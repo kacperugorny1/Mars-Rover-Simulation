@@ -1,0 +1,6 @@
+<map id="Contour::IsImposed" name="Contour::IsImposed">
+<area shape="rect" id="node1" title="Check collision." alt="" coords="208,56,343,83"/>
+<area shape="rect" id="node2" href="$a00121.html#a7127170c0a2d2c62326676b5c2820767" title="Zwraca czy kolizja." alt="" coords="5,5,160,32"/>
+<area shape="rect" id="node3" href="$a00129.html#aa6ad5dc5a1f3d2679521c6eced65a734" title="Sprawdza czy koliduje z lazikiem." alt="" coords="9,56,157,83"/>
+<area shape="rect" id="node4" href="$a00125.html#a4f4687b4722a1af8a506d34b5b787a2a" title="Sprawdza kolizje pomiedzy 2 obiektami." alt="" coords="21,107,144,133"/>
+</map>

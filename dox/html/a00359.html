@@ -1,0 +1,761 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MSR: Dokumentacja struktury doctest::detail::ResultBuilder</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="FSR-icon.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MSR
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a00359.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="a00356.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja struktury doctest::detail::ResultBuilder</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="a00637_source.html">doctest.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla doctest::detail::ResultBuilder</div>
+<div class="dyncontent">
+<div class="center"><img src="a00358.png" border="0" usemap="#doctest_1_1detail_1_1_result_builder_inherit__map" alt="Inheritance graph"/></div>
+<map name="doctest_1_1detail_1_1_result_builder_inherit__map" id="doctest_1_1detail_1_1_result_builder_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,80,191,107"/>
+<area shape="rect" href="a00251.html" title=" " alt="" coords="30,5,166,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
+<div class="dynheader">
+Diagram współpracy dla doctest::detail::ResultBuilder:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00357.png" border="0" usemap="#doctest_1_1detail_1_1_result_builder_coll__map" alt="Collaboration graph"/></div>
+<map name="doctest_1_1detail_1_1_result_builder_coll__map" id="doctest_1_1detail_1_1_result_builder_coll__map">
+<area shape="rect" title=" " alt="" coords="45,275,230,301"/>
+<area shape="rect" href="a00251.html" title=" " alt="" coords="69,199,205,225"/>
+<area shape="rect" href="a00247.html" title=" " alt="" coords="5,95,160,121"/>
+<area shape="rect" href="a00235.html" title=" " alt="" coords="185,95,290,121"/>
+<area shape="rect" href="a00239.html" title="OCLINT avoid private static members." alt="" coords="168,5,307,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:af1af5a8d0991b4fe3548107f111e968d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00359.html#af1af5a8d0991b4fe3548107f111e968d">ResultBuilder</a> (<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3">assertType::Enum</a> at, const char *file, int line, const char *expr, const char *exception_type=&quot;&quot;, const char *exception_string=&quot;&quot;)</td></tr>
+<tr class="separator:af1af5a8d0991b4fe3548107f111e968d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86c0ca727fead43263de4a7e9a59ad23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00359.html#a86c0ca727fead43263de4a7e9a59ad23">setResult</a> (const <a class="el" href="a00339.html">Result</a> &amp;res)</td></tr>
+<tr class="separator:a86c0ca727fead43263de4a7e9a59ad23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3d55b158b3ae687f80bca94db6bb701"><td class="memTemplParams" colspan="2">template&lt;int comparison, typename L , typename R &gt; </td></tr>
+<tr class="memitem:ab3d55b158b3ae687f80bca94db6bb701"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00035.html#a47e9d3609dfcc90b9a630ff33b9524d6">DOCTEST_NOINLINE</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00359.html#ab3d55b158b3ae687f80bca94db6bb701">binary_assert</a> (const <a class="el" href="a00035.html#af2901cafb023c57fb672ccb1bf14f2eb">DOCTEST_REF_WRAP</a>(L) lhs, const <a class="el" href="a00035.html#af2901cafb023c57fb672ccb1bf14f2eb">DOCTEST_REF_WRAP</a>(R) rhs)</td></tr>
+<tr class="separator:ab3d55b158b3ae687f80bca94db6bb701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98c33e90242e2859255a79cb38489f3b"><td class="memTemplParams" colspan="2">template&lt;typename L &gt; </td></tr>
+<tr class="memitem:a98c33e90242e2859255a79cb38489f3b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00035.html#a47e9d3609dfcc90b9a630ff33b9524d6">DOCTEST_NOINLINE</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00359.html#a98c33e90242e2859255a79cb38489f3b">unary_assert</a> (const <a class="el" href="a00035.html#af2901cafb023c57fb672ccb1bf14f2eb">DOCTEST_REF_WRAP</a>(L) val)</td></tr>
+<tr class="separator:a98c33e90242e2859255a79cb38489f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eece6aa3b1a2cb366cf5a0cc6c854a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00359.html#a5eece6aa3b1a2cb366cf5a0cc6c854a3">translateException</a> ()</td></tr>
+<tr class="separator:a5eece6aa3b1a2cb366cf5a0cc6c854a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2af75dd1d8db8d3aa949d78025854085"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00359.html#a2af75dd1d8db8d3aa949d78025854085">log</a> ()</td></tr>
+<tr class="separator:a2af75dd1d8db8d3aa949d78025854085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03686f862471728c2980d72e02980213"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00359.html#a03686f862471728c2980d72e02980213">react</a> () const</td></tr>
+<tr class="separator:a03686f862471728c2980d72e02980213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1af5a8d0991b4fe3548107f111e968d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00359.html#af1af5a8d0991b4fe3548107f111e968d">ResultBuilder</a> (<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3">assertType::Enum</a> at, const char *file, int line, const char *expr, const char *exception_type=&quot;&quot;, const char *exception_string=&quot;&quot;)</td></tr>
+<tr class="separator:af1af5a8d0991b4fe3548107f111e968d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86c0ca727fead43263de4a7e9a59ad23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00359.html#a86c0ca727fead43263de4a7e9a59ad23">setResult</a> (const <a class="el" href="a00339.html">Result</a> &amp;res)</td></tr>
+<tr class="separator:a86c0ca727fead43263de4a7e9a59ad23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3d55b158b3ae687f80bca94db6bb701"><td class="memTemplParams" colspan="2">template&lt;int comparison, typename L , typename R &gt; </td></tr>
+<tr class="memitem:ab3d55b158b3ae687f80bca94db6bb701"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00035.html#a47e9d3609dfcc90b9a630ff33b9524d6">DOCTEST_NOINLINE</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00359.html#ab3d55b158b3ae687f80bca94db6bb701">binary_assert</a> (const <a class="el" href="a00035.html#af2901cafb023c57fb672ccb1bf14f2eb">DOCTEST_REF_WRAP</a>(L) lhs, const <a class="el" href="a00035.html#af2901cafb023c57fb672ccb1bf14f2eb">DOCTEST_REF_WRAP</a>(R) rhs)</td></tr>
+<tr class="separator:ab3d55b158b3ae687f80bca94db6bb701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98c33e90242e2859255a79cb38489f3b"><td class="memTemplParams" colspan="2">template&lt;typename L &gt; </td></tr>
+<tr class="memitem:a98c33e90242e2859255a79cb38489f3b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00035.html#a47e9d3609dfcc90b9a630ff33b9524d6">DOCTEST_NOINLINE</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00359.html#a98c33e90242e2859255a79cb38489f3b">unary_assert</a> (const <a class="el" href="a00035.html#af2901cafb023c57fb672ccb1bf14f2eb">DOCTEST_REF_WRAP</a>(L) val)</td></tr>
+<tr class="separator:a98c33e90242e2859255a79cb38489f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eece6aa3b1a2cb366cf5a0cc6c854a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00359.html#a5eece6aa3b1a2cb366cf5a0cc6c854a3">translateException</a> ()</td></tr>
+<tr class="separator:a5eece6aa3b1a2cb366cf5a0cc6c854a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2af75dd1d8db8d3aa949d78025854085"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00359.html#a2af75dd1d8db8d3aa949d78025854085">log</a> ()</td></tr>
+<tr class="separator:a2af75dd1d8db8d3aa949d78025854085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03686f862471728c2980d72e02980213"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00359.html#a03686f862471728c2980d72e02980213">react</a> () const</td></tr>
+<tr class="separator:a03686f862471728c2980d72e02980213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Dodatkowe Dziedziczone Składowe</h2></td></tr>
+<tr class="inherit_header pub_attribs_a00251"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_a00251')"><img src="closed.png" alt="-"/>&#160;Atrybuty publiczne dziedziczone z <a class="el" href="a00251.html">doctest::AssertData</a></td></tr>
+<tr class="memitem:a2b39295fb9433efc497b8f8f458ef29a inherit pub_attribs_a00251"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00247.html">TestCaseData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html#a2b39295fb9433efc497b8f8f458ef29a">m_test_case</a></td></tr>
+<tr class="separator:a2b39295fb9433efc497b8f8f458ef29a inherit pub_attribs_a00251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b3b2866b13ba048c0beea51bd798749 inherit pub_attribs_a00251"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3">assertType::Enum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html#a0b3b2866b13ba048c0beea51bd798749">m_at</a></td></tr>
+<tr class="separator:a0b3b2866b13ba048c0beea51bd798749 inherit pub_attribs_a00251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b37fb8a1e89f3d3f71c6157d32468dd inherit pub_attribs_a00251"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html#a3b37fb8a1e89f3d3f71c6157d32468dd">m_file</a></td></tr>
+<tr class="separator:a3b37fb8a1e89f3d3f71c6157d32468dd inherit pub_attribs_a00251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1142f5fb5d171964b7677a9d23f81548 inherit pub_attribs_a00251"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html#a1142f5fb5d171964b7677a9d23f81548">m_line</a></td></tr>
+<tr class="separator:a1142f5fb5d171964b7677a9d23f81548 inherit pub_attribs_a00251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a119de0a0e3da5e1b15a9ede3f69813b3 inherit pub_attribs_a00251"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html#a119de0a0e3da5e1b15a9ede3f69813b3">m_expr</a></td></tr>
+<tr class="separator:a119de0a0e3da5e1b15a9ede3f69813b3 inherit pub_attribs_a00251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9ddaf3e6532fdadba3c1f74eb931d4a inherit pub_attribs_a00251"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html#ac9ddaf3e6532fdadba3c1f74eb931d4a">m_failed</a></td></tr>
+<tr class="separator:ac9ddaf3e6532fdadba3c1f74eb931d4a inherit pub_attribs_a00251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e9d4c7eeff7c4fe310b0597bf7027b8 inherit pub_attribs_a00251"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html#a3e9d4c7eeff7c4fe310b0597bf7027b8">m_threw</a></td></tr>
+<tr class="separator:a3e9d4c7eeff7c4fe310b0597bf7027b8 inherit pub_attribs_a00251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fdbef933ef26c0bc174f9ec716924cd inherit pub_attribs_a00251"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00235.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html#a1fdbef933ef26c0bc174f9ec716924cd">m_exception</a></td></tr>
+<tr class="separator:a1fdbef933ef26c0bc174f9ec716924cd inherit pub_attribs_a00251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c6b5804b7dd4d8ba70126cb598f30bd inherit pub_attribs_a00251"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00235.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html#a1c6b5804b7dd4d8ba70126cb598f30bd">m_decomp</a></td></tr>
+<tr class="separator:a1c6b5804b7dd4d8ba70126cb598f30bd inherit pub_attribs_a00251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace744d365532d299052c8a80a63f7079 inherit pub_attribs_a00251"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html#ace744d365532d299052c8a80a63f7079">m_threw_as</a></td></tr>
+<tr class="separator:ace744d365532d299052c8a80a63f7079 inherit pub_attribs_a00251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0144e1530ce95c559d5455826dd5429c inherit pub_attribs_a00251"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html#a0144e1530ce95c559d5455826dd5429c">m_exception_type</a></td></tr>
+<tr class="separator:a0144e1530ce95c559d5455826dd5429c inherit pub_attribs_a00251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11e9d4440527f5cf6c2881006e2a524c inherit pub_attribs_a00251"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html#a11e9d4440527f5cf6c2881006e2a524c">m_exception_string</a></td></tr>
+<tr class="separator:a11e9d4440527f5cf6c2881006e2a524c inherit pub_attribs_a00251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock">
+<p class="definition">Definicja w linii <a class="el" href="a00637_source.html#l01294">1294</a> pliku <a class="el" href="a00637_source.html">doctest.h</a>.</p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="af1af5a8d0991b4fe3548107f111e968d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1af5a8d0991b4fe3548107f111e968d">&#9670;&nbsp;</a></span>ResultBuilder() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">doctest::detail::ResultBuilder::ResultBuilder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3">assertType::Enum</a>&#160;</td>
+          <td class="paramname"><em>at</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>expr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>exception_type</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>exception_string</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00032_source.html#l01520">1520</a> pliku <a class="el" href="a00032_source.html">doctest.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01521"></a><span class="lineno"> 1521</span>&#160;                                                                                           {</div>
+<div class="line"><a name="l01522"></a><span class="lineno"> 1522</span>&#160;        <a class="code" href="a00251.html#a2b39295fb9433efc497b8f8f458ef29a">m_test_case</a>        = g_cs-&gt;currentTest;</div>
+<div class="line"><a name="l01523"></a><span class="lineno"> 1523</span>&#160;        <a class="code" href="a00251.html#a0b3b2866b13ba048c0beea51bd798749">m_at</a>               = at;</div>
+<div class="line"><a name="l01524"></a><span class="lineno"> 1524</span>&#160;        <a class="code" href="a00251.html#a3b37fb8a1e89f3d3f71c6157d32468dd">m_file</a>             = file;</div>
+<div class="line"><a name="l01525"></a><span class="lineno"> 1525</span>&#160;        <a class="code" href="a00251.html#a1142f5fb5d171964b7677a9d23f81548">m_line</a>             = line;</div>
+<div class="line"><a name="l01526"></a><span class="lineno"> 1526</span>&#160;        <a class="code" href="a00251.html#a119de0a0e3da5e1b15a9ede3f69813b3">m_expr</a>             = expr;</div>
+<div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160;        <a class="code" href="a00251.html#ac9ddaf3e6532fdadba3c1f74eb931d4a">m_failed</a>           = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01528"></a><span class="lineno"> 1528</span>&#160;        <a class="code" href="a00251.html#a3e9d4c7eeff7c4fe310b0597bf7027b8">m_threw</a>            = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01529"></a><span class="lineno"> 1529</span>&#160;        <a class="code" href="a00251.html#ace744d365532d299052c8a80a63f7079">m_threw_as</a>         = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01530"></a><span class="lineno"> 1530</span>&#160;        <a class="code" href="a00251.html#a0144e1530ce95c559d5455826dd5429c">m_exception_type</a>   = exception_type;</div>
+<div class="line"><a name="l01531"></a><span class="lineno"> 1531</span>&#160;        <a class="code" href="a00251.html#a11e9d4440527f5cf6c2881006e2a524c">m_exception_string</a> = exception_string;</div>
+<div class="line"><a name="l01532"></a><span class="lineno"> 1532</span>&#160;<span class="preprocessor">#if DOCTEST_MSVC</span></div>
+<div class="line"><a name="l01533"></a><span class="lineno"> 1533</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="a00251.html#a119de0a0e3da5e1b15a9ede3f69813b3">m_expr</a>[0] == <span class="charliteral">&#39; &#39;</span>) <span class="comment">// this happens when variadic macros are disabled under MSVC</span></div>
+<div class="line"><a name="l01534"></a><span class="lineno"> 1534</span>&#160;            ++<a class="code" href="a00251.html#a119de0a0e3da5e1b15a9ede3f69813b3">m_expr</a>;</div>
+<div class="line"><a name="l01535"></a><span class="lineno"> 1535</span>&#160;<span class="preprocessor">#endif // MSVC</span></div>
+<div class="line"><a name="l01536"></a><span class="lineno"> 1536</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af1af5a8d0991b4fe3548107f111e968d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1af5a8d0991b4fe3548107f111e968d">&#9670;&nbsp;</a></span>ResultBuilder() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">doctest::detail::ResultBuilder::ResultBuilder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3">assertType::Enum</a>&#160;</td>
+          <td class="paramname"><em>at</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>expr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>exception_type</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>exception_string</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="ab3d55b158b3ae687f80bca94db6bb701"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3d55b158b3ae687f80bca94db6bb701">&#9670;&nbsp;</a></span>binary_assert() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int comparison, typename L , typename R &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00035.html#a47e9d3609dfcc90b9a630ff33b9524d6">DOCTEST_NOINLINE</a> void doctest::detail::ResultBuilder::binary_assert </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00035.html#af2901cafb023c57fb672ccb1bf14f2eb">DOCTEST_REF_WRAP</a>(L)&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00035.html#af2901cafb023c57fb672ccb1bf14f2eb">DOCTEST_REF_WRAP</a>(R)&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00035_source.html#l01299">1299</a> pliku <a class="el" href="a00035_source.html">doctest_fwd.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;                                                                           {</div>
+<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;            <a class="code" href="a00251.html#ac9ddaf3e6532fdadba3c1f74eb931d4a">m_failed</a> = !RelationalComparator&lt;comparison, L, R&gt;()(lhs, rhs);</div>
+<div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="a00251.html#ac9ddaf3e6532fdadba3c1f74eb931d4a">m_failed</a> || <a class="code" href="a00200.html#a426c38f4b2561bf6cfb10a370bddc3da">getContextOptions</a>()-&gt;<a class="code" href="a00267.html#a5c7bc4cf57fadf73e626666a0a548b92">success</a>)</div>
+<div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;                <a class="code" href="a00251.html#a1c6b5804b7dd4d8ba70126cb598f30bd">m_decomp</a> = <a class="code" href="a00203.html#a6879a79aea397a22e296e4afd0a90e3b">stringifyBinaryExpr</a>(lhs, <span class="stringliteral">&quot;, &quot;</span>, rhs);</div>
+<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;        }</div>
+</div><!-- fragment --><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00359_ab3d55b158b3ae687f80bca94db6bb701_cgraph.png" border="0" usemap="#a00359_ab3d55b158b3ae687f80bca94db6bb701_cgraph" alt=""/></div>
+<map name="a00359_ab3d55b158b3ae687f80bca94db6bb701_cgraph" id="a00359_ab3d55b158b3ae687f80bca94db6bb701_cgraph">
+<area shape="rect" title=" " alt="" coords="5,27,191,69"/>
+<area shape="rect" href="a00200.html#a426c38f4b2561bf6cfb10a370bddc3da" title=" " alt="" coords="239,5,417,32"/>
+<area shape="rect" href="a00203.html#a6879a79aea397a22e296e4afd0a90e3b" title=" " alt="" coords="251,57,405,98"/>
+<area shape="rect" href="a00200.html#a8907bf35788959391343a2304f004e17" title=" " alt="" coords="465,64,581,91"/>
+<area shape="rect" href="a00307.html#a67d29f2a5de9a522d8e8607c1a39db9b" title=" " alt="" coords="629,49,832,105"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab3d55b158b3ae687f80bca94db6bb701"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3d55b158b3ae687f80bca94db6bb701">&#9670;&nbsp;</a></span>binary_assert() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int comparison, typename L , typename R &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00035.html#a47e9d3609dfcc90b9a630ff33b9524d6">DOCTEST_NOINLINE</a> void doctest::detail::ResultBuilder::binary_assert </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00035.html#af2901cafb023c57fb672ccb1bf14f2eb">DOCTEST_REF_WRAP</a>(L)&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00035.html#af2901cafb023c57fb672ccb1bf14f2eb">DOCTEST_REF_WRAP</a>(R)&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00637_source.html#l01302">1302</a> pliku <a class="el" href="a00637_source.html">doctest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;                                                                           {</div>
+<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;            <a class="code" href="a00251.html#ac9ddaf3e6532fdadba3c1f74eb931d4a">m_failed</a> = !RelationalComparator&lt;comparison, L, R&gt;()(lhs, rhs);</div>
+<div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="a00251.html#ac9ddaf3e6532fdadba3c1f74eb931d4a">m_failed</a> || <a class="code" href="a00200.html#a426c38f4b2561bf6cfb10a370bddc3da">getContextOptions</a>()-&gt;<a class="code" href="a00267.html#a5c7bc4cf57fadf73e626666a0a548b92">success</a>)</div>
+<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;                <a class="code" href="a00251.html#a1c6b5804b7dd4d8ba70126cb598f30bd">m_decomp</a> = <a class="code" href="a00203.html#a6879a79aea397a22e296e4afd0a90e3b">stringifyBinaryExpr</a>(lhs, <span class="stringliteral">&quot;, &quot;</span>, rhs);</div>
+<div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;        }</div>
+</div><!-- fragment --><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00359_ab3d55b158b3ae687f80bca94db6bb701_cgraph.png" border="0" usemap="#a00359_ab3d55b158b3ae687f80bca94db6bb701_cgraph" alt=""/></div>
+<map name="a00359_ab3d55b158b3ae687f80bca94db6bb701_cgraph" id="a00359_ab3d55b158b3ae687f80bca94db6bb701_cgraph">
+<area shape="rect" title=" " alt="" coords="5,27,191,69"/>
+<area shape="rect" href="a00200.html#a426c38f4b2561bf6cfb10a370bddc3da" title=" " alt="" coords="239,5,417,32"/>
+<area shape="rect" href="a00203.html#a6879a79aea397a22e296e4afd0a90e3b" title=" " alt="" coords="251,57,405,98"/>
+<area shape="rect" href="a00200.html#a8907bf35788959391343a2304f004e17" title=" " alt="" coords="465,64,581,91"/>
+<area shape="rect" href="a00307.html#a67d29f2a5de9a522d8e8607c1a39db9b" title=" " alt="" coords="629,49,832,105"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2af75dd1d8db8d3aa949d78025854085"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2af75dd1d8db8d3aa949d78025854085">&#9670;&nbsp;</a></span>log() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool doctest::detail::ResultBuilder::log </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2af75dd1d8db8d3aa949d78025854085"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2af75dd1d8db8d3aa949d78025854085">&#9670;&nbsp;</a></span>log() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool doctest::detail::ResultBuilder::log </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>OCLINT bitwise operator in conditional</p>
+<p>OCLINT</p>
+<p>OCLINT bitwise operator in conditional</p>
+<p>OCLINT bitwise operator in conditional</p>
+<p>OCLINT bitwise operator in conditional</p>
+
+<p class="definition">Definicja w linii <a class="el" href="a00032_source.html#l01548">1548</a> pliku <a class="el" href="a00032_source.html">doctest.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01548"></a><span class="lineno"> 1548</span>&#160;                            {</div>
+<div class="line"><a name="l01549"></a><span class="lineno"> 1549</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="a00251.html#a0b3b2866b13ba048c0beea51bd798749">m_at</a> &amp; <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3afa3c93eb2cfc13b22463a939c880426f">assertType::is_throws</a>) { </div>
+<div class="line"><a name="l01550"></a><span class="lineno"> 1550</span>&#160;            <a class="code" href="a00251.html#ac9ddaf3e6532fdadba3c1f74eb931d4a">m_failed</a> = !<a class="code" href="a00251.html#a3e9d4c7eeff7c4fe310b0597bf7027b8">m_threw</a>;</div>
+<div class="line"><a name="l01551"></a><span class="lineno"> 1551</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>((<a class="code" href="a00251.html#a0b3b2866b13ba048c0beea51bd798749">m_at</a> &amp; <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a963a644bdf5862ad090793796ceb66bb">assertType::is_throws_as</a>) &amp;&amp; (<a class="code" href="a00251.html#a0b3b2866b13ba048c0beea51bd798749">m_at</a> &amp; <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0ea2bbff31127e391e116ae517d5c514">assertType::is_throws_with</a>)) { </div>
+<div class="line"><a name="l01552"></a><span class="lineno"> 1552</span>&#160;            <a class="code" href="a00251.html#ac9ddaf3e6532fdadba3c1f74eb931d4a">m_failed</a> = !<a class="code" href="a00251.html#ace744d365532d299052c8a80a63f7079">m_threw_as</a> || (<a class="code" href="a00251.html#a1fdbef933ef26c0bc174f9ec716924cd">m_exception</a> != <a class="code" href="a00251.html#a11e9d4440527f5cf6c2881006e2a524c">m_exception_string</a>);</div>
+<div class="line"><a name="l01553"></a><span class="lineno"> 1553</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="a00251.html#a0b3b2866b13ba048c0beea51bd798749">m_at</a> &amp; <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a963a644bdf5862ad090793796ceb66bb">assertType::is_throws_as</a>) { </div>
+<div class="line"><a name="l01554"></a><span class="lineno"> 1554</span>&#160;            <a class="code" href="a00251.html#ac9ddaf3e6532fdadba3c1f74eb931d4a">m_failed</a> = !<a class="code" href="a00251.html#ace744d365532d299052c8a80a63f7079">m_threw_as</a>;</div>
+<div class="line"><a name="l01555"></a><span class="lineno"> 1555</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="a00251.html#a0b3b2866b13ba048c0beea51bd798749">m_at</a> &amp; <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0ea2bbff31127e391e116ae517d5c514">assertType::is_throws_with</a>) { </div>
+<div class="line"><a name="l01556"></a><span class="lineno"> 1556</span>&#160;            <a class="code" href="a00251.html#ac9ddaf3e6532fdadba3c1f74eb931d4a">m_failed</a> = <a class="code" href="a00251.html#a1fdbef933ef26c0bc174f9ec716924cd">m_exception</a> != <a class="code" href="a00251.html#a11e9d4440527f5cf6c2881006e2a524c">m_exception_string</a>;</div>
+<div class="line"><a name="l01557"></a><span class="lineno"> 1557</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="a00251.html#a0b3b2866b13ba048c0beea51bd798749">m_at</a> &amp; <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a5f3e310c10ba1f854da0049c3915130e">assertType::is_nothrow</a>) { </div>
+<div class="line"><a name="l01558"></a><span class="lineno"> 1558</span>&#160;            <a class="code" href="a00251.html#ac9ddaf3e6532fdadba3c1f74eb931d4a">m_failed</a> = <a class="code" href="a00251.html#a3e9d4c7eeff7c4fe310b0597bf7027b8">m_threw</a>;</div>
+<div class="line"><a name="l01559"></a><span class="lineno"> 1559</span>&#160;        }</div>
+<div class="line"><a name="l01560"></a><span class="lineno"> 1560</span>&#160; </div>
+<div class="line"><a name="l01561"></a><span class="lineno"> 1561</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="a00251.html#a1fdbef933ef26c0bc174f9ec716924cd">m_exception</a>.<a class="code" href="a00235.html#a9fbc7b09f1660b236f12fc2adce6183d">size</a>())</div>
+<div class="line"><a name="l01562"></a><span class="lineno"> 1562</span>&#160;            <a class="code" href="a00251.html#a1fdbef933ef26c0bc174f9ec716924cd">m_exception</a> = String(<span class="stringliteral">&quot;\&quot;&quot;</span>) + <a class="code" href="a00251.html#a1fdbef933ef26c0bc174f9ec716924cd">m_exception</a> + <span class="stringliteral">&quot;\&quot;&quot;</span>;</div>
+<div class="line"><a name="l01563"></a><span class="lineno"> 1563</span>&#160; </div>
+<div class="line"><a name="l01564"></a><span class="lineno"> 1564</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="a00200.html#a0b03060093b3894c976b6ae84e55f3f2">is_running_in_test</a>) {</div>
+<div class="line"><a name="l01565"></a><span class="lineno"> 1565</span>&#160;            addAssert(<a class="code" href="a00251.html#a0b3b2866b13ba048c0beea51bd798749">m_at</a>);</div>
+<div class="line"><a name="l01566"></a><span class="lineno"> 1566</span>&#160;            <a class="code" href="a00032.html#a590edce32e9348c4b55365ef126426d7">DOCTEST_ITERATE_THROUGH_REPORTERS</a>(log_assert, *<span class="keyword">this</span>);</div>
+<div class="line"><a name="l01567"></a><span class="lineno"> 1567</span>&#160; </div>
+<div class="line"><a name="l01568"></a><span class="lineno"> 1568</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="a00251.html#ac9ddaf3e6532fdadba3c1f74eb931d4a">m_failed</a>)</div>
+<div class="line"><a name="l01569"></a><span class="lineno"> 1569</span>&#160;                addFailedAssert(<a class="code" href="a00251.html#a0b3b2866b13ba048c0beea51bd798749">m_at</a>);</div>
+<div class="line"><a name="l01570"></a><span class="lineno"> 1570</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="a00251.html#ac9ddaf3e6532fdadba3c1f74eb931d4a">m_failed</a>) {</div>
+<div class="line"><a name="l01571"></a><span class="lineno"> 1571</span>&#160;            <a class="code" href="a00203.html#a0ff832be68bf666d856aefd539e1ce81">failed_out_of_a_testing_context</a>(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l01572"></a><span class="lineno"> 1572</span>&#160;        }</div>
+<div class="line"><a name="l01573"></a><span class="lineno"> 1573</span>&#160; </div>
+<div class="line"><a name="l01574"></a><span class="lineno"> 1574</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a00251.html#ac9ddaf3e6532fdadba3c1f74eb931d4a">m_failed</a> &amp;&amp; <a class="code" href="a00203.html#a013828c4e677241cc26aeea33f762710">isDebuggerActive</a>() &amp;&amp;</div>
+<div class="line"><a name="l01575"></a><span class="lineno"> 1575</span>&#160;               !<a class="code" href="a00200.html#a426c38f4b2561bf6cfb10a370bddc3da">getContextOptions</a>()-&gt;<a class="code" href="a00267.html#af82a6fc802b8ed33a84ea96e85b0d911">no_breaks</a>; <span class="comment">// break into debugger</span></div>
+<div class="line"><a name="l01576"></a><span class="lineno"> 1576</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00359_a2af75dd1d8db8d3aa949d78025854085_cgraph.png" border="0" usemap="#a00359_a2af75dd1d8db8d3aa949d78025854085_cgraph" alt=""/></div>
+<map name="a00359_a2af75dd1d8db8d3aa949d78025854085_cgraph" id="a00359_a2af75dd1d8db8d3aa949d78025854085_cgraph">
+<area shape="rect" title=" " alt="" coords="5,71,213,98"/>
+<area shape="rect" href="a00203.html#a0ff832be68bf666d856aefd539e1ce81" title=" " alt="" coords="263,5,438,47"/>
+<area shape="rect" href="a00200.html#a426c38f4b2561bf6cfb10a370bddc3da" title=" " alt="" coords="261,71,440,98"/>
+<area shape="rect" href="a00203.html#a013828c4e677241cc26aeea33f762710" title=" " alt="" coords="264,123,437,164"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a03686f862471728c2980d72e02980213"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03686f862471728c2980d72e02980213">&#9670;&nbsp;</a></span>react() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void doctest::detail::ResultBuilder::react </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a03686f862471728c2980d72e02980213"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03686f862471728c2980d72e02980213">&#9670;&nbsp;</a></span>react() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void doctest::detail::ResultBuilder::react </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00032_source.html#l01578">1578</a> pliku <a class="el" href="a00032_source.html">doctest.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01578"></a><span class="lineno"> 1578</span>&#160;                                    {</div>
+<div class="line"><a name="l01579"></a><span class="lineno"> 1579</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="a00251.html#ac9ddaf3e6532fdadba3c1f74eb931d4a">m_failed</a> &amp;&amp; <a class="code" href="a00203.html#acec9ff072dd86af95225a8beb9c57298">checkIfShouldThrow</a>(<a class="code" href="a00251.html#a0b3b2866b13ba048c0beea51bd798749">m_at</a>))</div>
+<div class="line"><a name="l01580"></a><span class="lineno"> 1580</span>&#160;            <a class="code" href="a00203.html#a60ffd50b9ee7adfcafc078f333aac8b6">throwException</a>();</div>
+<div class="line"><a name="l01581"></a><span class="lineno"> 1581</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00359_a03686f862471728c2980d72e02980213_cgraph.png" border="0" usemap="#a00359_a03686f862471728c2980d72e02980213_cgraph" alt=""/></div>
+<map name="a00359_a03686f862471728c2980d72e02980213_cgraph" id="a00359_a03686f862471728c2980d72e02980213_cgraph">
+<area shape="rect" title=" " alt="" coords="5,35,191,76"/>
+<area shape="rect" href="a00203.html#acec9ff072dd86af95225a8beb9c57298" title=" " alt="" coords="261,5,412,47"/>
+<area shape="rect" href="a00203.html#a60ffd50b9ee7adfcafc078f333aac8b6" title=" " alt="" coords="239,71,435,98"/>
+<area shape="rect" href="a00200.html#a426c38f4b2561bf6cfb10a370bddc3da" title=" " alt="" coords="483,13,661,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a86c0ca727fead43263de4a7e9a59ad23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86c0ca727fead43263de4a7e9a59ad23">&#9670;&nbsp;</a></span>setResult() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void doctest::detail::ResultBuilder::setResult </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00339.html">Result</a> &amp;&#160;</td>
+          <td class="paramname"><em>res</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a86c0ca727fead43263de4a7e9a59ad23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86c0ca727fead43263de4a7e9a59ad23">&#9670;&nbsp;</a></span>setResult() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void doctest::detail::ResultBuilder::setResult </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00339.html">Result</a> &amp;&#160;</td>
+          <td class="paramname"><em>res</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00032_source.html#l01538">1538</a> pliku <a class="el" href="a00032_source.html">doctest.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01538"></a><span class="lineno"> 1538</span>&#160;                                                   {</div>
+<div class="line"><a name="l01539"></a><span class="lineno"> 1539</span>&#160;        <a class="code" href="a00251.html#a1c6b5804b7dd4d8ba70126cb598f30bd">m_decomp</a> = <a class="code" href="a00213.html#af31fbdb969bc0a83db558e58d480af82">res</a>.m_decomp;</div>
+<div class="line"><a name="l01540"></a><span class="lineno"> 1540</span>&#160;        <a class="code" href="a00251.html#ac9ddaf3e6532fdadba3c1f74eb931d4a">m_failed</a> = !<a class="code" href="a00213.html#af31fbdb969bc0a83db558e58d480af82">res</a>.m_passed;</div>
+<div class="line"><a name="l01541"></a><span class="lineno"> 1541</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5eece6aa3b1a2cb366cf5a0cc6c854a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eece6aa3b1a2cb366cf5a0cc6c854a3">&#9670;&nbsp;</a></span>translateException() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void doctest::detail::ResultBuilder::translateException </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5eece6aa3b1a2cb366cf5a0cc6c854a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eece6aa3b1a2cb366cf5a0cc6c854a3">&#9670;&nbsp;</a></span>translateException() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void doctest::detail::ResultBuilder::translateException </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00032_source.html#l01543">1543</a> pliku <a class="el" href="a00032_source.html">doctest.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01543"></a><span class="lineno"> 1543</span>&#160;                                           {</div>
+<div class="line"><a name="l01544"></a><span class="lineno"> 1544</span>&#160;        <a class="code" href="a00251.html#a3e9d4c7eeff7c4fe310b0597bf7027b8">m_threw</a>     = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01545"></a><span class="lineno"> 1545</span>&#160;        <a class="code" href="a00251.html#a1fdbef933ef26c0bc174f9ec716924cd">m_exception</a> = translateActiveException();</div>
+<div class="line"><a name="l01546"></a><span class="lineno"> 1546</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a98c33e90242e2859255a79cb38489f3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98c33e90242e2859255a79cb38489f3b">&#9670;&nbsp;</a></span>unary_assert() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename L &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00035.html#a47e9d3609dfcc90b9a630ff33b9524d6">DOCTEST_NOINLINE</a> void doctest::detail::ResultBuilder::unary_assert </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00035.html#af2901cafb023c57fb672ccb1bf14f2eb">DOCTEST_REF_WRAP</a>(L)&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>OCLINT bitwise operator in conditional</p>
+
+<p class="definition">Definicja w linii <a class="el" href="a00035_source.html#l01307">1307</a> pliku <a class="el" href="a00035_source.html">doctest_fwd.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;                                                                          {</div>
+<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;            <a class="code" href="a00251.html#ac9ddaf3e6532fdadba3c1f74eb931d4a">m_failed</a> = !val;</div>
+<div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160; </div>
+<div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="a00251.html#a0b3b2866b13ba048c0beea51bd798749">m_at</a> &amp; <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a812e83ede566e134017f41d5c72b2ac5">assertType::is_false</a>) </div>
+<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;                <a class="code" href="a00251.html#ac9ddaf3e6532fdadba3c1f74eb931d4a">m_failed</a> = !<a class="code" href="a00251.html#ac9ddaf3e6532fdadba3c1f74eb931d4a">m_failed</a>;</div>
+<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160; </div>
+<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="a00251.html#ac9ddaf3e6532fdadba3c1f74eb931d4a">m_failed</a> || <a class="code" href="a00200.html#a426c38f4b2561bf6cfb10a370bddc3da">getContextOptions</a>()-&gt;success)</div>
+<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;                <a class="code" href="a00251.html#a1c6b5804b7dd4d8ba70126cb598f30bd">m_decomp</a> = <a class="code" href="a00200.html#a8907bf35788959391343a2304f004e17">toString</a>(val);</div>
+<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;        }</div>
+</div><!-- fragment --><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00359_a98c33e90242e2859255a79cb38489f3b_cgraph.png" border="0" usemap="#a00359_a98c33e90242e2859255a79cb38489f3b_cgraph" alt=""/></div>
+<map name="a00359_a98c33e90242e2859255a79cb38489f3b_cgraph" id="a00359_a98c33e90242e2859255a79cb38489f3b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,23,191,65"/>
+<area shape="rect" href="a00200.html#a426c38f4b2561bf6cfb10a370bddc3da" title=" " alt="" coords="239,5,417,32"/>
+<area shape="rect" href="a00200.html#a8907bf35788959391343a2304f004e17" title=" " alt="" coords="270,56,386,83"/>
+<area shape="rect" href="a00307.html#a67d29f2a5de9a522d8e8607c1a39db9b" title=" " alt="" coords="465,41,668,97"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a98c33e90242e2859255a79cb38489f3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98c33e90242e2859255a79cb38489f3b">&#9670;&nbsp;</a></span>unary_assert() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename L &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00035.html#a47e9d3609dfcc90b9a630ff33b9524d6">DOCTEST_NOINLINE</a> void doctest::detail::ResultBuilder::unary_assert </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00035.html#af2901cafb023c57fb672ccb1bf14f2eb">DOCTEST_REF_WRAP</a>(L)&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>OCLINT bitwise operator in conditional</p>
+
+<p class="definition">Definicja w linii <a class="el" href="a00637_source.html#l01310">1310</a> pliku <a class="el" href="a00637_source.html">doctest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;                                                                          {</div>
+<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;            <a class="code" href="a00251.html#ac9ddaf3e6532fdadba3c1f74eb931d4a">m_failed</a> = !val;</div>
+<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160; </div>
+<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="a00251.html#a0b3b2866b13ba048c0beea51bd798749">m_at</a> &amp; <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a812e83ede566e134017f41d5c72b2ac5">assertType::is_false</a>) </div>
+<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;                <a class="code" href="a00251.html#ac9ddaf3e6532fdadba3c1f74eb931d4a">m_failed</a> = !<a class="code" href="a00251.html#ac9ddaf3e6532fdadba3c1f74eb931d4a">m_failed</a>;</div>
+<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160; </div>
+<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="a00251.html#ac9ddaf3e6532fdadba3c1f74eb931d4a">m_failed</a> || <a class="code" href="a00200.html#a426c38f4b2561bf6cfb10a370bddc3da">getContextOptions</a>()-&gt;success)</div>
+<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;                <a class="code" href="a00251.html#a1c6b5804b7dd4d8ba70126cb598f30bd">m_decomp</a> = <a class="code" href="a00200.html#a8907bf35788959391343a2304f004e17">toString</a>(val);</div>
+<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;        }</div>
+</div><!-- fragment --><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00359_a98c33e90242e2859255a79cb38489f3b_cgraph.png" border="0" usemap="#a00359_a98c33e90242e2859255a79cb38489f3b_cgraph" alt=""/></div>
+<map name="a00359_a98c33e90242e2859255a79cb38489f3b_cgraph" id="a00359_a98c33e90242e2859255a79cb38489f3b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,23,191,65"/>
+<area shape="rect" href="a00200.html#a426c38f4b2561bf6cfb10a370bddc3da" title=" " alt="" coords="239,5,417,32"/>
+<area shape="rect" href="a00200.html#a8907bf35788959391343a2304f004e17" title=" " alt="" coords="270,56,386,83"/>
+<area shape="rect" href="a00307.html#a67d29f2a5de9a522d8e8607c1a39db9b" title=" " alt="" coords="465,41,668,97"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej struktury została wygenerowana z plików:<ul>
+<li>/home/kacpi/Desktop/kpo-zad6-1/prj/build/_deps/doctest-src/doctest/<a class="el" href="a00637_source.html">doctest.h</a></li>
+<li>/home/kacpi/Desktop/kpo-zad6-1/prj/build/_deps/doctest-src/doctest/parts/<a class="el" href="a00035_source.html">doctest_fwd.h</a></li>
+<li>/home/kacpi/Desktop/kpo-zad6-1/prj/build/_deps/doctest-src/doctest/parts/<a class="el" href="a00032_source.html">doctest.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa00235_html_a9fbc7b09f1660b236f12fc2adce6183d"><div class="ttname"><a href="a00235.html#a9fbc7b09f1660b236f12fc2adce6183d">doctest::String::size</a></div><div class="ttdeci">unsigned size() const</div></div>
+<div class="ttc" id="aa00203_html_a60ffd50b9ee7adfcafc078f333aac8b6"><div class="ttname"><a href="a00203.html#a60ffd50b9ee7adfcafc078f333aac8b6">doctest::detail::throwException</a></div><div class="ttdeci">DOCTEST_INTERFACE void throwException()</div><div class="ttdef"><b>Definition:</b> <a href="a00032_source.html#l00846">doctest.cpp:846</a></div></div>
+<div class="ttc" id="aa00251_html_a11e9d4440527f5cf6c2881006e2a524c"><div class="ttname"><a href="a00251.html#a11e9d4440527f5cf6c2881006e2a524c">doctest::AssertData::m_exception_string</a></div><div class="ttdeci">const char * m_exception_string</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00664">doctest.h:664</a></div></div>
+<div class="ttc" id="aa00251_html_a0b3b2866b13ba048c0beea51bd798749"><div class="ttname"><a href="a00251.html#a0b3b2866b13ba048c0beea51bd798749">doctest::AssertData::m_at</a></div><div class="ttdeci">assertType::Enum m_at</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00648">doctest.h:648</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a0ea2bbff31127e391e116ae517d5c514"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0ea2bbff31127e391e116ae517d5c514">doctest::assertType::is_throws_with</a></div><div class="ttdeci">@ is_throws_with</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00547">doctest.h:547</a></div></div>
+<div class="ttc" id="aa00203_html_a6879a79aea397a22e296e4afd0a90e3b"><div class="ttname"><a href="a00203.html#a6879a79aea397a22e296e4afd0a90e3b">doctest::detail::stringifyBinaryExpr</a></div><div class="ttdeci">String stringifyBinaryExpr(const DOCTEST_REF_WRAP(L) lhs, const char *op, const DOCTEST_REF_WRAP(R) rhs)</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l01006">doctest.h:1006</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a812e83ede566e134017f41d5c72b2ac5"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a812e83ede566e134017f41d5c72b2ac5">doctest::assertType::is_false</a></div><div class="ttdeci">@ is_false</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00550">doctest.h:550</a></div></div>
+<div class="ttc" id="aa00203_html_a0ff832be68bf666d856aefd539e1ce81"><div class="ttname"><a href="a00203.html#a0ff832be68bf666d856aefd539e1ce81">doctest::detail::failed_out_of_a_testing_context</a></div><div class="ttdeci">DOCTEST_INTERFACE void failed_out_of_a_testing_context(const AssertData &amp;ad)</div><div class="ttdef"><b>Definition:</b> <a href="a00032_source.html#l01583">doctest.cpp:1583</a></div></div>
+<div class="ttc" id="aa00251_html_ac9ddaf3e6532fdadba3c1f74eb931d4a"><div class="ttname"><a href="a00251.html#ac9ddaf3e6532fdadba3c1f74eb931d4a">doctest::AssertData::m_failed</a></div><div class="ttdeci">bool m_failed</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00652">doctest.h:652</a></div></div>
+<div class="ttc" id="aa00200_html_a426c38f4b2561bf6cfb10a370bddc3da"><div class="ttname"><a href="a00200.html#a426c38f4b2561bf6cfb10a370bddc3da">doctest::getContextOptions</a></div><div class="ttdeci">const DOCTEST_INTERFACE ContextOptions * getContextOptions()</div></div>
+<div class="ttc" id="aa00267_html_af82a6fc802b8ed33a84ea96e85b0d911"><div class="ttname"><a href="a00267.html#af82a6fc802b8ed33a84ea96e85b0d911">doctest::ContextOptions::no_breaks</a></div><div class="ttdeci">bool no_breaks</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00718">doctest.h:718</a></div></div>
+<div class="ttc" id="aa00200_html_a0b03060093b3894c976b6ae84e55f3f2"><div class="ttname"><a href="a00200.html#a0b03060093b3894c976b6ae84e55f3f2">doctest::is_running_in_test</a></div><div class="ttdeci">DOCTEST_INTERFACE bool is_running_in_test</div><div class="ttdef"><b>Definition:</b> <a href="a00035_source.html#l00419">doctest_fwd.h:419</a></div></div>
+<div class="ttc" id="aa00251_html_a1fdbef933ef26c0bc174f9ec716924cd"><div class="ttname"><a href="a00251.html#a1fdbef933ef26c0bc174f9ec716924cd">doctest::AssertData::m_exception</a></div><div class="ttdeci">String m_exception</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00656">doctest.h:656</a></div></div>
+<div class="ttc" id="aa00251_html_a3b37fb8a1e89f3d3f71c6157d32468dd"><div class="ttname"><a href="a00251.html#a3b37fb8a1e89f3d3f71c6157d32468dd">doctest::AssertData::m_file</a></div><div class="ttdeci">const char * m_file</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00649">doctest.h:649</a></div></div>
+<div class="ttc" id="aa00251_html_a1142f5fb5d171964b7677a9d23f81548"><div class="ttname"><a href="a00251.html#a1142f5fb5d171964b7677a9d23f81548">doctest::AssertData::m_line</a></div><div class="ttdeci">int m_line</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00650">doctest.h:650</a></div></div>
+<div class="ttc" id="aa00251_html_a3e9d4c7eeff7c4fe310b0597bf7027b8"><div class="ttname"><a href="a00251.html#a3e9d4c7eeff7c4fe310b0597bf7027b8">doctest::AssertData::m_threw</a></div><div class="ttdeci">bool m_threw</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00655">doctest.h:655</a></div></div>
+<div class="ttc" id="aa00267_html_a5c7bc4cf57fadf73e626666a0a548b92"><div class="ttname"><a href="a00267.html#a5c7bc4cf57fadf73e626666a0a548b92">doctest::ContextOptions::success</a></div><div class="ttdeci">bool success</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00708">doctest.h:708</a></div></div>
+<div class="ttc" id="aa00200_html_a8907bf35788959391343a2304f004e17"><div class="ttname"><a href="a00200.html#a8907bf35788959391343a2304f004e17">doctest::toString</a></div><div class="ttdeci">String toString(const DOCTEST_REF_WRAP(T) value)</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00850">doctest.h:850</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a963a644bdf5862ad090793796ceb66bb"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a963a644bdf5862ad090793796ceb66bb">doctest::assertType::is_throws_as</a></div><div class="ttdeci">@ is_throws_as</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00546">doctest.h:546</a></div></div>
+<div class="ttc" id="aa00251_html_a1c6b5804b7dd4d8ba70126cb598f30bd"><div class="ttname"><a href="a00251.html#a1c6b5804b7dd4d8ba70126cb598f30bd">doctest::AssertData::m_decomp</a></div><div class="ttdeci">String m_decomp</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00659">doctest.h:659</a></div></div>
+<div class="ttc" id="aa00251_html_a119de0a0e3da5e1b15a9ede3f69813b3"><div class="ttname"><a href="a00251.html#a119de0a0e3da5e1b15a9ede3f69813b3">doctest::AssertData::m_expr</a></div><div class="ttdeci">const char * m_expr</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00651">doctest.h:651</a></div></div>
+<div class="ttc" id="aa00251_html_a0144e1530ce95c559d5455826dd5429c"><div class="ttname"><a href="a00251.html#a0144e1530ce95c559d5455826dd5429c">doctest::AssertData::m_exception_type</a></div><div class="ttdeci">const char * m_exception_type</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00663">doctest.h:663</a></div></div>
+<div class="ttc" id="aa00213_html_af31fbdb969bc0a83db558e58d480af82"><div class="ttname"><a href="a00213.html#af31fbdb969bc0a83db558e58d480af82">run_all.res</a></div><div class="ttdeci">res</div><div class="ttdef"><b>Definition:</b> <a href="a00107_source.html#l00048">run_all.py:48</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a5f3e310c10ba1f854da0049c3915130e"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a5f3e310c10ba1f854da0049c3915130e">doctest::assertType::is_nothrow</a></div><div class="ttdeci">@ is_nothrow</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00548">doctest.h:548</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3afa3c93eb2cfc13b22463a939c880426f"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3afa3c93eb2cfc13b22463a939c880426f">doctest::assertType::is_throws</a></div><div class="ttdeci">@ is_throws</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00545">doctest.h:545</a></div></div>
+<div class="ttc" id="aa00251_html_ace744d365532d299052c8a80a63f7079"><div class="ttname"><a href="a00251.html#ace744d365532d299052c8a80a63f7079">doctest::AssertData::m_threw_as</a></div><div class="ttdeci">bool m_threw_as</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00662">doctest.h:662</a></div></div>
+<div class="ttc" id="aa00203_html_acec9ff072dd86af95225a8beb9c57298"><div class="ttname"><a href="a00203.html#acec9ff072dd86af95225a8beb9c57298">doctest::detail::checkIfShouldThrow</a></div><div class="ttdeci">DOCTEST_INTERFACE bool checkIfShouldThrow(assertType::Enum at)</div><div class="ttdef"><b>Definition:</b> <a href="a00032_source.html#l00827">doctest.cpp:827</a></div></div>
+<div class="ttc" id="aa00251_html_a2b39295fb9433efc497b8f8f458ef29a"><div class="ttname"><a href="a00251.html#a2b39295fb9433efc497b8f8f458ef29a">doctest::AssertData::m_test_case</a></div><div class="ttdeci">const TestCaseData * m_test_case</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00647">doctest.h:647</a></div></div>
+<div class="ttc" id="aa00032_html_a590edce32e9348c4b55365ef126426d7"><div class="ttname"><a href="a00032.html#a590edce32e9348c4b55365ef126426d7">DOCTEST_ITERATE_THROUGH_REPORTERS</a></div><div class="ttdeci">#define DOCTEST_ITERATE_THROUGH_REPORTERS(function,...)</div><div class="ttdef"><b>Definition:</b> <a href="a00032_source.html#l00823">doctest.cpp:823</a></div></div>
+<div class="ttc" id="aa00203_html_a013828c4e677241cc26aeea33f762710"><div class="ttname"><a href="a00203.html#a013828c4e677241cc26aeea33f762710">doctest::detail::isDebuggerActive</a></div><div class="ttdeci">DOCTEST_INTERFACE bool isDebuggerActive()</div><div class="ttdef"><b>Definition:</b> <a href="a00032_source.html#l01259">doctest.cpp:1259</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="a00200.html">doctest</a></li><li class="navelem"><a class="el" href="a00203.html">detail</a></li><li class="navelem"><a class="el" href="a00359.html">ResultBuilder</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+<map id="RoverSFR::IsCollision" name="RoverSFR::IsCollision">
+<area shape="rect" id="node1" title="Sprawdza czy koliduje z lazikiem." alt="" coords="5,5,153,32"/>
+<area shape="rect" id="node2" href="$a00105.html#ad69a744d21bd67cc456e975b1785acc2" title="Check collision." alt="" coords="201,5,336,32"/>
+</map>

@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MSR: Dokumentacja pliku /home/kacpi/Desktop/kpo-zad6-1/prj/build/_deps/doctest-src/examples/executable_dll_and_plugin/main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="FSR-icon.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MSR
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a00622.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definicje</a> &#124;
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku main.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;doctest/doctest.h&gt;</code><br />
+<code>#include &lt;cstdio&gt;</code><br />
+<code>#include &lt;dlfcn.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Wykres zależności załączania dla main.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00623.png" border="0" usemap="#_2home_2kacpi_2_desktop_2kpo-zad6-1_2prj_2build_2__deps_2doctest-src_2examples_2executable__dll__and__plugin_2main_8cpp" alt=""/></div>
+<map name="_2home_2kacpi_2_desktop_2kpo-zad6-1_2prj_2build_2__deps_2doctest-src_2examples_2executable__dll__and__plugin_2main_8cpp" id="_2home_2kacpi_2_desktop_2kpo-zad6-1_2prj_2build_2__deps_2doctest-src_2examples_2executable__dll__and__plugin_2main_8cpp">
+<area shape="rect" title=" " alt="" coords="87,5,276,91"/>
+<area shape="rect" title=" " alt="" coords="5,139,128,165"/>
+<area shape="rect" title=" " alt="" coords="153,139,210,165"/>
+<area shape="rect" title=" " alt="" coords="234,139,294,165"/>
+</map>
+</div>
+</div>
+<p><a href="a00622_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:ac7c3b557a9e89c6eddc3c75389309a62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00622.html#ac7c3b557a9e89c6eddc3c75389309a62">DOCTEST_CONFIG_IMPLEMENTATION_IN_DLL</a></td></tr>
+<tr class="separator:ac7c3b557a9e89c6eddc3c75389309a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab17c427949b008ed77726d347525fb71"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00622.html#ab17c427949b008ed77726d347525fb71">LoadDynamicLib</a>(lib)&#160;&#160;&#160;dlopen(&quot;lib&quot; lib &quot;.so&quot;, RTLD_NOW)</td></tr>
+<tr class="separator:ab17c427949b008ed77726d347525fb71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a8d4bcda90b381d9ce4b1a87c7f353414"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00622.html#a8d4bcda90b381d9ce4b1a87c7f353414">TEST_CASE</a> (&quot;executable&quot;)</td></tr>
+<tr class="separator:a8d4bcda90b381d9ce4b1a87c7f353414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a556bea068ab4f7f0ac208fe5ab937384"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00622.html#a556bea068ab4f7f0ac208fe5ab937384">REGISTER_EXCEPTION_TRANSLATOR</a> (double &amp;e)</td></tr>
+<tr class="separator:a556bea068ab4f7f0ac208fe5ab937384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af03d0e870b24e4cf1ae54194cae2415e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00035.html#a4fd9f1ce2de2fad78a45972c2ee216d4">DOCTEST_SYMBOL_IMPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00622.html#af03d0e870b24e4cf1ae54194cae2415e">from_dll</a> ()</td></tr>
+<tr class="separator:af03d0e870b24e4cf1ae54194cae2415e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00622.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
+<tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Dokumentacja definicji</h2>
+<a id="ac7c3b557a9e89c6eddc3c75389309a62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7c3b557a9e89c6eddc3c75389309a62">&#9670;&nbsp;</a></span>DOCTEST_CONFIG_IMPLEMENTATION_IN_DLL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DOCTEST_CONFIG_IMPLEMENTATION_IN_DLL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00622_source.html#l00001">1</a> pliku <a class="el" href="a00622_source.html">main.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab17c427949b008ed77726d347525fb71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab17c427949b008ed77726d347525fb71">&#9670;&nbsp;</a></span>LoadDynamicLib</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LoadDynamicLib</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">lib</td><td>)</td>
+          <td>&#160;&#160;&#160;dlopen(&quot;lib&quot; lib &quot;.so&quot;, RTLD_NOW)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00622_source.html#l00039">39</a> pliku <a class="el" href="a00622_source.html">main.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="af03d0e870b24e4cf1ae54194cae2415e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af03d0e870b24e4cf1ae54194cae2415e">&#9670;&nbsp;</a></span>from_dll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00035.html#a4fd9f1ce2de2fad78a45972c2ee216d4">DOCTEST_SYMBOL_IMPORT</a> void from_dll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00643_source.html#l00013">13</a> pliku <a class="el" href="a00643_source.html">dll.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{} <span class="comment">// force the creation of a .lib file with MSVC</span></div>
+</div><!-- fragment --><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00622_af03d0e870b24e4cf1ae54194cae2415e_icgraph.png" border="0" usemap="#a00622_af03d0e870b24e4cf1ae54194cae2415e_icgraph" alt=""/></div>
+<map name="a00622_af03d0e870b24e4cf1ae54194cae2415e_icgraph" id="a00622_af03d0e870b24e4cf1ae54194cae2415e_icgraph">
+<area shape="rect" title=" " alt="" coords="104,5,172,32"/>
+<area shape="rect" href="a00622.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3c04138a5bfe5d72780bb7e82a18e627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c04138a5bfe5d72780bb7e82a18e627">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>argv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00622_source.html#l00050">50</a> pliku <a class="el" href="a00622_source.html">main.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// force the use of a symbol from the dll so tests from it get registered</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="a00622.html#af03d0e870b24e4cf1ae54194cae2415e">from_dll</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="a00622.html#ab17c427949b008ed77726d347525fb71">LoadDynamicLib</a>(<span class="stringliteral">&quot;plugin&quot;</span>); <span class="comment">// load the plugin so tests from it get registered</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="a00395.html">doctest::Context</a> context(argc, argv);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00213.html#af31fbdb969bc0a83db558e58d480af82">res</a> = context.run();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span>(context.shouldExit()) <span class="comment">// important - query flags (and --exit) rely on the user doing this</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a00213.html#af31fbdb969bc0a83db558e58d480af82">res</a>;          <span class="comment">// propagate the result of the tests</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">int</span> client_stuff_return_code = 0;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// your program - if the testing framework is integrated in your production code</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="a00213.html#af31fbdb969bc0a83db558e58d480af82">res</a> + client_stuff_return_code; <span class="comment">// the result from doctest is propagated here as well</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00622_a3c04138a5bfe5d72780bb7e82a18e627_cgraph.png" border="0" usemap="#a00622_a3c04138a5bfe5d72780bb7e82a18e627_cgraph" alt=""/></div>
+<map name="a00622_a3c04138a5bfe5d72780bb7e82a18e627_cgraph" id="a00622_a3c04138a5bfe5d72780bb7e82a18e627_cgraph">
+<area shape="rect" title=" " alt="" coords="5,56,56,83"/>
+<area shape="rect" href="a00622.html#af03d0e870b24e4cf1ae54194cae2415e" title=" " alt="" coords="160,5,228,32"/>
+<area shape="rect" href="a00395.html#a8059b137ef41cbe6c5d8160806a3cc63" title=" " alt="" coords="125,56,263,83"/>
+<area shape="rect" href="a00395.html#a219b10301380b81c84c0824a6876d9aa" title=" " alt="" coords="104,107,284,133"/>
+<area shape="rect" href="a00203.html#a013828c4e677241cc26aeea33f762710" title=" " alt="" coords="332,49,505,90"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a556bea068ab4f7f0ac208fe5ab937384"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a556bea068ab4f7f0ac208fe5ab937384">&#9670;&nbsp;</a></span>REGISTER_EXCEPTION_TRANSLATOR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">REGISTER_EXCEPTION_TRANSLATOR </td>
+          <td>(</td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00622_source.html#l00044">44</a> pliku <a class="el" href="a00622_source.html">main.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                         {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="a00235.html">doctest::String</a>(<span class="stringliteral">&quot;double: &quot;</span>) + <a class="code" href="a00200.html#a8907bf35788959391343a2304f004e17">doctest::toString</a>(e);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00622_a556bea068ab4f7f0ac208fe5ab937384_cgraph.png" border="0" usemap="#a00622_a556bea068ab4f7f0ac208fe5ab937384_cgraph" alt=""/></div>
+<map name="a00622_a556bea068ab4f7f0ac208fe5ab937384_cgraph" id="a00622_a556bea068ab4f7f0ac208fe5ab937384_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,175,54"/>
+<area shape="rect" href="a00200.html#a8907bf35788959391343a2304f004e17" title=" " alt="" coords="223,20,339,47"/>
+<area shape="rect" href="a00307.html#a67d29f2a5de9a522d8e8607c1a39db9b" title=" " alt="" coords="387,5,589,61"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8d4bcda90b381d9ce4b1a87c7f353414"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d4bcda90b381d9ce4b1a87c7f353414">&#9670;&nbsp;</a></span>TEST_CASE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">&quot;executable&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00622_source.html#l00019">19</a> pliku <a class="el" href="a00622_source.html">main.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                        {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    printf(<span class="stringliteral">&quot;I am a test from the executable!\n&quot;</span>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    conditional_throw(<span class="keyword">true</span>, <span class="charliteral">&#39;a&#39;</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa00622_html_ab17c427949b008ed77726d347525fb71"><div class="ttname"><a href="a00622.html#ab17c427949b008ed77726d347525fb71">LoadDynamicLib</a></div><div class="ttdeci">#define LoadDynamicLib(lib)</div><div class="ttdef"><b>Definition:</b> <a href="a00622_source.html#l00039">main.cpp:39</a></div></div>
+<div class="ttc" id="aa00395_html"><div class="ttname"><a href="a00395.html">doctest::Context</a></div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l01578">doctest.h:1578</a></div></div>
+<div class="ttc" id="aa00200_html_a8907bf35788959391343a2304f004e17"><div class="ttname"><a href="a00200.html#a8907bf35788959391343a2304f004e17">doctest::toString</a></div><div class="ttdeci">String toString(const DOCTEST_REF_WRAP(T) value)</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00850">doctest.h:850</a></div></div>
+<div class="ttc" id="aa00213_html_af31fbdb969bc0a83db558e58d480af82"><div class="ttname"><a href="a00213.html#af31fbdb969bc0a83db558e58d480af82">run_all.res</a></div><div class="ttdeci">res</div><div class="ttdef"><b>Definition:</b> <a href="a00107_source.html#l00048">run_all.py:48</a></div></div>
+<div class="ttc" id="aa00622_html_af03d0e870b24e4cf1ae54194cae2415e"><div class="ttname"><a href="a00622.html#af03d0e870b24e4cf1ae54194cae2415e">from_dll</a></div><div class="ttdeci">DOCTEST_SYMBOL_IMPORT void from_dll()</div><div class="ttdef"><b>Definition:</b> <a href="a00643_source.html#l00013">dll.cpp:13</a></div></div>
+<div class="ttc" id="aa00235_html"><div class="ttname"><a href="a00235.html">doctest::String</a></div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00444">doctest.h:444</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_8f9266336383e159d2f429832046f539.html">kacpi</a></li><li class="navelem"><a class="el" href="dir_01d646dff4bd0b2f6c7a0dca8a2aa321.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_41a9a67b8b29bbe5954a3999558704d1.html">kpo-zad6-1</a></li><li class="navelem"><a class="el" href="dir_8c1d9bd07d018f51481f944e40717a64.html">prj</a></li><li class="navelem"><a class="el" href="dir_afbd551f88fa0759327dbbb0d3fffe1d.html">build</a></li><li class="navelem"><a class="el" href="dir_31ea72cf3d589dd2ea1122251bdd2017.html">_deps</a></li><li class="navelem"><a class="el" href="dir_a58b0dc1e84de6aa7da8d651d5576d98.html">doctest-src</a></li><li class="navelem"><a class="el" href="dir_607fea33f6f99950d483707cb9d2d53a.html">examples</a></li><li class="navelem"><a class="el" href="dir_7491efae00f2b4e4baa357d30287f70d.html">executable_dll_and_plugin</a></li><li class="navelem"><a class="el" href="a00622.html">main.cpp</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

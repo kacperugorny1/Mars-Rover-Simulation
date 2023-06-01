@@ -1,0 +1,5 @@
+<map id="Scene::AddToDrawingList" name="Scene::AddToDrawingList">
+<area shape="rect" id="node1" title="Metoda dodajaca obiekt do listy rysowania." alt="" coords="5,35,177,61"/>
+<area shape="rect" id="node2" href="$a00085.html#abb2258886b34ef477c0364769ed1623d" title="Zwraca id koloru." alt="" coords="235,5,390,32"/>
+<area shape="rect" id="node3" href="$a00085.html#a8693cb9a9fd4d935774578cc6aadd6d9" title="Zwraca nazwe pliku z bryla rysowana." alt="" coords="225,57,400,98"/>
+</map>

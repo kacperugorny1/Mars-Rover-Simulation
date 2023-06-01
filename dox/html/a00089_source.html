@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MSR: Plik źródłowy /home/kacper/Desktop/kpo-zad6-2-main/prj/src/RoverSFR.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="FSR-icon.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MSR
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a00089_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">RoverSFR.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="a00089.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00059.html">RoverSFR.hh</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="a00129.html#aa6ad5dc5a1f3d2679521c6eced65a734">    3</a></span>&#160;<a class="code" href="a00047.html#aa884075f403706dceea29a61771a0d44">CollisionType</a> <a class="code" href="a00129.html#aa6ad5dc5a1f3d2679521c6eced65a734">RoverSFR::IsCollision</a>(<span class="keyword">const</span> std::shared_ptr&lt;Rover&gt;&amp; Obj_ptr)<span class="keyword">const </span>{</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="a00117.html#a8fe29ce2ca5f7bf2f573fe38be364c7f">_Contour</a>.<a class="code" href="a00105.html#ad69a744d21bd67cc456e975b1785acc2">IsImposed</a>(Obj_ptr-&gt;ReturnContour()))</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="a00047.html#aa884075f403706dceea29a61771a0d44ad84d345573bd5ca8f74f677fc4b6ea15">CollisionType::CT_Collision</a>;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="a00047.html#aa884075f403706dceea29a61771a0d44a6f42e7962ce270f9dad616e196936061">CollisionType::CT_NoCollision</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;}</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="a00129.html#ae3418d8af84a54c2b91e3819ce4dc1a0">    9</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00129.html#ae3418d8af84a54c2b91e3819ce4dc1a0">RoverSFR::DisplaySampleList</a>()<span class="keyword">const</span>{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordtype">int</span> x=0;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot;Zebrane Probki&quot;</span>&lt;&lt;std::endl;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="a00129.html#a90c03209974aeb319691b44176f5943d">SampleList</a>.size()==0){</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        std::cout&lt;&lt;<span class="stringliteral">&quot;Brak probek&quot;</span>&lt;&lt;std::endl&lt;&lt;std::endl;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    }</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">for</span>(std::shared_ptr&lt;RegSample&gt; RegSample_ptr:<a class="code" href="a00129.html#a90c03209974aeb319691b44176f5943d">SampleList</a>){</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        ++x;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        std::cout&lt;&lt;x&lt;&lt;<span class="stringliteral">&quot;. &quot;</span>&lt;&lt;RegSample_ptr-&gt;ReturnObjectName()&lt;&lt;std::endl;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;       }</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    std::cout&lt;&lt;std::endl;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="a00129.html#a2b190ed4894d227160d2351f850006ce">   24</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00129.html#a2b190ed4894d227160d2351f850006ce">RoverSFR::AddSampleToList</a>(std::list&lt;std::shared_ptr&lt;Object&gt;&gt;&amp; from,std::list&lt;std::shared_ptr&lt;Object&gt;&gt;::const_iterator what){</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="a00129.html#a90c03209974aeb319691b44176f5943d">SampleList</a>.push_front(std::static_pointer_cast&lt;RegSample&gt;(*what));</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    from.erase(what);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="a00129.html#a90c03209974aeb319691b44176f5943d">SampleList</a>.front()-&gt;ReturnPosition() = <a class="code" href="a00117.html#a78942d660398da85c46edef8dc9e10aa">_Position</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="a00129.html#a90c03209974aeb319691b44176f5943d">SampleList</a>.front()-&gt;ReturnPosition()[2]=(<a class="code" href="a00129.html#a90c03209974aeb319691b44176f5943d">SampleList</a>.size()-1)*2+10;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="a00129.html#a90c03209974aeb319691b44176f5943d">SampleList</a>.front()-&gt;ReturnRotMatrix() =<a class="code" href="a00117.html#ac38a4014e05c03c7ddf61e0da13b0e94">_RotMatrix</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="a00129.html#a90c03209974aeb319691b44176f5943d">SampleList</a>.front()-&gt;Count_and_save_tops();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="a00129.html#a244a6e8d15ad3f4f4add63cff3a44cc5">   33</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00129.html#a244a6e8d15ad3f4f4add63cff3a44cc5">RoverSFR::MoveRover</a>(<span class="keywordtype">double</span> Distance){</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="a00113.html">Matrix3D</a> rotacja;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="a00137.html">Vector3D</a> przes;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    przes[1] = 1;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    rotacja.<a class="code" href="a00113.html#ac1fba7ab0fc082c29a8261a7c04acc5f">FillRotationZ</a>(<a class="code" href="a00125.html#a481b56f34148bbb2fea6eca22b5ac63d">_RotationAngle</a>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    przes=rotacja*przes;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="a00117.html#a78942d660398da85c46edef8dc9e10aa">_Position</a>=<a class="code" href="a00117.html#a78942d660398da85c46edef8dc9e10aa">_Position</a> + przes*Distance;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="a00117.html#a24c3b4c2635368c805f2fc664468bdaa">Count_and_save_tops</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> x: <a class="code" href="a00129.html#a90c03209974aeb319691b44176f5943d">SampleList</a>){</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      x-&gt;ReturnPosition()[0] = <a class="code" href="a00117.html#a78942d660398da85c46edef8dc9e10aa">_Position</a>[0];</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      x-&gt;ReturnPosition()[1] = <a class="code" href="a00117.html#a78942d660398da85c46edef8dc9e10aa">_Position</a>[1];</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      x-&gt;Count_and_save_tops();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="a00129.html#af7e6dfc4f8af35d7a5d7431393ea3e40">   48</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00129.html#af7e6dfc4f8af35d7a5d7431393ea3e40">RoverSFR::RotateRover</a>(<span class="keywordtype">double</span> Angle){</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="a00125.html#a481b56f34148bbb2fea6eca22b5ac63d">_RotationAngle</a> += Angle;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;     <span class="keywordflow">while</span>(<a class="code" href="a00125.html#a481b56f34148bbb2fea6eca22b5ac63d">_RotationAngle</a>&gt;=360) <a class="code" href="a00125.html#a481b56f34148bbb2fea6eca22b5ac63d">_RotationAngle</a>-=360;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;     <span class="keywordflow">while</span>(<a class="code" href="a00125.html#a481b56f34148bbb2fea6eca22b5ac63d">_RotationAngle</a>&lt;=-360) <a class="code" href="a00125.html#a481b56f34148bbb2fea6eca22b5ac63d">_RotationAngle</a>+=360;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="a00117.html#ac38a4014e05c03c7ddf61e0da13b0e94">_RotMatrix</a>.<a class="code" href="a00113.html#ac1fba7ab0fc082c29a8261a7c04acc5f">FillRotationZ</a>(<a class="code" href="a00125.html#a481b56f34148bbb2fea6eca22b5ac63d">_RotationAngle</a>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> x: <a class="code" href="a00129.html#a90c03209974aeb319691b44176f5943d">SampleList</a>){</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      x-&gt;ReturnRotMatrix()=<a class="code" href="a00117.html#ac38a4014e05c03c7ddf61e0da13b0e94">_RotMatrix</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      x-&gt;Count_and_save_tops();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="a00129.html#a4fd332a26cb769acadfcfba637ed4e4b">   59</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00129.html#a4fd332a26cb769acadfcfba637ed4e4b">RoverSFR::RoverState</a>()<span class="keyword">const </span>{</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="a00125.html#ac3b7e9b978a67103be19f8b308a79b7a">Rover::RoverState</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="a00129.html#ae3418d8af84a54c2b91e3819ce4dc1a0">DisplaySampleList</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="ttc" id="aa00047_html_aa884075f403706dceea29a61771a0d44"><div class="ttname"><a href="a00047.html#aa884075f403706dceea29a61771a0d44">CollisionType</a></div><div class="ttdeci">CollisionType</div><div class="ttdoc">typ kolizji</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00027">Object.hh:27</a></div></div>
+<div class="ttc" id="aa00047_html_aa884075f403706dceea29a61771a0d44a6f42e7962ce270f9dad616e196936061"><div class="ttname"><a href="a00047.html#aa884075f403706dceea29a61771a0d44a6f42e7962ce270f9dad616e196936061">CT_NoCollision</a></div><div class="ttdeci">@ CT_NoCollision</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00028">Object.hh:28</a></div></div>
+<div class="ttc" id="aa00047_html_aa884075f403706dceea29a61771a0d44ad84d345573bd5ca8f74f677fc4b6ea15"><div class="ttname"><a href="a00047.html#aa884075f403706dceea29a61771a0d44ad84d345573bd5ca8f74f677fc4b6ea15">CT_Collision</a></div><div class="ttdeci">@ CT_Collision</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00029">Object.hh:29</a></div></div>
+<div class="ttc" id="aa00059_html"><div class="ttname"><a href="a00059.html">RoverSFR.hh</a></div></div>
+<div class="ttc" id="aa00105_html_ad69a744d21bd67cc456e975b1785acc2"><div class="ttname"><a href="a00105.html#ad69a744d21bd67cc456e975b1785acc2">Contour::IsImposed</a></div><div class="ttdeci">bool IsImposed(Contour x) const</div><div class="ttdoc">Check collision.</div><div class="ttdef"><b>Definition:</b> <a href="a00071_source.html#l00005">Contour.cpp:5</a></div></div>
+<div class="ttc" id="aa00113_html"><div class="ttname"><a href="a00113.html">Matrix3D</a></div><div class="ttdoc">Macierz3D dziedziczy z tMatrix.</div><div class="ttdef"><b>Definition:</b> <a href="a00044_source.html#l00019">Matrix3D.hh:19</a></div></div>
+<div class="ttc" id="aa00113_html_ac1fba7ab0fc082c29a8261a7c04acc5f"><div class="ttname"><a href="a00113.html#ac1fba7ab0fc082c29a8261a7c04acc5f">Matrix3D::FillRotationZ</a></div><div class="ttdeci">void FillRotationZ(double theta)</div><div class="ttdoc">wypelnij macierz obrotu Z</div><div class="ttdef"><b>Definition:</b> <a href="a00074_source.html#l00023">Matrix3D.cpp:23</a></div></div>
+<div class="ttc" id="aa00117_html_a24c3b4c2635368c805f2fc664468bdaa"><div class="ttname"><a href="a00117.html#a24c3b4c2635368c805f2fc664468bdaa">Object::Count_and_save_tops</a></div><div class="ttdeci">bool Count_and_save_tops()</div><div class="ttdoc">inicjalizuje strumienie i wywoluje z nimi funkcje Count_and_save_top(std::istream &amp;StrmIn,...</div><div class="ttdef"><b>Definition:</b> <a href="a00077_source.html#l00029">Object.cpp:29</a></div></div>
+<div class="ttc" id="aa00117_html_a78942d660398da85c46edef8dc9e10aa"><div class="ttname"><a href="a00117.html#a78942d660398da85c46edef8dc9e10aa">Object::_Position</a></div><div class="ttdeci">Vector3D _Position</div><div class="ttdoc">Wektor polozenia.</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00082">Object.hh:82</a></div></div>
+<div class="ttc" id="aa00117_html_a8fe29ce2ca5f7bf2f573fe38be364c7f"><div class="ttname"><a href="a00117.html#a8fe29ce2ca5f7bf2f573fe38be364c7f">Object::_Contour</a></div><div class="ttdeci">Contour _Contour</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00086">Object.hh:86</a></div></div>
+<div class="ttc" id="aa00117_html_ac38a4014e05c03c7ddf61e0da13b0e94"><div class="ttname"><a href="a00117.html#ac38a4014e05c03c7ddf61e0da13b0e94">Object::_RotMatrix</a></div><div class="ttdeci">Matrix3D _RotMatrix</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00084">Object.hh:84</a></div></div>
+<div class="ttc" id="aa00125_html_a481b56f34148bbb2fea6eca22b5ac63d"><div class="ttname"><a href="a00125.html#a481b56f34148bbb2fea6eca22b5ac63d">Rover::_RotationAngle</a></div><div class="ttdeci">double _RotationAngle</div><div class="ttdoc">Okresla kat rotacji.</div><div class="ttdef"><b>Definition:</b> <a href="a00056_source.html#l00037">Rover.hh:37</a></div></div>
+<div class="ttc" id="aa00125_html_ac3b7e9b978a67103be19f8b308a79b7a"><div class="ttname"><a href="a00125.html#ac3b7e9b978a67103be19f8b308a79b7a">Rover::RoverState</a></div><div class="ttdeci">virtual void RoverState() const</div><div class="ttdoc">zwraca informacje o laziku</div><div class="ttdef"><b>Definition:</b> <a href="a00086_source.html#l00046">Rover.cpp:46</a></div></div>
+<div class="ttc" id="aa00129_html_a244a6e8d15ad3f4f4add63cff3a44cc5"><div class="ttname"><a href="a00129.html#a244a6e8d15ad3f4f4add63cff3a44cc5">RoverSFR::MoveRover</a></div><div class="ttdeci">virtual void MoveRover(double Distance) override</div><div class="ttdoc">Funkcja przesuwajaca lazik i zebrane probki o distance.</div><div class="ttdef"><b>Definition:</b> <a href="a00089_source.html#l00033">RoverSFR.cpp:33</a></div></div>
+<div class="ttc" id="aa00129_html_a2b190ed4894d227160d2351f850006ce"><div class="ttname"><a href="a00129.html#a2b190ed4894d227160d2351f850006ce">RoverSFR::AddSampleToList</a></div><div class="ttdeci">void AddSampleToList(std::list&lt; std::shared_ptr&lt; Object &gt;&gt; &amp;from, const std::list&lt; std::shared_ptr&lt; Object &gt;&gt;::const_iterator what)</div><div class="ttdoc">Usuwa z listy from element what i dodaje go do listy probek.</div><div class="ttdef"><b>Definition:</b> <a href="a00089_source.html#l00024">RoverSFR.cpp:24</a></div></div>
+<div class="ttc" id="aa00129_html_a4fd332a26cb769acadfcfba637ed4e4b"><div class="ttname"><a href="a00129.html#a4fd332a26cb769acadfcfba637ed4e4b">RoverSFR::RoverState</a></div><div class="ttdeci">virtual void RoverState() const override</div><div class="ttdoc">Wyswietla informacje o laziku.</div><div class="ttdef"><b>Definition:</b> <a href="a00089_source.html#l00059">RoverSFR.cpp:59</a></div></div>
+<div class="ttc" id="aa00129_html_a90c03209974aeb319691b44176f5943d"><div class="ttname"><a href="a00129.html#a90c03209974aeb319691b44176f5943d">RoverSFR::SampleList</a></div><div class="ttdeci">std::list&lt; std::shared_ptr&lt; RegSample &gt; &gt; SampleList</div><div class="ttdoc">Lista zebranych probek.</div><div class="ttdef"><b>Definition:</b> <a href="a00059_source.html#l00018">RoverSFR.hh:18</a></div></div>
+<div class="ttc" id="aa00129_html_aa6ad5dc5a1f3d2679521c6eced65a734"><div class="ttname"><a href="a00129.html#aa6ad5dc5a1f3d2679521c6eced65a734">RoverSFR::IsCollision</a></div><div class="ttdeci">virtual CollisionType IsCollision(const std::shared_ptr&lt; Rover &gt; &amp;Obj_ptr) const override</div><div class="ttdoc">Sprawdza czy koliduje z lazikiem.</div><div class="ttdef"><b>Definition:</b> <a href="a00089_source.html#l00003">RoverSFR.cpp:3</a></div></div>
+<div class="ttc" id="aa00129_html_ae3418d8af84a54c2b91e3819ce4dc1a0"><div class="ttname"><a href="a00129.html#ae3418d8af84a54c2b91e3819ce4dc1a0">RoverSFR::DisplaySampleList</a></div><div class="ttdeci">void DisplaySampleList() const</div><div class="ttdoc">Wyswietla liste zebranych probek.</div><div class="ttdef"><b>Definition:</b> <a href="a00089_source.html#l00009">RoverSFR.cpp:9</a></div></div>
+<div class="ttc" id="aa00129_html_af7e6dfc4f8af35d7a5d7431393ea3e40"><div class="ttname"><a href="a00129.html#af7e6dfc4f8af35d7a5d7431393ea3e40">RoverSFR::RotateRover</a></div><div class="ttdeci">virtual void RotateRover(double Angle) override</div><div class="ttdoc">Funkcja obracajaca lazik i zebrane probki o angle.</div><div class="ttdef"><b>Definition:</b> <a href="a00089_source.html#l00048">RoverSFR.cpp:48</a></div></div>
+<div class="ttc" id="aa00137_html"><div class="ttname"><a href="a00137.html">tVector&lt; double, 3 &gt;</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_16743127fce78036b5d234ef5015f645.html">kacper</a></li><li class="navelem"><a class="el" href="dir_49a7c49b4431654095b2ac0943d558f1.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_796f0d55694bd57af0b260f5884b0691.html">kpo-zad6-2-main</a></li><li class="navelem"><a class="el" href="dir_01633c65f0a370ff10a533d98ad2fd10.html">prj</a></li><li class="navelem"><a class="el" href="dir_f48bae84e945866af4b15ebdc6c217c7.html">src</a></li><li class="navelem"><a class="el" href="a00089.html">RoverSFR.cpp</a></li>
+    <li class="footer">Wygenerowano przez <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

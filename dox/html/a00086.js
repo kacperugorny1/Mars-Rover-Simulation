@@ -1,0 +1,6 @@
+var a00086 =
+[
+    [ "DOCTEST_CONFIG_IMPLEMENT", "a00086.html#adf980eb1ed0df2191c56fd3d218c2819", null ],
+    [ "DOCTEST_CONFIG_IMPLEMENTATION_IN_DLL", "a00086.html#ac7c3b557a9e89c6eddc3c75389309a62", null ],
+    [ "TEST_CASE", "a00086.html#ae66a833d39a175971df301f1a3a00325", null ]
+];

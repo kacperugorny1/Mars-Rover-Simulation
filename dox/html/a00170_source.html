@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MSR: Plik źródłowy /home/kacpi/Desktop/kpo-zad6-1/prj/inc/Scene.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="FSR-icon.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MSR
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a00170_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">Scene.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="a00170.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00167.html">Rover.hh</a>&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00164.html">PowierzchniaMarsa.hh</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;lacze_do_gnuplota.hh&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="a00170.html#ac92ca5ab87034a348decad7ee8d4bd1b">   20</a></span>&#160;<span class="preprocessor">#define FPS 30</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="a00523.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00523.html">Scene</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="a00523.html#a545646825dd7231ee873877c6fe81507">   25</a></span>&#160;    std::shared_ptr&lt;Rover&gt; <a class="code" href="a00523.html#a545646825dd7231ee873877c6fe81507">ActiveRover</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a00523.html#a76018b48ab716e92d86516aa70e621dd">   26</a></span>&#160;    std::list&lt;std::shared_ptr&lt;Object&gt;&gt; <a class="code" href="a00523.html#a76018b48ab716e92d86516aa70e621dd">Objects</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="a00523.html#a294342f6e251f72e3c41dc6cb95b1df6">   27</a></span>&#160;    PzG::LaczeDoGNUPlota <a class="code" href="a00523.html#a294342f6e251f72e3c41dc6cb95b1df6">Lacze</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="a00523.html#ad10176d75a9cc0da56626f682d083507">   33</a></span>&#160;    <a class="code" href="a00523.html#ad10176d75a9cc0da56626f682d083507">Scene</a>(){<a class="code" href="a00523.html#a545646825dd7231ee873877c6fe81507">ActiveRover</a>=<span class="keyword">nullptr</span>;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00523.html#a58e85f55140d5e623fb0acb93214f2c8">InitGnuplotLink</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00523.html#a33e1c17eb13674ea81d1c0e9bdbd9b00">addActiveRover</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* sNameOfFile_ModelBlock, <span class="keyword">const</span> <span class="keywordtype">char</span>* sObjectName, <span class="keywordtype">int</span> ColourID, </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">double</span> sX,<span class="keywordtype">double</span> sY,<span class="keywordtype">double</span> sZ, <span class="keywordtype">double</span> pX,<span class="keywordtype">double</span> pY,<span class="keywordtype">double</span> pZ,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">double</span> Angle, <span class="keywordtype">double</span> Velocity, <span class="keywordtype">double</span> Distance);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00523.html#a33e1c17eb13674ea81d1c0e9bdbd9b00">addActiveRover</a>(<a class="code" href="a00519.html">Rover</a> &amp;rRover);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00523.html#a57ce22836f26d3c5eca5396644f4489c">AddToDrawingList</a>(<a class="code" href="a00515.html">Object</a> &amp;Obj);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="a00523.html#a4813338ee7c6c995f5bb6f10e3673804">   79</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00523.html#a4813338ee7c6c995f5bb6f10e3673804">Draw</a>(){<a class="code" href="a00523.html#a294342f6e251f72e3c41dc6cb95b1df6">Lacze</a>.Rysuj();}</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00523.html#ad5292c8fc0f91f9e4f0267e3c898faea">DisplayRoversList</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00523.html#a3000ef8f2a26bcd8dff96fe371c3e495">SelectRover</a>(<span class="keywordtype">int</span> choice);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00523.html#af09abc708a665e438b8846d9ebfff459">MoveRover</a>(<span class="keywordtype">double</span>);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00523.html#ae09993201fafead44a75bc6105c1934c">RotateRover</a>(<span class="keywordtype">double</span>);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="a00523.html#a85aa9f2f5459aba8acf76399dd8eddaf">  113</a></span>&#160;    std::string <a class="code" href="a00523.html#a85aa9f2f5459aba8acf76399dd8eddaf">Rover_name</a>(){<span class="keywordflow">return</span> <a class="code" href="a00523.html#a545646825dd7231ee873877c6fe81507">ActiveRover</a>-&gt;ReturnObjectName();}</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="a00523.html#af528fa10e78e2bbc1c269c6528533753">  120</a></span>&#160;    <a class="code" href="a00527.html">Vector3D</a> <a class="code" href="a00523.html#af528fa10e78e2bbc1c269c6528533753">Rover_pos</a>(){<span class="keywordflow">return</span> <a class="code" href="a00523.html#a545646825dd7231ee873877c6fe81507">ActiveRover</a>-&gt;returnPosition();}</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    </div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="a00523.html#a9aaa7eb02545bbce8c2e255151384a8f">  127</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="a00523.html#a9aaa7eb02545bbce8c2e255151384a8f">Rover_angle</a>(){<span class="keywordflow">return</span> <a class="code" href="a00523.html#a545646825dd7231ee873877c6fe81507">ActiveRover</a>-&gt;returnAngle();}</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;};</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa00523_html_a85aa9f2f5459aba8acf76399dd8eddaf"><div class="ttname"><a href="a00523.html#a85aa9f2f5459aba8acf76399dd8eddaf">Scene::Rover_name</a></div><div class="ttdeci">std::string Rover_name()</div><div class="ttdoc">Zwroc nazwe aktywnego lazika.</div><div class="ttdef"><b>Definition:</b> <a href="a00170_source.html#l00113">Scene.hh:113</a></div></div>
+<div class="ttc" id="aa00523_html_ad5292c8fc0f91f9e4f0267e3c898faea"><div class="ttname"><a href="a00523.html#ad5292c8fc0f91f9e4f0267e3c898faea">Scene::DisplayRoversList</a></div><div class="ttdeci">void DisplayRoversList()</div><div class="ttdoc">Metoda wyswietlajaca liste lazikow.</div><div class="ttdef"><b>Definition:</b> <a href="a00191_source.html#l00052">Scene.cpp:52</a></div></div>
+<div class="ttc" id="aa00523_html_a33e1c17eb13674ea81d1c0e9bdbd9b00"><div class="ttname"><a href="a00523.html#a33e1c17eb13674ea81d1c0e9bdbd9b00">Scene::addActiveRover</a></div><div class="ttdeci">void addActiveRover(const char *sNameOfFile_ModelBlock, const char *sObjectName, int ColourID, double sX, double sY, double sZ, double pX, double pY, double pZ, double Angle, double Velocity, double Distance)</div><div class="ttdoc">Metoda dodajaca Rover do sceny podajac parametry.</div><div class="ttdef"><b>Definition:</b> <a href="a00191_source.html#l00020">Scene.cpp:20</a></div></div>
+<div class="ttc" id="aa00523_html_a294342f6e251f72e3c41dc6cb95b1df6"><div class="ttname"><a href="a00523.html#a294342f6e251f72e3c41dc6cb95b1df6">Scene::Lacze</a></div><div class="ttdeci">PzG::LaczeDoGNUPlota Lacze</div><div class="ttdef"><b>Definition:</b> <a href="a00170_source.html#l00027">Scene.hh:27</a></div></div>
+<div class="ttc" id="aa00523_html_af528fa10e78e2bbc1c269c6528533753"><div class="ttname"><a href="a00523.html#af528fa10e78e2bbc1c269c6528533753">Scene::Rover_pos</a></div><div class="ttdeci">Vector3D Rover_pos()</div><div class="ttdoc">Zwroc pozycje aktywnego lazika.</div><div class="ttdef"><b>Definition:</b> <a href="a00170_source.html#l00120">Scene.hh:120</a></div></div>
+<div class="ttc" id="aa00167_html"><div class="ttname"><a href="a00167.html">Rover.hh</a></div></div>
+<div class="ttc" id="aa00523_html_ae09993201fafead44a75bc6105c1934c"><div class="ttname"><a href="a00523.html#ae09993201fafead44a75bc6105c1934c">Scene::RotateRover</a></div><div class="ttdeci">void RotateRover(double)</div><div class="ttdoc">Obroc lazik wraz z animacja z dana iloscia FPS.</div><div class="ttdef"><b>Definition:</b> <a href="a00191_source.html#l00107">Scene.cpp:107</a></div></div>
+<div class="ttc" id="aa00523_html_a9aaa7eb02545bbce8c2e255151384a8f"><div class="ttname"><a href="a00523.html#a9aaa7eb02545bbce8c2e255151384a8f">Scene::Rover_angle</a></div><div class="ttdeci">double Rover_angle()</div><div class="ttdoc">Zwroc kat orientacji aktywnego lazika.</div><div class="ttdef"><b>Definition:</b> <a href="a00170_source.html#l00127">Scene.hh:127</a></div></div>
+<div class="ttc" id="aa00523_html_a4813338ee7c6c995f5bb6f10e3673804"><div class="ttname"><a href="a00523.html#a4813338ee7c6c995f5bb6f10e3673804">Scene::Draw</a></div><div class="ttdeci">void Draw()</div><div class="ttdoc">metoda rysujaca w gnuplocie</div><div class="ttdef"><b>Definition:</b> <a href="a00170_source.html#l00079">Scene.hh:79</a></div></div>
+<div class="ttc" id="aa00523_html_a57ce22836f26d3c5eca5396644f4489c"><div class="ttname"><a href="a00523.html#a57ce22836f26d3c5eca5396644f4489c">Scene::AddToDrawingList</a></div><div class="ttdeci">void AddToDrawingList(Object &amp;Obj)</div><div class="ttdoc">Metoda dodajaca obiekt do listy rysowania.</div><div class="ttdef"><b>Definition:</b> <a href="a00191_source.html#l00047">Scene.cpp:47</a></div></div>
+<div class="ttc" id="aa00523_html_a58e85f55140d5e623fb0acb93214f2c8"><div class="ttname"><a href="a00523.html#a58e85f55140d5e623fb0acb93214f2c8">Scene::InitGnuplotLink</a></div><div class="ttdeci">void InitGnuplotLink()</div><div class="ttdoc">Metoda inicjujaca lacze do gnuplota.</div><div class="ttdef"><b>Definition:</b> <a href="a00191_source.html#l00009">Scene.cpp:9</a></div></div>
+<div class="ttc" id="aa00519_html"><div class="ttname"><a href="a00519.html">Rover</a></div><div class="ttdef"><b>Definition:</b> <a href="a00167_source.html#l00005">Rover.hh:5</a></div></div>
+<div class="ttc" id="aa00164_html"><div class="ttname"><a href="a00164.html">PowierzchniaMarsa.hh</a></div></div>
+<div class="ttc" id="aa00523_html_af09abc708a665e438b8846d9ebfff459"><div class="ttname"><a href="a00523.html#af09abc708a665e438b8846d9ebfff459">Scene::MoveRover</a></div><div class="ttdeci">void MoveRover(double)</div><div class="ttdoc">Przesun lazik wraz z animacja z dana iloscia FPS.</div><div class="ttdef"><b>Definition:</b> <a href="a00191_source.html#l00085">Scene.cpp:85</a></div></div>
+<div class="ttc" id="aa00523_html_a76018b48ab716e92d86516aa70e621dd"><div class="ttname"><a href="a00523.html#a76018b48ab716e92d86516aa70e621dd">Scene::Objects</a></div><div class="ttdeci">std::list&lt; std::shared_ptr&lt; Object &gt; &gt; Objects</div><div class="ttdef"><b>Definition:</b> <a href="a00170_source.html#l00026">Scene.hh:26</a></div></div>
+<div class="ttc" id="aa00527_html"><div class="ttname"><a href="a00527.html">tVector&lt; double, 3 &gt;</a></div></div>
+<div class="ttc" id="aa00523_html_a545646825dd7231ee873877c6fe81507"><div class="ttname"><a href="a00523.html#a545646825dd7231ee873877c6fe81507">Scene::ActiveRover</a></div><div class="ttdeci">std::shared_ptr&lt; Rover &gt; ActiveRover</div><div class="ttdef"><b>Definition:</b> <a href="a00170_source.html#l00025">Scene.hh:25</a></div></div>
+<div class="ttc" id="aa00515_html"><div class="ttname"><a href="a00515.html">Object</a></div><div class="ttdef"><b>Definition:</b> <a href="a00161_source.html#l00012">Object.hh:12</a></div></div>
+<div class="ttc" id="aa00523_html_ad10176d75a9cc0da56626f682d083507"><div class="ttname"><a href="a00523.html#ad10176d75a9cc0da56626f682d083507">Scene::Scene</a></div><div class="ttdeci">Scene()</div><div class="ttdoc">Konstruktor bezparametryczny.</div><div class="ttdef"><b>Definition:</b> <a href="a00170_source.html#l00033">Scene.hh:33</a></div></div>
+<div class="ttc" id="aa00523_html_a3000ef8f2a26bcd8dff96fe371c3e495"><div class="ttname"><a href="a00523.html#a3000ef8f2a26bcd8dff96fe371c3e495">Scene::SelectRover</a></div><div class="ttdeci">bool SelectRover(int choice)</div><div class="ttdoc">Wybierz lazik ktorym sterujesz.</div><div class="ttdef"><b>Definition:</b> <a href="a00191_source.html#l00065">Scene.cpp:65</a></div></div>
+<div class="ttc" id="aa00523_html"><div class="ttname"><a href="a00523.html">Scene</a></div><div class="ttdef"><b>Definition:</b> <a href="a00170_source.html#l00022">Scene.hh:22</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_8f9266336383e159d2f429832046f539.html">kacpi</a></li><li class="navelem"><a class="el" href="dir_01d646dff4bd0b2f6c7a0dca8a2aa321.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_41a9a67b8b29bbe5954a3999558704d1.html">kpo-zad6-1</a></li><li class="navelem"><a class="el" href="dir_8c1d9bd07d018f51481f944e40717a64.html">prj</a></li><li class="navelem"><a class="el" href="dir_ecdb327f7dc179a1a5fd960d8d40ed2d.html">inc</a></li><li class="navelem"><a class="el" href="a00170.html">Scene.hh</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MSR: Plik źródłowy /home/kacper/Desktop/kpo-zad6-2-main/prj/inc/RoverSFR.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="FSR-icon.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MSR
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a00059_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">RoverSFR.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="a00059.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00056.html">Rover.hh</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00053.html">RegSample.hh</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="a00129.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00129.html">RoverSFR</a> : <span class="keyword">public</span> <a class="code" href="a00125.html">Rover</a>{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="a00129.html#a90c03209974aeb319691b44176f5943d">   18</a></span>&#160;    std::list&lt;std::shared_ptr&lt;RegSample&gt;&gt; <a class="code" href="a00129.html#a90c03209974aeb319691b44176f5943d">SampleList</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">using</span> <a class="code" href="a00125.html#a6a3c691dcab56e6205063e3d4fe3c255">Rover::Rover</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00129.html#ae3418d8af84a54c2b91e3819ce4dc1a0">DisplaySampleList</a>()<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00129.html#a244a6e8d15ad3f4f4add63cff3a44cc5">MoveRover</a>(<span class="keywordtype">double</span> Distance)<span class="keyword">override</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00129.html#af7e6dfc4f8af35d7a5d7431393ea3e40">RotateRover</a>(<span class="keywordtype">double</span> Angle)<span class="keyword">override</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="a00047.html#aa884075f403706dceea29a61771a0d44">CollisionType</a> <a class="code" href="a00129.html#aa6ad5dc5a1f3d2679521c6eced65a734">IsCollision</a>(<span class="keyword">const</span> std::shared_ptr&lt;Rover&gt;&amp; Obj_ptr) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="a00129.html#ae41d59d58812f0e0355e6ffb9174492d">   62</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="a00047.html#a842c5e2e69277690b064bf363c017980">ObjectType</a> <a class="code" href="a00129.html#ae41d59d58812f0e0355e6ffb9174492d">ReturnType</a>()<span class="keyword">const override</span>{<span class="keywordflow">return</span> <a class="code" href="a00047.html#a842c5e2e69277690b064bf363c017980a4366307e82926f062dfb4d533be17fcd">ObjectType::RoverSFRT</a>;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00129.html#a2b190ed4894d227160d2351f850006ce">AddSampleToList</a>(std::list&lt;std::shared_ptr&lt;Object&gt;&gt;&amp; from, <span class="keyword">const</span> std::list&lt;std::shared_ptr&lt;Object&gt;&gt;::const_iterator what);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00129.html#a4fd332a26cb769acadfcfba637ed4e4b">RoverState</a>()<span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
+<div class="ttc" id="aa00047_html_a842c5e2e69277690b064bf363c017980"><div class="ttname"><a href="a00047.html#a842c5e2e69277690b064bf363c017980">ObjectType</a></div><div class="ttdeci">ObjectType</div><div class="ttdoc">Typ obiektu.</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00038">Object.hh:38</a></div></div>
+<div class="ttc" id="aa00047_html_a842c5e2e69277690b064bf363c017980a4366307e82926f062dfb4d533be17fcd"><div class="ttname"><a href="a00047.html#a842c5e2e69277690b064bf363c017980a4366307e82926f062dfb4d533be17fcd">RoverSFRT</a></div><div class="ttdeci">@ RoverSFRT</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00043">Object.hh:42</a></div></div>
+<div class="ttc" id="aa00047_html_aa884075f403706dceea29a61771a0d44"><div class="ttname"><a href="a00047.html#aa884075f403706dceea29a61771a0d44">CollisionType</a></div><div class="ttdeci">CollisionType</div><div class="ttdoc">typ kolizji</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00027">Object.hh:27</a></div></div>
+<div class="ttc" id="aa00053_html"><div class="ttname"><a href="a00053.html">RegSample.hh</a></div></div>
+<div class="ttc" id="aa00056_html"><div class="ttname"><a href="a00056.html">Rover.hh</a></div><div class="ttdoc">Plik naglowkowy lazika.</div></div>
+<div class="ttc" id="aa00125_html"><div class="ttname"><a href="a00125.html">Rover</a></div><div class="ttdoc">Klasa Rover - Lazik Dziedziczy od Object.</div><div class="ttdef"><b>Definition:</b> <a href="a00056_source.html#l00021">Rover.hh:21</a></div></div>
+<div class="ttc" id="aa00125_html_a6a3c691dcab56e6205063e3d4fe3c255"><div class="ttname"><a href="a00125.html#a6a3c691dcab56e6205063e3d4fe3c255">Rover::Rover</a></div><div class="ttdeci">Rover()</div><div class="ttdoc">Konstruktor bezparametryczny.</div></div>
+<div class="ttc" id="aa00129_html"><div class="ttname"><a href="a00129.html">RoverSFR</a></div><div class="ttdoc">Klasa RoverSFR.</div><div class="ttdef"><b>Definition:</b> <a href="a00059_source.html#l00012">RoverSFR.hh:12</a></div></div>
+<div class="ttc" id="aa00129_html_a244a6e8d15ad3f4f4add63cff3a44cc5"><div class="ttname"><a href="a00129.html#a244a6e8d15ad3f4f4add63cff3a44cc5">RoverSFR::MoveRover</a></div><div class="ttdeci">virtual void MoveRover(double Distance) override</div><div class="ttdoc">Funkcja przesuwajaca lazik i zebrane probki o distance.</div><div class="ttdef"><b>Definition:</b> <a href="a00089_source.html#l00033">RoverSFR.cpp:33</a></div></div>
+<div class="ttc" id="aa00129_html_a2b190ed4894d227160d2351f850006ce"><div class="ttname"><a href="a00129.html#a2b190ed4894d227160d2351f850006ce">RoverSFR::AddSampleToList</a></div><div class="ttdeci">void AddSampleToList(std::list&lt; std::shared_ptr&lt; Object &gt;&gt; &amp;from, const std::list&lt; std::shared_ptr&lt; Object &gt;&gt;::const_iterator what)</div><div class="ttdoc">Usuwa z listy from element what i dodaje go do listy probek.</div><div class="ttdef"><b>Definition:</b> <a href="a00089_source.html#l00024">RoverSFR.cpp:24</a></div></div>
+<div class="ttc" id="aa00129_html_a4fd332a26cb769acadfcfba637ed4e4b"><div class="ttname"><a href="a00129.html#a4fd332a26cb769acadfcfba637ed4e4b">RoverSFR::RoverState</a></div><div class="ttdeci">virtual void RoverState() const override</div><div class="ttdoc">Wyswietla informacje o laziku.</div><div class="ttdef"><b>Definition:</b> <a href="a00089_source.html#l00059">RoverSFR.cpp:59</a></div></div>
+<div class="ttc" id="aa00129_html_a90c03209974aeb319691b44176f5943d"><div class="ttname"><a href="a00129.html#a90c03209974aeb319691b44176f5943d">RoverSFR::SampleList</a></div><div class="ttdeci">std::list&lt; std::shared_ptr&lt; RegSample &gt; &gt; SampleList</div><div class="ttdoc">Lista zebranych probek.</div><div class="ttdef"><b>Definition:</b> <a href="a00059_source.html#l00018">RoverSFR.hh:18</a></div></div>
+<div class="ttc" id="aa00129_html_aa6ad5dc5a1f3d2679521c6eced65a734"><div class="ttname"><a href="a00129.html#aa6ad5dc5a1f3d2679521c6eced65a734">RoverSFR::IsCollision</a></div><div class="ttdeci">virtual CollisionType IsCollision(const std::shared_ptr&lt; Rover &gt; &amp;Obj_ptr) const override</div><div class="ttdoc">Sprawdza czy koliduje z lazikiem.</div><div class="ttdef"><b>Definition:</b> <a href="a00089_source.html#l00003">RoverSFR.cpp:3</a></div></div>
+<div class="ttc" id="aa00129_html_ae3418d8af84a54c2b91e3819ce4dc1a0"><div class="ttname"><a href="a00129.html#ae3418d8af84a54c2b91e3819ce4dc1a0">RoverSFR::DisplaySampleList</a></div><div class="ttdeci">void DisplaySampleList() const</div><div class="ttdoc">Wyswietla liste zebranych probek.</div><div class="ttdef"><b>Definition:</b> <a href="a00089_source.html#l00009">RoverSFR.cpp:9</a></div></div>
+<div class="ttc" id="aa00129_html_ae41d59d58812f0e0355e6ffb9174492d"><div class="ttname"><a href="a00129.html#ae41d59d58812f0e0355e6ffb9174492d">RoverSFR::ReturnType</a></div><div class="ttdeci">virtual ObjectType ReturnType() const override</div><div class="ttdoc">Zwraca typ obiektu.</div><div class="ttdef"><b>Definition:</b> <a href="a00059_source.html#l00062">RoverSFR.hh:62</a></div></div>
+<div class="ttc" id="aa00129_html_af7e6dfc4f8af35d7a5d7431393ea3e40"><div class="ttname"><a href="a00129.html#af7e6dfc4f8af35d7a5d7431393ea3e40">RoverSFR::RotateRover</a></div><div class="ttdeci">virtual void RotateRover(double Angle) override</div><div class="ttdoc">Funkcja obracajaca lazik i zebrane probki o angle.</div><div class="ttdef"><b>Definition:</b> <a href="a00089_source.html#l00048">RoverSFR.cpp:48</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_16743127fce78036b5d234ef5015f645.html">kacper</a></li><li class="navelem"><a class="el" href="dir_49a7c49b4431654095b2ac0943d558f1.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_796f0d55694bd57af0b260f5884b0691.html">kpo-zad6-2-main</a></li><li class="navelem"><a class="el" href="dir_01633c65f0a370ff10a533d98ad2fd10.html">prj</a></li><li class="navelem"><a class="el" href="dir_d85f67b63ab5d7b12a078e53f7d35029.html">inc</a></li><li class="navelem"><a class="el" href="a00059.html">RoverSFR.hh</a></li>
+    <li class="footer">Wygenerowano przez <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

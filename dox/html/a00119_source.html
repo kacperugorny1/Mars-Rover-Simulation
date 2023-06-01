@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MSR: Plik źródłowy /home/kacpi/Desktop/kpo-zad6-1/prj/build/_deps/doctest-src/scripts/how_stuff_works/how_captures_work.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="FSR-icon.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MSR
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a00119_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">how_captures_work.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="a00119.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;new&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="a00119.html#a28c144632da97bca6f2e2b3e08ec6747">    8</a></span>&#160;<span class="preprocessor">#define CAT_IMPL(s1, s2) s1##s2</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="a00119.html#ac7e4660d2c752d19bfe96c1bfe6f61f2">    9</a></span>&#160;<span class="preprocessor">#define CAT(s1, s2) CAT_IMPL(s1, s2)</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="a00119.html#aa57eb21e46ddbab2ba3943ce35c38890">   10</a></span>&#160;<span class="preprocessor">#define ANONYMOUS(x) CAT(x, __COUNTER__)</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="a00119.html#a5b6826d539cb124c75de34dbd030fd86">   12</a></span>&#160;<span class="preprocessor">#define NUM_CAPTURES_ON_STACK 5</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="a00483.html">   14</a></span>&#160;<span class="keyword">struct </span><a class="code" href="a00483.html">ICapture</a> { <span class="keyword">virtual</span> std::string <a class="code" href="a00483.html#a4d57d66d6cb64493a39c61af428f4386">toString</a>() <span class="keyword">const</span> = 0; };</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00119.html#a280605a78b3636a7847f3919b149f62e">addToCaptures</a>(<span class="keyword">const</span> <a class="code" href="a00483.html">ICapture</a>* ptr);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00119.html#a17e950352c54119ac03b7f3a22d38deb">popFromCaptures</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00119.html#a5b98fee543c3363c8e194472ab565431">printCaptures</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="a00487.html">   20</a></span>&#160;<span class="keyword">struct </span><a class="code" href="a00487.html">InfoBuilder</a> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="a00491.html">   22</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="a00491.html">Capture</a> : <a class="code" href="a00483.html">ICapture</a> {</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="a00491.html#a44bdc5286df817afb07c17744ab63a76">   23</a></span>&#160;        <span class="keyword">const</span> T* <a class="code" href="a00491.html#a44bdc5286df817afb07c17744ab63a76">capture</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="a00491.html#a1320cb65b1819554ecbbabcffba2f9e9">   25</a></span>&#160;        <a class="code" href="a00491.html#a1320cb65b1819554ecbbabcffba2f9e9">Capture</a>(<span class="keyword">const</span> T* in) : <a class="code" href="a00491.html#a44bdc5286df817afb07c17744ab63a76">capture</a>(in) {}</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a00491.html#a230b98f92591329f0b1fdd21ce00c5c6">   26</a></span>&#160;        std::string <a class="code" href="a00491.html#a230b98f92591329f0b1fdd21ce00c5c6">toString</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> std::to_string(*<a class="code" href="a00491.html#a44bdc5286df817afb07c17744ab63a76">capture</a>); }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    };</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="a00495.html#ad241e184c3b46136f18237d8e4cdef00">   29</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="a00495.html">Chunk</a> { <span class="keywordtype">char</span> <a class="code" href="a00495.html#ad241e184c3b46136f18237d8e4cdef00">buf</a>[<span class="keyword">sizeof</span>(<a class="code" href="a00491.html">Capture&lt;char&gt;</a>)]; };</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="a00487.html#aa103bedd426971beab50370fd9fd3f7d">   31</a></span>&#160;    <a class="code" href="a00495.html">Chunk</a> <a class="code" href="a00487.html#aa103bedd426971beab50370fd9fd3f7d">stackChunks</a>[<a class="code" href="a00119.html#a5b6826d539cb124c75de34dbd030fd86">NUM_CAPTURES_ON_STACK</a>];</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="a00487.html#aa21ab297b19943daa1695bdbf6aabed1">   32</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00487.html#aa21ab297b19943daa1695bdbf6aabed1">numCaptures</a> = 0;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="a00487.html#a3deb8fa4a605efd8eca70ad4af86947d">   33</a></span>&#160;    std::list&lt;Chunk&gt; <a class="code" href="a00487.html#a3deb8fa4a605efd8eca70ad4af86947d">heapChunks</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="a00487.html#a91ddf055031d9909a1e57020e28ee9b3">   36</a></span>&#160;    <a class="code" href="a00487.html">InfoBuilder</a>&amp; <a class="code" href="a00487.html#a91ddf055031d9909a1e57020e28ee9b3">operator&lt;&lt;</a>(<span class="keyword">const</span> T&amp; in) {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="a00487.html#aa21ab297b19943daa1695bdbf6aabed1">numCaptures</a> &lt; <a class="code" href="a00119.html#a5b6826d539cb124c75de34dbd030fd86">NUM_CAPTURES_ON_STACK</a>) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <a class="code" href="a00119.html#a280605a78b3636a7847f3919b149f62e">addToCaptures</a>(<span class="keyword">new</span> (<a class="code" href="a00487.html#aa103bedd426971beab50370fd9fd3f7d">stackChunks</a>[<a class="code" href="a00487.html#aa21ab297b19943daa1695bdbf6aabed1">numCaptures</a>].buf) <a class="code" href="a00491.html">Capture&lt;T&gt;</a>(&amp;in));</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <a class="code" href="a00487.html#a3deb8fa4a605efd8eca70ad4af86947d">heapChunks</a>.push_back(<a class="code" href="a00495.html">Chunk</a>());</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <a class="code" href="a00119.html#a280605a78b3636a7847f3919b149f62e">addToCaptures</a>(<span class="keyword">new</span> (<a class="code" href="a00487.html#a3deb8fa4a605efd8eca70ad4af86947d">heapChunks</a>.back().buf) <a class="code" href="a00491.html">Capture&lt;T&gt;</a>(&amp;in));</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        ++<a class="code" href="a00487.html#aa21ab297b19943daa1695bdbf6aabed1">numCaptures</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="a00487.html#af734945e1bb638f146e6b59ad4476f09">   47</a></span>&#160;    <a class="code" href="a00487.html#af734945e1bb638f146e6b59ad4476f09">~InfoBuilder</a>() {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="a00487.html#aa21ab297b19943daa1695bdbf6aabed1">numCaptures</a>; ++i)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <a class="code" href="a00119.html#a17e950352c54119ac03b7f3a22d38deb">popFromCaptures</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="a00487.html">InfoBuilder</a>&amp; <a class="code" href="a00487.html#a91ddf055031d9909a1e57020e28ee9b3">operator&lt;&lt;</a>(<span class="keyword">const</span> T&amp;&amp;) = <span class="keyword">delete</span>; <span class="comment">// prevent rvalues from being captured</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="a00119.html#a7c92f7eb848dfb96558d44fadba135f0">   56</a></span>&#160;<span class="preprocessor">#define INFO_IMPL(name, x) InfoBuilder name; name &lt;&lt; x</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="a00119.html#ab7e64333eba48090f444ec9f36fd23ef">   57</a></span>&#160;<span class="preprocessor">#define INFO(x) INFO_IMPL(ANONYMOUS(_CAPTURE_), x)</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">// impl</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="a00119.html#af2d131b952c08e4af27134facba0089f">   61</a></span>&#160;std::vector&lt;const ICapture*&gt; <a class="code" href="a00119.html#af2d131b952c08e4af27134facba0089f">captures</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="a00119.html#a280605a78b3636a7847f3919b149f62e">   63</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00119.html#a280605a78b3636a7847f3919b149f62e">addToCaptures</a>(<span class="keyword">const</span> <a class="code" href="a00483.html">ICapture</a>* ptr) { <a class="code" href="a00119.html#af2d131b952c08e4af27134facba0089f">captures</a>.push_back(ptr); }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="a00119.html#a17e950352c54119ac03b7f3a22d38deb">   65</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00119.html#a17e950352c54119ac03b7f3a22d38deb">popFromCaptures</a>() { <a class="code" href="a00119.html#af2d131b952c08e4af27134facba0089f">captures</a>.pop_back(); }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="a00119.html#a5b98fee543c3363c8e194472ab565431">   67</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00119.html#a5b98fee543c3363c8e194472ab565431">printCaptures</a>() {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="a00119.html#af2d131b952c08e4af27134facba0089f">captures</a>.size(); ++i)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        std::cout &lt;&lt; <a class="code" href="a00119.html#af2d131b952c08e4af27134facba0089f">captures</a>[i]-&gt;<a class="code" href="a00200.html#a8907bf35788959391343a2304f004e17">toString</a>() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">// usage</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="a00119.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   74</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="a00119.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">int</span> var1 = 42;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">int</span> var2 = 43;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">int</span> var3 = 45;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">int</span> var4 = 46;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">int</span> var5 = 47;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">float</span> var6 = 48.f;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">bool</span> var7 = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="a00119.html#ab7e64333eba48090f444ec9f36fd23ef">INFO</a>(var1 &lt;&lt; var2 &lt;&lt; var3 &lt;&lt; var4 &lt;&lt; var5 &lt;&lt; var6 &lt;&lt; var7);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="a00119.html#a5b98fee543c3363c8e194472ab565431">printCaptures</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa00487_html_a3deb8fa4a605efd8eca70ad4af86947d"><div class="ttname"><a href="a00487.html#a3deb8fa4a605efd8eca70ad4af86947d">InfoBuilder::heapChunks</a></div><div class="ttdeci">std::list&lt; Chunk &gt; heapChunks</div><div class="ttdef"><b>Definition:</b> <a href="a00119_source.html#l00033">how_captures_work.cpp:33</a></div></div>
+<div class="ttc" id="aa00119_html_a280605a78b3636a7847f3919b149f62e"><div class="ttname"><a href="a00119.html#a280605a78b3636a7847f3919b149f62e">addToCaptures</a></div><div class="ttdeci">void addToCaptures(const ICapture *ptr)</div><div class="ttdef"><b>Definition:</b> <a href="a00119_source.html#l00063">how_captures_work.cpp:63</a></div></div>
+<div class="ttc" id="aa00495_html"><div class="ttname"><a href="a00495.html">InfoBuilder::Chunk</a></div><div class="ttdef"><b>Definition:</b> <a href="a00119_source.html#l00029">how_captures_work.cpp:29</a></div></div>
+<div class="ttc" id="aa00495_html_ad241e184c3b46136f18237d8e4cdef00"><div class="ttname"><a href="a00495.html#ad241e184c3b46136f18237d8e4cdef00">InfoBuilder::Chunk::buf</a></div><div class="ttdeci">char buf[sizeof(Capture&lt; char &gt;)]</div><div class="ttdef"><b>Definition:</b> <a href="a00119_source.html#l00029">how_captures_work.cpp:29</a></div></div>
+<div class="ttc" id="aa00487_html_a91ddf055031d9909a1e57020e28ee9b3"><div class="ttname"><a href="a00487.html#a91ddf055031d9909a1e57020e28ee9b3">InfoBuilder::operator&lt;&lt;</a></div><div class="ttdeci">InfoBuilder &amp; operator&lt;&lt;(const T &amp;in)</div><div class="ttdef"><b>Definition:</b> <a href="a00119_source.html#l00036">how_captures_work.cpp:36</a></div></div>
+<div class="ttc" id="aa00487_html"><div class="ttname"><a href="a00487.html">InfoBuilder</a></div><div class="ttdef"><b>Definition:</b> <a href="a00119_source.html#l00020">how_captures_work.cpp:20</a></div></div>
+<div class="ttc" id="aa00119_html_ab7e64333eba48090f444ec9f36fd23ef"><div class="ttname"><a href="a00119.html#ab7e64333eba48090f444ec9f36fd23ef">INFO</a></div><div class="ttdeci">#define INFO(x)</div><div class="ttdef"><b>Definition:</b> <a href="a00119_source.html#l00057">how_captures_work.cpp:57</a></div></div>
+<div class="ttc" id="aa00487_html_aa103bedd426971beab50370fd9fd3f7d"><div class="ttname"><a href="a00487.html#aa103bedd426971beab50370fd9fd3f7d">InfoBuilder::stackChunks</a></div><div class="ttdeci">Chunk stackChunks[NUM_CAPTURES_ON_STACK]</div><div class="ttdef"><b>Definition:</b> <a href="a00119_source.html#l00031">how_captures_work.cpp:31</a></div></div>
+<div class="ttc" id="aa00119_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="a00119.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="a00119_source.html#l00074">how_captures_work.cpp:74</a></div></div>
+<div class="ttc" id="aa00483_html"><div class="ttname"><a href="a00483.html">ICapture</a></div><div class="ttdef"><b>Definition:</b> <a href="a00119_source.html#l00014">how_captures_work.cpp:14</a></div></div>
+<div class="ttc" id="aa00200_html_a8907bf35788959391343a2304f004e17"><div class="ttname"><a href="a00200.html#a8907bf35788959391343a2304f004e17">doctest::toString</a></div><div class="ttdeci">String toString(const DOCTEST_REF_WRAP(T) value)</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00850">doctest.h:850</a></div></div>
+<div class="ttc" id="aa00491_html_a230b98f92591329f0b1fdd21ce00c5c6"><div class="ttname"><a href="a00491.html#a230b98f92591329f0b1fdd21ce00c5c6">InfoBuilder::Capture::toString</a></div><div class="ttdeci">std::string toString() const override</div><div class="ttdef"><b>Definition:</b> <a href="a00119_source.html#l00026">how_captures_work.cpp:26</a></div></div>
+<div class="ttc" id="aa00491_html_a1320cb65b1819554ecbbabcffba2f9e9"><div class="ttname"><a href="a00491.html#a1320cb65b1819554ecbbabcffba2f9e9">InfoBuilder::Capture::Capture</a></div><div class="ttdeci">Capture(const T *in)</div><div class="ttdef"><b>Definition:</b> <a href="a00119_source.html#l00025">how_captures_work.cpp:25</a></div></div>
+<div class="ttc" id="aa00119_html_af2d131b952c08e4af27134facba0089f"><div class="ttname"><a href="a00119.html#af2d131b952c08e4af27134facba0089f">captures</a></div><div class="ttdeci">std::vector&lt; const ICapture * &gt; captures</div><div class="ttdef"><b>Definition:</b> <a href="a00119_source.html#l00061">how_captures_work.cpp:61</a></div></div>
+<div class="ttc" id="aa00491_html"><div class="ttname"><a href="a00491.html">InfoBuilder::Capture</a></div><div class="ttdef"><b>Definition:</b> <a href="a00119_source.html#l00022">how_captures_work.cpp:22</a></div></div>
+<div class="ttc" id="aa00487_html_aa21ab297b19943daa1695bdbf6aabed1"><div class="ttname"><a href="a00487.html#aa21ab297b19943daa1695bdbf6aabed1">InfoBuilder::numCaptures</a></div><div class="ttdeci">int numCaptures</div><div class="ttdef"><b>Definition:</b> <a href="a00119_source.html#l00032">how_captures_work.cpp:32</a></div></div>
+<div class="ttc" id="aa00119_html_a17e950352c54119ac03b7f3a22d38deb"><div class="ttname"><a href="a00119.html#a17e950352c54119ac03b7f3a22d38deb">popFromCaptures</a></div><div class="ttdeci">void popFromCaptures()</div><div class="ttdef"><b>Definition:</b> <a href="a00119_source.html#l00065">how_captures_work.cpp:65</a></div></div>
+<div class="ttc" id="aa00491_html_a44bdc5286df817afb07c17744ab63a76"><div class="ttname"><a href="a00491.html#a44bdc5286df817afb07c17744ab63a76">InfoBuilder::Capture::capture</a></div><div class="ttdeci">const T * capture</div><div class="ttdef"><b>Definition:</b> <a href="a00119_source.html#l00023">how_captures_work.cpp:23</a></div></div>
+<div class="ttc" id="aa00119_html_a5b98fee543c3363c8e194472ab565431"><div class="ttname"><a href="a00119.html#a5b98fee543c3363c8e194472ab565431">printCaptures</a></div><div class="ttdeci">void printCaptures()</div><div class="ttdef"><b>Definition:</b> <a href="a00119_source.html#l00067">how_captures_work.cpp:67</a></div></div>
+<div class="ttc" id="aa00483_html_a4d57d66d6cb64493a39c61af428f4386"><div class="ttname"><a href="a00483.html#a4d57d66d6cb64493a39c61af428f4386">ICapture::toString</a></div><div class="ttdeci">virtual std::string toString() const =0</div></div>
+<div class="ttc" id="aa00119_html_a5b6826d539cb124c75de34dbd030fd86"><div class="ttname"><a href="a00119.html#a5b6826d539cb124c75de34dbd030fd86">NUM_CAPTURES_ON_STACK</a></div><div class="ttdeci">#define NUM_CAPTURES_ON_STACK</div><div class="ttdef"><b>Definition:</b> <a href="a00119_source.html#l00012">how_captures_work.cpp:12</a></div></div>
+<div class="ttc" id="aa00487_html_af734945e1bb638f146e6b59ad4476f09"><div class="ttname"><a href="a00487.html#af734945e1bb638f146e6b59ad4476f09">InfoBuilder::~InfoBuilder</a></div><div class="ttdeci">~InfoBuilder()</div><div class="ttdef"><b>Definition:</b> <a href="a00119_source.html#l00047">how_captures_work.cpp:47</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_8f9266336383e159d2f429832046f539.html">kacpi</a></li><li class="navelem"><a class="el" href="dir_01d646dff4bd0b2f6c7a0dca8a2aa321.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_41a9a67b8b29bbe5954a3999558704d1.html">kpo-zad6-1</a></li><li class="navelem"><a class="el" href="dir_8c1d9bd07d018f51481f944e40717a64.html">prj</a></li><li class="navelem"><a class="el" href="dir_afbd551f88fa0759327dbbb0d3fffe1d.html">build</a></li><li class="navelem"><a class="el" href="dir_31ea72cf3d589dd2ea1122251bdd2017.html">_deps</a></li><li class="navelem"><a class="el" href="dir_a58b0dc1e84de6aa7da8d651d5576d98.html">doctest-src</a></li><li class="navelem"><a class="el" href="dir_bf72b1e8adddca5b0e41ccc089de6cba.html">scripts</a></li><li class="navelem"><a class="el" href="dir_3fc018289b7440fc2b040fdac36b0ab7.html">how_stuff_works</a></li><li class="navelem"><a class="el" href="a00119.html">how_captures_work.cpp</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

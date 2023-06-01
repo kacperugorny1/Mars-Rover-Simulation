@@ -1,0 +1,16 @@
+digraph "UtworzPowierzchnie_ZapiszDoPliku"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="UtworzPowierzchnie\l_ZapiszDoPliku",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="Inicjalizuj_Powierzchnie\lMarsa",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00050.html#a4ea2370930491646c4519a1f689f117c",tooltip="Inicjalizuje model powierzchni Marsa."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="Scene::InitGnuplotLink",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00133.html#a58e85f55140d5e623fb0acb93214f2c8",tooltip="Metoda inicjujaca lacze do gnuplota."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="Scene::Scene",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00133.html#ad10176d75a9cc0da56626f682d083507",tooltip="Konstruktor bezparametryczny."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node5 [label="UtworzPowierzchnie\l_ZapiszDoPliku",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00080.html#a90f8388bf4b0322ca71017caae3e0d73",tooltip=" "];
+}

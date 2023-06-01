@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MSR: Plik źródłowy /home/kacper/Desktop/kpo-zad6-2-main/prj/inc/vector.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="FSR-icon.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MSR
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a00065_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">vector.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="a00065.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;iomanip&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> tType, <span class="keywordtype">int</span> tSize&gt;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a00137.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00137.html">tVector</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="a00137.html#a80dbf25fdf22079557e2de4850816198">   33</a></span>&#160;    tType <a class="code" href="a00137.html#a80dbf25fdf22079557e2de4850816198">size</a>[tSize]; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="a00137.html#a65fd859ac0e75169d8496351fadffaad">   38</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="a00137.html#a65fd859ac0e75169d8496351fadffaad">vector_counter</a> = 0;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="a00137.html#a55e427a2c5c92bd4ed4391349bd934cd">   43</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="a00137.html#a55e427a2c5c92bd4ed4391349bd934cd">destroyed_vectors</a> = 0;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="a00137.html">tVector&lt;tType,tSize&gt;</a>() {<span class="keywordflow">for</span> (tType &amp;x: <a class="code" href="a00137.html#a80dbf25fdf22079557e2de4850816198">size</a>) x=0;++<a class="code" href="a00137.html#a65fd859ac0e75169d8496351fadffaad">vector_counter</a>;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="a00137.html#af4ca4e4bf9d6493aaa046bf6997dd58b">   56</a></span>&#160;    <a class="code" href="a00137.html#af4ca4e4bf9d6493aaa046bf6997dd58b">tVector</a>(tType [tSize]);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="a00137.html#a0d608608477e69e9038a2766eed004ea">   63</a></span>&#160;    <a class="code" href="a00137.html#a0d608608477e69e9038a2766eed004ea">tVector</a>(<span class="keyword">const</span> std::initializer_list&lt;tType&gt; &amp;ListaWsp);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="a00137.html#ac086d6b79b001805f6837f2bfa09b0e5">   70</a></span>&#160;    <a class="code" href="a00137.html#ac086d6b79b001805f6837f2bfa09b0e5">tVector</a>(<span class="keyword">const</span> <a class="code" href="a00137.html">tVector</a> &amp; v);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="a00137.html#a763a6a738c342c44a77637cfa89693e0">   76</a></span>&#160;    <a class="code" href="a00137.html#a763a6a738c342c44a77637cfa89693e0">~tVector</a>(){++<a class="code" href="a00137.html#a55e427a2c5c92bd4ed4391349bd934cd">destroyed_vectors</a>;}</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="a00137.html#a3b98364022b3de3e100f4a78543eeb65">   84</a></span>&#160;    <a class="code" href="a00137.html">tVector&lt;tType,tSize&gt;</a> &amp;<a class="code" href="a00137.html#a3b98364022b3de3e100f4a78543eeb65">operator=</a>(<span class="keyword">const</span> <a class="code" href="a00137.html">tVector&lt;tType,tSize&gt;</a> &amp;v); </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="a00137.html#a060f4d4ece23c4385f8b233d7b22821b">   92</a></span>&#160;    <a class="code" href="a00137.html">tVector&lt;tType,tSize&gt;</a> <a class="code" href="a00137.html#a060f4d4ece23c4385f8b233d7b22821b">operator + </a>(<span class="keyword">const</span> <a class="code" href="a00137.html">tVector&lt;tType,tSize&gt;</a> &amp;v) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="a00137.html#a43f723bd3b15df648a0a62b25beb6858">  100</a></span>&#160;    <a class="code" href="a00137.html">tVector&lt;tType,tSize&gt;</a> <a class="code" href="a00137.html#a43f723bd3b15df648a0a62b25beb6858">operator - </a>(<span class="keyword">const</span> <a class="code" href="a00137.html">tVector&lt;tType,tSize&gt;</a> &amp;v) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="a00137.html#ae25bfb091d72365afa590c843c4b1c6f">  108</a></span>&#160;    <a class="code" href="a00137.html">tVector&lt;tType,tSize&gt;</a> <a class="code" href="a00137.html#ae25bfb091d72365afa590c843c4b1c6f">operator * </a>(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;tmp) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="a00137.html#a66bb6ec2729915dcfa688de87d62d4ab">  116</a></span>&#160;    tType <a class="code" href="a00137.html#ae25bfb091d72365afa590c843c4b1c6f">operator * </a>(<span class="keyword">const</span> <a class="code" href="a00137.html">tVector&lt;tType,tSize&gt;</a> &amp;v) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="a00137.html#a1d9432e6a4dc1ca317a1bfa5e468f180">  124</a></span>&#160;    <a class="code" href="a00137.html">tVector&lt;tType,tSize&gt;</a> <a class="code" href="a00137.html#a1d9432e6a4dc1ca317a1bfa5e468f180">operator / </a>(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;tmp) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="a00137.html#a807a3a451d081c5c6cc12be70a914e37">  132</a></span>&#160;    <span class="keyword">const</span> tType &amp;<a class="code" href="a00137.html#a807a3a451d081c5c6cc12be70a914e37">operator [] </a>(<span class="keywordtype">int</span> index) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="a00137.html#a633eaef41429a2c7b98f2f092c252a39">  140</a></span>&#160;    tType &amp;<a class="code" href="a00137.html#a807a3a451d081c5c6cc12be70a914e37">operator [] </a>(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    </div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="a00137.html#ad7923da98dd49419659dcc7fb3b213b4">  146</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="a00137.html#ad7923da98dd49419659dcc7fb3b213b4">Count_vectors</a>() __attribute__ ((destructor));</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;};</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;template&lt;typename tType, <span class="keywordtype">int</span> tSize&gt;</div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="a00137.html#ac086d6b79b001805f6837f2bfa09b0e5">  151</a></span>&#160;<a class="code" href="a00137.html">tVector</a>&lt;tType,tSize&gt;::<a class="code" href="a00137.html">tVector</a>(const <a class="code" href="a00137.html">tVector</a>&lt;tType,tSize&gt; &amp;v){</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;tSize;++i)</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <a class="code" href="a00137.html#a80dbf25fdf22079557e2de4850816198">size</a>[i]=v[i];</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <a class="code" href="a00137.html#a65fd859ac0e75169d8496351fadffaad">vector_counter</a>++;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;}</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment">/******************************************************************************</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="comment"> |  Konstruktor klasy tVector.                                                 |</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="comment"> |  Argumenty:                                                                |</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="comment"> |      tmp - Jednowymiarowa tablica typu double.                             |</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="comment"> |  Zwraca:                                                                   |</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment"> |      Tablice wypelniona wartosciami podanymi w argumencie.                 |</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> tType, <span class="keywordtype">int</span> tSize&gt;</div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="a00137.html#af4ca4e4bf9d6493aaa046bf6997dd58b">  165</a></span>&#160;<a class="code" href="a00137.html#a5f7812abb16c1e23c7747408e61642e0">tVector&lt;tType,tSize&gt;::tVector</a>(tType tmp[tSize]) {</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; tSize; ++i) {</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <a class="code" href="a00137.html#a80dbf25fdf22079557e2de4850816198">size</a>[i] = tmp[i];</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    }</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <a class="code" href="a00137.html#a65fd859ac0e75169d8496351fadffaad">vector_counter</a>++;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;}</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> tType, <span class="keywordtype">int</span> tSize&gt;</div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="a00137.html#a0d608608477e69e9038a2766eed004ea">  173</a></span>&#160;<a class="code" href="a00137.html#a5f7812abb16c1e23c7747408e61642e0">tVector&lt;tType,tSize&gt;::tVector</a>(<span class="keyword">const</span> std::initializer_list&lt;tType&gt; &amp;ListaWsp){</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordtype">int</span> Ind = -1;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordflow">for</span>(tType wsp:ListaWsp)</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <a class="code" href="a00137.html#a80dbf25fdf22079557e2de4850816198">size</a>[++Ind] = wsp;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <a class="code" href="a00137.html#a65fd859ac0e75169d8496351fadffaad">vector_counter</a>++;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;}</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> tType, <span class="keywordtype">int</span> tSize&gt;</div>
+<div class="line"><a name="l00190"></a><span class="lineno"><a class="line" href="a00137.html#a3b98364022b3de3e100f4a78543eeb65">  190</a></span>&#160;<a class="code" href="a00137.html">tVector&lt;tType,tSize&gt;</a> &amp;<a class="code" href="a00137.html#a3b98364022b3de3e100f4a78543eeb65">tVector&lt;tType, tSize&gt;::operator=</a>(<span class="keyword">const</span> <a class="code" href="a00137.html">tVector</a> &amp;v) {</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; tSize; ++i)</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <a class="code" href="a00137.html#a80dbf25fdf22079557e2de4850816198">size</a>[i] = v[i];</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;}</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="comment">/******************************************************************************</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="comment"> |  Realizuje dodawanie dwoch wektorow.                                       |</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="comment"> |  Argumenty:                                                                |</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="comment"> |      this - pierwszy skladnik dodawania,                                   |</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="comment"> |      v - drugi skladnik dodawania.                                         |</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="comment"> |  Zwraca:                                                                   |</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment"> |      Sume dwoch skladnikow przekazanych jako wskaznik                      |</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment"> |      na parametr.                                                          |</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> tType, <span class="keywordtype">int</span> tSize&gt;</div>
+<div class="line"><a name="l00207"></a><span class="lineno"><a class="line" href="a00137.html#a060f4d4ece23c4385f8b233d7b22821b">  207</a></span>&#160;<a class="code" href="a00137.html">tVector&lt;tType,tSize&gt;</a> <a class="code" href="a00137.html#a060f4d4ece23c4385f8b233d7b22821b">tVector&lt;tType,tSize&gt;::operator + </a>(<span class="keyword">const</span> <a class="code" href="a00137.html">tVector&lt;tType,tSize&gt;</a> &amp;v)<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <a class="code" href="a00137.html">tVector&lt;tType,tSize&gt;</a> result;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; tSize; ++i) {</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        result[i] = <a class="code" href="a00137.html#a80dbf25fdf22079557e2de4850816198">size</a>[i] + v[i];</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    }</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;}</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="comment">/******************************************************************************</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="comment"> |  Realizuje odejmowanie dwoch wektorow.                                     |</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="comment"> |  Argumenty:                                                                |</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="comment"> |      this - pierwszy skladnik odejmowania,                                 |</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="comment"> |      v - drugi skladnik odejmowania.                                       |</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="comment"> |  Zwraca:                                                                   |</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="comment"> |      Roznice dwoch skladnikow przekazanych jako wskaznik                   |</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="comment"> |      na parametr.                                                          |</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> tType, <span class="keywordtype">int</span> tSize&gt;</div>
+<div class="line"><a name="l00225"></a><span class="lineno"><a class="line" href="a00137.html#a43f723bd3b15df648a0a62b25beb6858">  225</a></span>&#160;<a class="code" href="a00137.html">tVector&lt;tType,tSize&gt;</a> <a class="code" href="a00137.html#a43f723bd3b15df648a0a62b25beb6858">tVector&lt;tType,tSize&gt;::operator - </a>(<span class="keyword">const</span> <a class="code" href="a00137.html">tVector&lt;tType,tSize&gt;</a> &amp;v)<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <a class="code" href="a00137.html">tVector&lt;tType,tSize&gt;</a> result;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; tSize; ++i) {</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        result[i] = <a class="code" href="a00137.html#a80dbf25fdf22079557e2de4850816198">size</a>[i] - v[i];</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    }</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;}</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment">/******************************************************************************</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="comment"> |  Realizuje mnozenie wektora przez liczbe zmiennoprzecinkowa.               |</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="comment"> |  Argumenty:                                                                |</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="comment"> |      this - pierwszy skladnik mnozenia (wektor),                           |</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="comment"> |      v - drugi skladnik mnozenia (liczba typu double).                     |</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="comment"> |  Zwraca:                                                                   |</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="comment"> |      Iloczyn dwoch skladnikow przekazanych jako wskaznik                   |</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="comment"> |      na parametr.                                                          |</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> tType, <span class="keywordtype">int</span> tSize&gt;</div>
+<div class="line"><a name="l00244"></a><span class="lineno"><a class="line" href="a00137.html#ae25bfb091d72365afa590c843c4b1c6f">  244</a></span>&#160;<a class="code" href="a00137.html">tVector&lt;tType,tSize&gt;</a> <a class="code" href="a00137.html#ae25bfb091d72365afa590c843c4b1c6f">tVector&lt;tType,tSize&gt;::operator * </a>(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;tmp)<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <a class="code" href="a00137.html">tVector&lt;tType,tSize&gt;</a> result;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; tSize; ++i) {</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        result[i] = <a class="code" href="a00137.html#a80dbf25fdf22079557e2de4850816198">size</a>[i] * tmp;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    }</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;}</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160; </div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="comment"> * Mnozenie skalarne wektorow</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="comment"> * Argumenty:</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="comment"> *  this - Pierwszy skladnik</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="comment"> *  v - drugi skladnik </span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="comment"> * Zwraca:</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="comment"> *  wartosc mnozenia skalarnego</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> tType, <span class="keywordtype">int</span> tSize&gt;</div>
+<div class="line"><a name="l00262"></a><span class="lineno"><a class="line" href="a00137.html#a66bb6ec2729915dcfa688de87d62d4ab">  262</a></span>&#160;tType <a class="code" href="a00137.html#ae25bfb091d72365afa590c843c4b1c6f">tVector&lt;tType,tSize&gt;::operator * </a>(<span class="keyword">const</span> <a class="code" href="a00137.html">tVector&lt;tType,tSize&gt;</a> &amp;v)<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    tType result=<a class="code" href="a00137.html#a80dbf25fdf22079557e2de4850816198">size</a>[0] * v[0];</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i&lt;tSize; ++i){</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        result += <a class="code" href="a00137.html#a80dbf25fdf22079557e2de4850816198">size</a>[i] * v[i];</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    }</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;}</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="comment">/******************************************************************************</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="comment"> |  Realizuje dzielenie dwoch wektorow.                                       |</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="comment"> |  Argumenty:                                                                |</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="comment"> |      this - licznik dzielenia,                                             |</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="comment"> |      v - mianownik dzielenia.                                              |</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="comment"> |  Zwraca:                                                                   |</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="comment"> |      Iloraz dwoch skladnikow przekazanych jako wskaznik                    |</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="comment"> |      na parametr.                                                          |</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160; </div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> tType, <span class="keywordtype">int</span> tSize&gt;</div>
+<div class="line"><a name="l00281"></a><span class="lineno"><a class="line" href="a00137.html#a1d9432e6a4dc1ca317a1bfa5e468f180">  281</a></span>&#160;<a class="code" href="a00137.html">tVector&lt;tType,tSize&gt;</a> <a class="code" href="a00137.html#a1d9432e6a4dc1ca317a1bfa5e468f180">tVector&lt;tType,tSize&gt;::operator / </a>(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;tmp)<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <a class="code" href="a00137.html">tVector&lt;tType,tSize&gt;</a> result;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; tSize; ++i) {</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        result[i] = <a class="code" href="a00137.html#a80dbf25fdf22079557e2de4850816198">size</a>[i] / tmp;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    }</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;}</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160; </div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="comment">/******************************************************************************</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="comment"> |  Funktor wektora.                                                          |</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="comment"> |  Argumenty:                                                                |</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="comment"> |      index - index wektora.                                                |</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="comment"> |  Zwraca:                                                                   |</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="comment"> |      Wartosc wektora w danym miejscu tablicy jako stala.                   |</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> tType, <span class="keywordtype">int</span> tSize&gt;</div>
+<div class="line"><a name="l00300"></a><span class="lineno"><a class="line" href="a00137.html#a807a3a451d081c5c6cc12be70a914e37">  300</a></span>&#160;<span class="keyword">const</span> tType &amp;<a class="code" href="a00137.html#a807a3a451d081c5c6cc12be70a914e37">tVector&lt;tType,tSize&gt;::operator [] </a>(<span class="keywordtype">int</span> index)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="keywordflow">if</span> (index &lt; 0 || index &gt;= tSize) </div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Error: Wektor jest poza zasiegiem&quot;</span>);</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="a00137.html#a80dbf25fdf22079557e2de4850816198">size</a>[index];</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;}</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="comment">/******************************************************************************</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="comment"> |  Funktor wektora.                                                          |</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="comment"> |  Argumenty:                                                                |</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="comment"> |      index - index wektora.                                                |</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="comment"> |  Zwraca:                                                                   |</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="comment"> |      Wartosc wektora w danym miejscu tablicy.                              |</span></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> tType, <span class="keywordtype">int</span> tSize&gt;</div>
+<div class="line"><a name="l00315"></a><span class="lineno"><a class="line" href="a00137.html#a633eaef41429a2c7b98f2f092c252a39">  315</a></span>&#160;tType &amp;<a class="code" href="a00137.html#a807a3a451d081c5c6cc12be70a914e37">tVector&lt;tType,tSize&gt;::operator[]</a>(<span class="keywordtype">int</span> index) {</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">const_cast&lt;</span>tType &amp;<span class="keyword">&gt;</span>(<span class="keyword">const_cast&lt;</span><span class="keyword">const </span><a class="code" href="a00137.html">tVector&lt;tType,tSize&gt;</a> *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<span class="keyword">operator</span>[](index));</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;}</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; </div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160; </div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="comment">/******************************************************************************</span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="comment"> |  Przeciazenie operatora &lt;&lt;                                                 |</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="comment"> |  Argumenty:                                                                |</span></div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="comment"> |      out - strumien wejsciowy,                                             |</span></div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="comment"> |      tmp - wektor.                                                         |</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> tType, <span class="keywordtype">int</span> tSize&gt;</div>
+<div class="line"><a name="l00327"></a><span class="lineno"><a class="line" href="a00065.html#a0865f38afd33e5d872d73bf732afa383">  327</a></span>&#160;std::ostream &amp;<a class="code" href="a00065.html#a0865f38afd33e5d872d73bf732afa383">operator &lt;&lt; </a>(std::ostream &amp;out, <a class="code" href="a00137.html">tVector&lt;tType,tSize&gt;</a> <span class="keyword">const</span> &amp;tmp) {</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; tSize; ++i) {</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        out &lt;&lt; <span class="stringliteral">&quot;[ &quot;</span> &lt;&lt; tmp[i] &lt;&lt; <span class="stringliteral">&quot; ]\n&quot;</span>;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    }</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordflow">return</span> out;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;}</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="comment">/******************************************************************************</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="comment"> |  Przeciazenie operatora &gt;&gt;                                                 |</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="comment"> |  Argumenty:                                                                |</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="comment"> |      in - strumien wyjsciowy,                                              |</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="comment"> |      tmp - wektor.                                                         |</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> tType, <span class="keywordtype">int</span> tSize&gt;</div>
+<div class="line"><a name="l00341"></a><span class="lineno"><a class="line" href="a00065.html#aee1c32104b8bb6b5185f00b1c2ef454b">  341</a></span>&#160;std::istream &amp;<a class="code" href="a00065.html#aee1c32104b8bb6b5185f00b1c2ef454b">operator &gt;&gt; </a>(std::istream &amp;in, <a class="code" href="a00137.html">tVector&lt;tType,tSize&gt;</a> &amp;tmp) {</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; tSize; ++i) {</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        in &gt;&gt; tmp[i];</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    }</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="keywordflow">return</span> in;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;}</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160; </div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> tType, <span class="keywordtype">int</span> tSize&gt;</div>
+<div class="line"><a name="l00355"></a><span class="lineno"><a class="line" href="a00137.html#ad7923da98dd49419659dcc7fb3b213b4">  355</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00137.html#ad7923da98dd49419659dcc7fb3b213b4">tVector&lt;tType,tSize&gt;::Count_vectors</a>(){</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <span class="keywordtype">int</span> actual=<a class="code" href="a00137.html#a65fd859ac0e75169d8496351fadffaad">vector_counter</a>-<a class="code" href="a00137.html#a55e427a2c5c92bd4ed4391349bd934cd">destroyed_vectors</a>;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot;Ilosc stworzonych wektorow: &quot;</span>&lt;&lt;<a class="code" href="a00137.html#a65fd859ac0e75169d8496351fadffaad">vector_counter</a>&lt;&lt;std::endl;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot;Aktualna ilosc wektorow: &quot;</span>&lt;&lt;actual&lt;&lt;std::endl;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;}</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160; </div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160; </div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="comment"> *  metoda length() liczy dlugosc wektora</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="comment"> *  Argumenty:</span></div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="comment"> *  this</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="comment"> *  zwraca:</span></div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="comment"> *  double</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="comment">template &lt;typename tType,int tSize&gt;</span></div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="comment">double tVector&lt;tType,tSize&gt;::length(){</span></div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="comment">    double len = 0;</span></div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="comment">    for(tType x: size)</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="comment">        len +=pow(x,2);</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="comment">    len = sqrt(len);</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="comment">    return len;</span></div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="comment">}</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="comment"> *  metoda length() liczaca dlugosc wektora dla Liczby zespolonej </span></div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="comment"> *  argumenty:</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="comment"> *  this</span></div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="comment"> *  zwraca:</span></div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="comment"> *  double</span></div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="comment">template &lt;&gt;</span></div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="comment">double tVector&lt;LZespolona,3&gt;::length(){</span></div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="comment">    double len=0;</span></div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="comment">    for (LZespolona x: size)</span></div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="comment">        len += x.Mod_kwadrat();</span></div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="comment">    len = sqrt(len);</span></div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="comment">    return len;</span></div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="comment">}</span></div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="comment">*/</span></div>
+<div class="ttc" id="aa00065_html_a0865f38afd33e5d872d73bf732afa383"><div class="ttname"><a href="a00065.html#a0865f38afd33e5d872d73bf732afa383">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;out, tVector&lt; tType, tSize &gt; const &amp;tmp)</div><div class="ttdef"><b>Definition:</b> <a href="a00065_source.html#l00327">vector.hh:327</a></div></div>
+<div class="ttc" id="aa00065_html_aee1c32104b8bb6b5185f00b1c2ef454b"><div class="ttname"><a href="a00065.html#aee1c32104b8bb6b5185f00b1c2ef454b">operator&gt;&gt;</a></div><div class="ttdeci">std::istream &amp; operator&gt;&gt;(std::istream &amp;in, tVector&lt; tType, tSize &gt; &amp;tmp)</div><div class="ttdef"><b>Definition:</b> <a href="a00065_source.html#l00341">vector.hh:341</a></div></div>
+<div class="ttc" id="aa00137_html"><div class="ttname"><a href="a00137.html">tVector</a></div><div class="ttdoc">Szablon tVector.</div><div class="ttdef"><b>Definition:</b> <a href="a00065_source.html#l00026">vector.hh:26</a></div></div>
+<div class="ttc" id="aa00137_html_a060f4d4ece23c4385f8b233d7b22821b"><div class="ttname"><a href="a00137.html#a060f4d4ece23c4385f8b233d7b22821b">tVector::operator+</a></div><div class="ttdeci">tVector&lt; tType, tSize &gt; operator+(const tVector&lt; tType, tSize &gt; &amp;v) const</div><div class="ttdoc">DOdawanie 2 wektorow.</div><div class="ttdef"><b>Definition:</b> <a href="a00065_source.html#l00207">vector.hh:207</a></div></div>
+<div class="ttc" id="aa00137_html_a0d608608477e69e9038a2766eed004ea"><div class="ttname"><a href="a00137.html#a0d608608477e69e9038a2766eed004ea">tVector::tVector</a></div><div class="ttdeci">tVector(const std::initializer_list&lt; tType &gt; &amp;ListaWsp)</div><div class="ttdoc">Construct a new t Vector object.</div><div class="ttdef"><b>Definition:</b> <a href="a00065_source.html#l00173">vector.hh:173</a></div></div>
+<div class="ttc" id="aa00137_html_a1d9432e6a4dc1ca317a1bfa5e468f180"><div class="ttname"><a href="a00137.html#a1d9432e6a4dc1ca317a1bfa5e468f180">tVector::operator/</a></div><div class="ttdeci">tVector&lt; tType, tSize &gt; operator/(const double &amp;tmp) const</div><div class="ttdoc">Dzielenie wektora przez liczbe.</div><div class="ttdef"><b>Definition:</b> <a href="a00065_source.html#l00281">vector.hh:281</a></div></div>
+<div class="ttc" id="aa00137_html_a3b98364022b3de3e100f4a78543eeb65"><div class="ttname"><a href="a00137.html#a3b98364022b3de3e100f4a78543eeb65">tVector::operator=</a></div><div class="ttdeci">tVector&lt; tType, tSize &gt; &amp; operator=(const tVector&lt; tType, tSize &gt; &amp;v)</div><div class="ttdoc">operator przypisania</div><div class="ttdef"><b>Definition:</b> <a href="a00065_source.html#l00190">vector.hh:190</a></div></div>
+<div class="ttc" id="aa00137_html_a43f723bd3b15df648a0a62b25beb6858"><div class="ttname"><a href="a00137.html#a43f723bd3b15df648a0a62b25beb6858">tVector::operator-</a></div><div class="ttdeci">tVector&lt; tType, tSize &gt; operator-(const tVector&lt; tType, tSize &gt; &amp;v) const</div><div class="ttdoc">Odejmowanie 2 wektorow.</div><div class="ttdef"><b>Definition:</b> <a href="a00065_source.html#l00225">vector.hh:225</a></div></div>
+<div class="ttc" id="aa00137_html_a55e427a2c5c92bd4ed4391349bd934cd"><div class="ttname"><a href="a00137.html#a55e427a2c5c92bd4ed4391349bd934cd">tVector::destroyed_vectors</a></div><div class="ttdeci">static unsigned int destroyed_vectors</div><div class="ttdoc">Zmienna statyczna liczaca zniszczone wektory.</div><div class="ttdef"><b>Definition:</b> <a href="a00065_source.html#l00043">vector.hh:43</a></div></div>
+<div class="ttc" id="aa00137_html_a5f7812abb16c1e23c7747408e61642e0"><div class="ttname"><a href="a00137.html#a5f7812abb16c1e23c7747408e61642e0">tVector::tVector</a></div><div class="ttdeci">tVector()</div><div class="ttdoc">Konstruktor klasy tVector bezparametryczny.</div><div class="ttdef"><b>Definition:</b> <a href="a00065_source.html#l00043">vector.hh:50</a></div></div>
+<div class="ttc" id="aa00137_html_a65fd859ac0e75169d8496351fadffaad"><div class="ttname"><a href="a00137.html#a65fd859ac0e75169d8496351fadffaad">tVector::vector_counter</a></div><div class="ttdeci">static unsigned int vector_counter</div><div class="ttdoc">Zmienna statyczna liczaca wektory.</div><div class="ttdef"><b>Definition:</b> <a href="a00065_source.html#l00038">vector.hh:38</a></div></div>
+<div class="ttc" id="aa00137_html_a763a6a738c342c44a77637cfa89693e0"><div class="ttname"><a href="a00137.html#a763a6a738c342c44a77637cfa89693e0">tVector::~tVector</a></div><div class="ttdeci">~tVector()</div><div class="ttdoc">Destruktor.</div><div class="ttdef"><b>Definition:</b> <a href="a00065_source.html#l00076">vector.hh:76</a></div></div>
+<div class="ttc" id="aa00137_html_a807a3a451d081c5c6cc12be70a914e37"><div class="ttname"><a href="a00137.html#a807a3a451d081c5c6cc12be70a914e37">tVector::operator[]</a></div><div class="ttdeci">const tType &amp; operator[](int index) const</div><div class="ttdoc">Zwraca wartosc wektora w danym miejscu.</div><div class="ttdef"><b>Definition:</b> <a href="a00065_source.html#l00300">vector.hh:300</a></div></div>
+<div class="ttc" id="aa00137_html_a80dbf25fdf22079557e2de4850816198"><div class="ttname"><a href="a00137.html#a80dbf25fdf22079557e2de4850816198">tVector::size</a></div><div class="ttdeci">tType size[tSize]</div><div class="ttdoc">Tablica wektora;.</div><div class="ttdef"><b>Definition:</b> <a href="a00065_source.html#l00033">vector.hh:33</a></div></div>
+<div class="ttc" id="aa00137_html_ac086d6b79b001805f6837f2bfa09b0e5"><div class="ttname"><a href="a00137.html#ac086d6b79b001805f6837f2bfa09b0e5">tVector::tVector</a></div><div class="ttdeci">tVector(const tVector &amp;v)</div><div class="ttdoc">Konstruktor kopiujacy.</div><div class="ttdef"><b>Definition:</b> <a href="a00065_source.html#l00151">vector.hh:151</a></div></div>
+<div class="ttc" id="aa00137_html_ad7923da98dd49419659dcc7fb3b213b4"><div class="ttname"><a href="a00137.html#ad7923da98dd49419659dcc7fb3b213b4">tVector::Count_vectors</a></div><div class="ttdeci">static void Count_vectors() __attribute__((destructor))</div><div class="ttdoc">Funkcja liczaca wektory.</div><div class="ttdef"><b>Definition:</b> <a href="a00065_source.html#l00355">vector.hh:355</a></div></div>
+<div class="ttc" id="aa00137_html_ae25bfb091d72365afa590c843c4b1c6f"><div class="ttname"><a href="a00137.html#ae25bfb091d72365afa590c843c4b1c6f">tVector::operator*</a></div><div class="ttdeci">tVector&lt; tType, tSize &gt; operator*(const double &amp;tmp) const</div><div class="ttdoc">Mnozenie wektora przez stala.</div><div class="ttdef"><b>Definition:</b> <a href="a00065_source.html#l00244">vector.hh:244</a></div></div>
+<div class="ttc" id="aa00137_html_af4ca4e4bf9d6493aaa046bf6997dd58b"><div class="ttname"><a href="a00137.html#af4ca4e4bf9d6493aaa046bf6997dd58b">tVector::tVector</a></div><div class="ttdeci">tVector(tType[tSize])</div><div class="ttdoc">Konstruktor parametryczny.</div><div class="ttdef"><b>Definition:</b> <a href="a00065_source.html#l00165">vector.hh:165</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_16743127fce78036b5d234ef5015f645.html">kacper</a></li><li class="navelem"><a class="el" href="dir_49a7c49b4431654095b2ac0943d558f1.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_796f0d55694bd57af0b260f5884b0691.html">kpo-zad6-2-main</a></li><li class="navelem"><a class="el" href="dir_01633c65f0a370ff10a533d98ad2fd10.html">prj</a></li><li class="navelem"><a class="el" href="dir_d85f67b63ab5d7b12a078e53f7d35029.html">inc</a></li><li class="navelem"><a class="el" href="a00065.html">vector.hh</a></li>
+    <li class="footer">Wygenerowano przez <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

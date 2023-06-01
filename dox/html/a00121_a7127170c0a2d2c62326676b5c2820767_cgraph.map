@@ -1,0 +1,5 @@
+<map id="RegSample::IsCollision" name="RegSample::IsCollision">
+<area shape="rect" id="node1" title="Zwraca czy kolizja." alt="" coords="5,31,160,57"/>
+<area shape="rect" id="node2" href="$a00113.html#ac1fba7ab0fc082c29a8261a7c04acc5f" title="wypelnij macierz obrotu Z" alt="" coords="208,5,360,32"/>
+<area shape="rect" id="node3" href="$a00105.html#ad69a744d21bd67cc456e975b1785acc2" title="Check collision." alt="" coords="217,56,351,83"/>
+</map>

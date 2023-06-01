@@ -1,0 +1,18 @@
+digraph "/home/kacper/Desktop/kpo-zad6-2-main/prj" {
+  compound=true
+  node [ fontsize="10", fontname="FreeSans"];
+  edge [ labelfontsize="10", labelfontname="FreeSans"];
+  subgraph clusterdir_796f0d55694bd57af0b260f5884b0691 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="kpo-zad6-2-main" fontname="FreeSans", fontsize="10", URL="dir_796f0d55694bd57af0b260f5884b0691.html"]
+  subgraph clusterdir_01633c65f0a370ff10a533d98ad2fd10 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_01633c65f0a370ff10a533d98ad2fd10.html"];
+    dir_01633c65f0a370ff10a533d98ad2fd10 [shape=plaintext label="prj"];
+  dir_5744f0e814da613ea85ed472591afbb9 [shape=box label="app" fillcolor="white" style="filled" URL="dir_5744f0e814da613ea85ed472591afbb9.html"];
+  dir_00c54c358e81a39feae6e7b5aeede691 [shape=box label="CMakeFiles" fillcolor="white" style="filled" color="red" URL="dir_00c54c358e81a39feae6e7b5aeede691.html"];
+  dir_d85f67b63ab5d7b12a078e53f7d35029 [shape=box label="inc" fillcolor="white" style="filled" URL="dir_d85f67b63ab5d7b12a078e53f7d35029.html"];
+  dir_f48bae84e945866af4b15ebdc6c217c7 [shape=box label="src" fillcolor="white" style="filled" URL="dir_f48bae84e945866af4b15ebdc6c217c7.html"];
+  }
+  }
+  dir_5744f0e814da613ea85ed472591afbb9->dir_d85f67b63ab5d7b12a078e53f7d35029 [headlabel="6", labeldistance=1.5 headhref="dir_000007_000011.html"];
+  dir_f48bae84e945866af4b15ebdc6c217c7->dir_d85f67b63ab5d7b12a078e53f7d35029 [headlabel="12", labeldistance=1.5 headhref="dir_000012_000011.html"];
+}

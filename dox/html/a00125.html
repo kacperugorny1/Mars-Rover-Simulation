@@ -1,0 +1,784 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MSR: Dokumentacja klasy Rover</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="FSR-icon.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MSR
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a00125.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pro-attribs">Atrybuty chronione</a> &#124;
+<a href="a00122.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy Rover</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa <a class="el" href="a00125.html" title="Klasa Rover - Lazik Dziedziczy od Object.">Rover</a> - Lazik Dziedziczy od <a class="el" href="a00117.html" title="Klasa Object.">Object</a>.  
+ <a href="a00125.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00056_source.html">Rover.hh</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla Rover</div>
+<div class="dyncontent">
+<div class="center"><img src="a00124.png" border="0" usemap="#a_rover_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_rover_inherit__map" id="a_rover_inherit__map">
+<area shape="rect" title="Klasa Rover &#45; Lazik Dziedziczy od Object." alt="" coords="19,80,75,107"/>
+<area shape="rect" href="a00129.html" title="Klasa RoverSFR." alt="" coords="5,155,88,181"/>
+<area shape="rect" href="a00117.html" title="Klasa Object." alt="" coords="17,5,77,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
+<div class="dynheader">
+Diagram współpracy dla Rover:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00123.png" border="0" usemap="#a_rover_coll__map" alt="Collaboration graph"/></div>
+<map name="a_rover_coll__map" id="a_rover_coll__map">
+<area shape="rect" title="Klasa Rover &#45; Lazik Dziedziczy od Object." alt="" coords="247,468,303,495"/>
+<area shape="rect" href="a00117.html" title="Klasa Object." alt="" coords="245,392,305,419"/>
+<area shape="rect" href="a00113.html" title="Macierz3D dziedziczy z tMatrix." alt="" coords="238,303,311,329"/>
+<area shape="rect" href="a00109.html" title=" " alt="" coords="207,199,342,225"/>
+<area shape="rect" href="a00137.html" title=" " alt="" coords="281,95,441,121"/>
+<area shape="rect" href="a00137.html" title="Szablon tVector." alt="" coords="284,5,439,32"/>
+<area shape="rect" href="a00137.html" title=" " alt="" coords="5,147,144,173"/>
+<area shape="rect" href="a00137.html" title=" " alt="" coords="465,95,604,121"/>
+<area shape="rect" href="a00109.html" title="Szablon tMatrix." alt="" coords="106,95,257,121"/>
+<area shape="rect" href="a00105.html" title=" " alt="" coords="364,251,431,277"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a3b2384e42bf37d4c8381a796dbde13c6"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00125.html#a3b2384e42bf37d4c8381a796dbde13c6">~Rover</a> ()</td></tr>
+<tr class="separator:a3b2384e42bf37d4c8381a796dbde13c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a3c691dcab56e6205063e3d4fe3c255"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00125.html#a6a3c691dcab56e6205063e3d4fe3c255">Rover</a> ()</td></tr>
+<tr class="memdesc:a6a3c691dcab56e6205063e3d4fe3c255"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor bezparametryczny.  <a href="a00125.html#a6a3c691dcab56e6205063e3d4fe3c255">Więcej...</a><br /></td></tr>
+<tr class="separator:a6a3c691dcab56e6205063e3d4fe3c255"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aded9d8fc52192ccb3b9aca2f4fde1638"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00125.html#aded9d8fc52192ccb3b9aca2f4fde1638">Rover</a> (const char *sNameOfFile_ModelBlock, const char *sObjectName, int ColourID, <a class="el" href="a00068.html#ae9f8e248568ca99015f69b28f7281be8">Vector3D</a> Scale, <a class="el" href="a00068.html#ae9f8e248568ca99015f69b28f7281be8">Vector3D</a> Postition, double angle, double Velocity, double Distance)</td></tr>
+<tr class="memdesc:aded9d8fc52192ccb3b9aca2f4fde1638"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="a00125.html" title="Klasa Rover - Lazik Dziedziczy od Object.">Rover</a> object.  <a href="a00125.html#aded9d8fc52192ccb3b9aca2f4fde1638">Więcej...</a><br /></td></tr>
+<tr class="separator:aded9d8fc52192ccb3b9aca2f4fde1638"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f25eaec312a9eead73b78b1672452fa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00125.html#a2f25eaec312a9eead73b78b1672452fa">MoveRover</a> (double Distance)</td></tr>
+<tr class="memdesc:a2f25eaec312a9eead73b78b1672452fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przesuwa lazik bez animacji o droge Distance.  <a href="a00125.html#a2f25eaec312a9eead73b78b1672452fa">Więcej...</a><br /></td></tr>
+<tr class="separator:a2f25eaec312a9eead73b78b1672452fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f5af08e3e0fb7944940c7ead8e4d316"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00125.html#a5f5af08e3e0fb7944940c7ead8e4d316">RotateRover</a> (double Angle)</td></tr>
+<tr class="memdesc:a5f5af08e3e0fb7944940c7ead8e4d316"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obroc lazik bez animacji o kat Angle.  <a href="a00125.html#a5f5af08e3e0fb7944940c7ead8e4d316">Więcej...</a><br /></td></tr>
+<tr class="separator:a5f5af08e3e0fb7944940c7ead8e4d316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32bfe0a61ccc8004563330bcb4a3f46a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00125.html#a32bfe0a61ccc8004563330bcb4a3f46a">returnVelocity</a> () const</td></tr>
+<tr class="memdesc:a32bfe0a61ccc8004563330bcb4a3f46a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca predkosc.  <a href="a00125.html#a32bfe0a61ccc8004563330bcb4a3f46a">Więcej...</a><br /></td></tr>
+<tr class="separator:a32bfe0a61ccc8004563330bcb4a3f46a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a034976830937e70915f1270ddb36a964"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00068.html#ae9f8e248568ca99015f69b28f7281be8">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00125.html#a034976830937e70915f1270ddb36a964">returnPosition</a> () const</td></tr>
+<tr class="memdesc:a034976830937e70915f1270ddb36a964"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca pozycje.  <a href="a00125.html#a034976830937e70915f1270ddb36a964">Więcej...</a><br /></td></tr>
+<tr class="separator:a034976830937e70915f1270ddb36a964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa42fe0657a871eb2e0a1d2d24391ef92"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00125.html#aa42fe0657a871eb2e0a1d2d24391ef92">returnAngle</a> () const</td></tr>
+<tr class="memdesc:aa42fe0657a871eb2e0a1d2d24391ef92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca kat rotacji.  <a href="a00125.html#aa42fe0657a871eb2e0a1d2d24391ef92">Więcej...</a><br /></td></tr>
+<tr class="separator:aa42fe0657a871eb2e0a1d2d24391ef92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fb954ca4494b3b6bdc37f351c062e18"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00047.html#a842c5e2e69277690b064bf363c017980">ObjectType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00125.html#a7fb954ca4494b3b6bdc37f351c062e18">ReturnType</a> () const override</td></tr>
+<tr class="memdesc:a7fb954ca4494b3b6bdc37f351c062e18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca typ obiektu.  <a href="a00125.html#a7fb954ca4494b3b6bdc37f351c062e18">Więcej...</a><br /></td></tr>
+<tr class="separator:a7fb954ca4494b3b6bdc37f351c062e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f4687b4722a1af8a506d34b5b787a2a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00047.html#aa884075f403706dceea29a61771a0d44">CollisionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00125.html#a4f4687b4722a1af8a506d34b5b787a2a">IsCollision</a> (const std::shared_ptr&lt; <a class="el" href="a00125.html">Rover</a> &gt; &amp;Obj_ptr) const override</td></tr>
+<tr class="memdesc:a4f4687b4722a1af8a506d34b5b787a2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza kolizje pomiedzy 2 obiektami.  <a href="a00125.html#a4f4687b4722a1af8a506d34b5b787a2a">Więcej...</a><br /></td></tr>
+<tr class="separator:a4f4687b4722a1af8a506d34b5b787a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3b7e9b978a67103be19f8b308a79b7a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00125.html#ac3b7e9b978a67103be19f8b308a79b7a">RoverState</a> () const</td></tr>
+<tr class="memdesc:ac3b7e9b978a67103be19f8b308a79b7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">zwraca informacje o laziku  <a href="a00125.html#ac3b7e9b978a67103be19f8b308a79b7a">Więcej...</a><br /></td></tr>
+<tr class="separator:ac3b7e9b978a67103be19f8b308a79b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00117"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00117')"><img src="closed.png" alt="-"/>&#160;Metody publiczne dziedziczone z <a class="el" href="a00117.html">Object</a></td></tr>
+<tr class="memitem:a40860402e64d8008fb42329df7097cdb inherit pub_methods_a00117"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#a40860402e64d8008fb42329df7097cdb">Object</a> ()</td></tr>
+<tr class="memdesc:a40860402e64d8008fb42329df7097cdb inherit pub_methods_a00117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor bezparam.  <a href="a00117.html#a40860402e64d8008fb42329df7097cdb">Więcej...</a><br /></td></tr>
+<tr class="separator:a40860402e64d8008fb42329df7097cdb inherit pub_methods_a00117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3e791419d84c4c346ef9499513b8e00 inherit pub_methods_a00117"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#aa3e791419d84c4c346ef9499513b8e00">~Object</a> ()</td></tr>
+<tr class="separator:aa3e791419d84c4c346ef9499513b8e00 inherit pub_methods_a00117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1de648309686c595627070232461c37 inherit pub_methods_a00117"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#ae1de648309686c595627070232461c37">Object</a> (const char *sNameOfFile_ModelBlock, const char *sObjectName, int ColourID, <a class="el" href="a00068.html#ae9f8e248568ca99015f69b28f7281be8">Vector3D</a> scale, <a class="el" href="a00068.html#ae9f8e248568ca99015f69b28f7281be8">Vector3D</a> Position)</td></tr>
+<tr class="memdesc:ae1de648309686c595627070232461c37 inherit pub_methods_a00117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="a00117.html" title="Klasa Object.">Object</a> object.  <a href="a00117.html#ae1de648309686c595627070232461c37">Więcej...</a><br /></td></tr>
+<tr class="separator:ae1de648309686c595627070232461c37 inherit pub_methods_a00117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb2258886b34ef477c0364769ed1623d inherit pub_methods_a00117"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#abb2258886b34ef477c0364769ed1623d">ReturnColourID</a> () const</td></tr>
+<tr class="memdesc:abb2258886b34ef477c0364769ed1623d inherit pub_methods_a00117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca id koloru.  <a href="a00117.html#abb2258886b34ef477c0364769ed1623d">Więcej...</a><br /></td></tr>
+<tr class="separator:abb2258886b34ef477c0364769ed1623d inherit pub_methods_a00117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefb30e4802e0e38103c8aeae2fd9ba9f inherit pub_methods_a00117"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00105.html">Contour</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#aefb30e4802e0e38103c8aeae2fd9ba9f">ReturnContour</a> () const</td></tr>
+<tr class="separator:aefb30e4802e0e38103c8aeae2fd9ba9f inherit pub_methods_a00117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b0f018074a22edc39d72d166d4b2469 inherit pub_methods_a00117"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#a6b0f018074a22edc39d72d166d4b2469">ReturnObjectName</a> () const</td></tr>
+<tr class="memdesc:a6b0f018074a22edc39d72d166d4b2469 inherit pub_methods_a00117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca nazwe obiektu.  <a href="a00117.html#a6b0f018074a22edc39d72d166d4b2469">Więcej...</a><br /></td></tr>
+<tr class="separator:a6b0f018074a22edc39d72d166d4b2469 inherit pub_methods_a00117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8693cb9a9fd4d935774578cc6aadd6d9 inherit pub_methods_a00117"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#a8693cb9a9fd4d935774578cc6aadd6d9">ReturnNameOfFile_DrawBlock</a> () const</td></tr>
+<tr class="memdesc:a8693cb9a9fd4d935774578cc6aadd6d9 inherit pub_methods_a00117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca nazwe pliku z bryla rysowana.  <a href="a00117.html#a8693cb9a9fd4d935774578cc6aadd6d9">Więcej...</a><br /></td></tr>
+<tr class="separator:a8693cb9a9fd4d935774578cc6aadd6d9 inherit pub_methods_a00117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24c3b4c2635368c805f2fc664468bdaa inherit pub_methods_a00117"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#a24c3b4c2635368c805f2fc664468bdaa">Count_and_save_tops</a> ()</td></tr>
+<tr class="memdesc:a24c3b4c2635368c805f2fc664468bdaa inherit pub_methods_a00117"><td class="mdescLeft">&#160;</td><td class="mdescRight">inicjalizuje strumienie i wywoluje z nimi funkcje Count_and_save_top(std::istream &amp;StrmIn,std::ostream &amp;StrmOut)  <a href="a00117.html#a24c3b4c2635368c805f2fc664468bdaa">Więcej...</a><br /></td></tr>
+<tr class="separator:a24c3b4c2635368c805f2fc664468bdaa inherit pub_methods_a00117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d6a7eb15ea2f52861472f7bd0476357 inherit pub_methods_a00117"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#a0d6a7eb15ea2f52861472f7bd0476357">Count_and_save_tops</a> (std::istream &amp;, std::ostream &amp;)</td></tr>
+<tr class="memdesc:a0d6a7eb15ea2f52861472f7bd0476357 inherit pub_methods_a00117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Oblicza wierzcholki.  <a href="a00117.html#a0d6a7eb15ea2f52861472f7bd0476357">Więcej...</a><br /></td></tr>
+<tr class="separator:a0d6a7eb15ea2f52861472f7bd0476357 inherit pub_methods_a00117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Atrybuty chronione</h2></td></tr>
+<tr class="memitem:a6bc902ae8c0768bf89ca5fd89b89a7d1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00125.html#a6bc902ae8c0768bf89ca5fd89b89a7d1">_Velocity</a></td></tr>
+<tr class="memdesc:a6bc902ae8c0768bf89ca5fd89b89a7d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Okresla predkosc maksymlna lazika.  <a href="a00125.html#a6bc902ae8c0768bf89ca5fd89b89a7d1">Więcej...</a><br /></td></tr>
+<tr class="separator:a6bc902ae8c0768bf89ca5fd89b89a7d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa35cb04ed5ef3f7b6e8612d14b1d0f22"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00125.html#aa35cb04ed5ef3f7b6e8612d14b1d0f22">_Distance</a></td></tr>
+<tr class="memdesc:aa35cb04ed5ef3f7b6e8612d14b1d0f22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Okresla droge do przejechania narazie nieuzytek.  <a href="a00125.html#aa35cb04ed5ef3f7b6e8612d14b1d0f22">Więcej...</a><br /></td></tr>
+<tr class="separator:aa35cb04ed5ef3f7b6e8612d14b1d0f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a481b56f34148bbb2fea6eca22b5ac63d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00125.html#a481b56f34148bbb2fea6eca22b5ac63d">_RotationAngle</a></td></tr>
+<tr class="memdesc:a481b56f34148bbb2fea6eca22b5ac63d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Okresla kat rotacji.  <a href="a00125.html#a481b56f34148bbb2fea6eca22b5ac63d">Więcej...</a><br /></td></tr>
+<tr class="separator:a481b56f34148bbb2fea6eca22b5ac63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_a00117"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_a00117')"><img src="closed.png" alt="-"/>&#160;Atrybuty chronione dziedziczone z <a class="el" href="a00117.html">Object</a></td></tr>
+<tr class="memitem:a96e3db4d7a322120a499be6edb002f3a inherit pro_attribs_a00117"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#a96e3db4d7a322120a499be6edb002f3a">_NameOfFile_ModelBlock</a></td></tr>
+<tr class="memdesc:a96e3db4d7a322120a499be6edb002f3a inherit pro_attribs_a00117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nazwa pliku z bryla wzorcowa.  <a href="a00117.html#a96e3db4d7a322120a499be6edb002f3a">Więcej...</a><br /></td></tr>
+<tr class="separator:a96e3db4d7a322120a499be6edb002f3a inherit pro_attribs_a00117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3a30890263fccf2694f97fdac01b286 inherit pro_attribs_a00117"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#af3a30890263fccf2694f97fdac01b286">_NameOfFile_DrawBlock</a></td></tr>
+<tr class="memdesc:af3a30890263fccf2694f97fdac01b286 inherit pro_attribs_a00117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nazwa pliku z bryla rysowana.  <a href="a00117.html#af3a30890263fccf2694f97fdac01b286">Więcej...</a><br /></td></tr>
+<tr class="separator:af3a30890263fccf2694f97fdac01b286 inherit pro_attribs_a00117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab979f0bc7587926b8613ce62423ebeaf inherit pro_attribs_a00117"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#ab979f0bc7587926b8613ce62423ebeaf">_ObjectName</a></td></tr>
+<tr class="memdesc:ab979f0bc7587926b8613ce62423ebeaf inherit pro_attribs_a00117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nazwa obiektu.  <a href="a00117.html#ab979f0bc7587926b8613ce62423ebeaf">Więcej...</a><br /></td></tr>
+<tr class="separator:ab979f0bc7587926b8613ce62423ebeaf inherit pro_attribs_a00117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c0e3d335b4205a5cb6f3d9c37c00fe5 inherit pro_attribs_a00117"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#a0c0e3d335b4205a5cb6f3d9c37c00fe5">_ColourID</a></td></tr>
+<tr class="memdesc:a0c0e3d335b4205a5cb6f3d9c37c00fe5 inherit pro_attribs_a00117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Id Koloru.  <a href="a00117.html#a0c0e3d335b4205a5cb6f3d9c37c00fe5">Więcej...</a><br /></td></tr>
+<tr class="separator:a0c0e3d335b4205a5cb6f3d9c37c00fe5 inherit pro_attribs_a00117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe45ced8fc837a82845ba0f98847e66f inherit pro_attribs_a00117"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00068.html#ae9f8e248568ca99015f69b28f7281be8">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#afe45ced8fc837a82845ba0f98847e66f">_Scale</a></td></tr>
+<tr class="memdesc:afe45ced8fc837a82845ba0f98847e66f inherit pro_attribs_a00117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wektor skali.  <a href="a00117.html#afe45ced8fc837a82845ba0f98847e66f">Więcej...</a><br /></td></tr>
+<tr class="separator:afe45ced8fc837a82845ba0f98847e66f inherit pro_attribs_a00117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78942d660398da85c46edef8dc9e10aa inherit pro_attribs_a00117"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00068.html#ae9f8e248568ca99015f69b28f7281be8">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#a78942d660398da85c46edef8dc9e10aa">_Position</a></td></tr>
+<tr class="memdesc:a78942d660398da85c46edef8dc9e10aa inherit pro_attribs_a00117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wektor polozenia.  <a href="a00117.html#a78942d660398da85c46edef8dc9e10aa">Więcej...</a><br /></td></tr>
+<tr class="separator:a78942d660398da85c46edef8dc9e10aa inherit pro_attribs_a00117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac38a4014e05c03c7ddf61e0da13b0e94 inherit pro_attribs_a00117"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00113.html">Matrix3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#ac38a4014e05c03c7ddf61e0da13b0e94">_RotMatrix</a></td></tr>
+<tr class="separator:ac38a4014e05c03c7ddf61e0da13b0e94 inherit pro_attribs_a00117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fe29ce2ca5f7bf2f573fe38be364c7f inherit pro_attribs_a00117"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00105.html">Contour</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#a8fe29ce2ca5f7bf2f573fe38be364c7f">_Contour</a></td></tr>
+<tr class="separator:a8fe29ce2ca5f7bf2f573fe38be364c7f inherit pro_attribs_a00117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock">
+<p class="definition">Definicja w linii <a class="el" href="a00056_source.html#l00021">21</a> pliku <a class="el" href="a00056_source.html">Rover.hh</a>.</p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="a3b2384e42bf37d4c8381a796dbde13c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b2384e42bf37d4c8381a796dbde13c6">&#9670;&nbsp;</a></span>~Rover()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Rover::~Rover </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00056_source.html#l00041">41</a> pliku <a class="el" href="a00056_source.html">Rover.hh</a>.</p>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6a3c691dcab56e6205063e3d4fe3c255"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a3c691dcab56e6205063e3d4fe3c255">&#9670;&nbsp;</a></span>Rover() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Rover::Rover </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aded9d8fc52192ccb3b9aca2f4fde1638"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aded9d8fc52192ccb3b9aca2f4fde1638">&#9670;&nbsp;</a></span>Rover() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Rover::Rover </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>sNameOfFile_ModelBlock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>sObjectName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ColourID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00068.html#ae9f8e248568ca99015f69b28f7281be8">Vector3D</a>&#160;</td>
+          <td class="paramname"><em>Scale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00068.html#ae9f8e248568ca99015f69b28f7281be8">Vector3D</a>&#160;</td>
+          <td class="paramname"><em>Postition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>Velocity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>Distance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sNameOfFile_ModelBlock</td><td>Nazwa pliku z bryla modelowa </td></tr>
+    <tr><td class="paramname">sObjectName</td><td>Nazwa objektu </td></tr>
+    <tr><td class="paramname">ColourID</td><td>Id koloru </td></tr>
+    <tr><td class="paramname">Scale</td><td>wektor skali </td></tr>
+    <tr><td class="paramname">Postition</td><td>Wektor pozycji </td></tr>
+    <tr><td class="paramname">angle</td><td>kat </td></tr>
+    <tr><td class="paramname">Velocity</td><td>predkosc </td></tr>
+    <tr><td class="paramname">Distance</td><td>dystans </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="a00086_source.html#l00006">6</a> pliku <a class="el" href="a00086_source.html">Rover.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <a class="code" href="a00117.html#a96e3db4d7a322120a499be6edb002f3a">_NameOfFile_ModelBlock</a> =sNameOfFile_ModelBlock;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <a class="code" href="a00117.html#a0c0e3d335b4205a5cb6f3d9c37c00fe5">_ColourID</a>=ColourID;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <a class="code" href="a00117.html#ab979f0bc7587926b8613ce62423ebeaf">_ObjectName</a> = sObjectName;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <a class="code" href="a00117.html#af3a30890263fccf2694f97fdac01b286">_NameOfFile_DrawBlock</a> = <a class="code" href="a00047.html#ae595890bce7c6c764f6ff1ef7e549443">NAZWA_KARTOTEKI_PLIKOW_DO_RYSOWANIA</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <a class="code" href="a00117.html#af3a30890263fccf2694f97fdac01b286">_NameOfFile_DrawBlock</a> += <span class="stringliteral">&quot;/&quot;</span>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <a class="code" href="a00117.html#af3a30890263fccf2694f97fdac01b286">_NameOfFile_DrawBlock</a> += sObjectName;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="a00117.html#af3a30890263fccf2694f97fdac01b286">_NameOfFile_DrawBlock</a> += <span class="stringliteral">&quot;.dat&quot;</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="a00117.html#afe45ced8fc837a82845ba0f98847e66f">_Scale</a> = Scale;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="a00117.html#a78942d660398da85c46edef8dc9e10aa">_Position</a> = Position;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="a00125.html#a481b56f34148bbb2fea6eca22b5ac63d">_RotationAngle</a>=Angle;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="a00117.html#ac38a4014e05c03c7ddf61e0da13b0e94">_RotMatrix</a>.<a class="code" href="a00113.html#ac1fba7ab0fc082c29a8261a7c04acc5f">FillRotationZ</a>(<a class="code" href="a00125.html#a481b56f34148bbb2fea6eca22b5ac63d">_RotationAngle</a>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="a00125.html#a6bc902ae8c0768bf89ca5fd89b89a7d1">_Velocity</a> = Velocity;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="a00125.html#aa35cb04ed5ef3f7b6e8612d14b1d0f22">_Distance</a>=Distance;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
+<div class="ttc" id="aa00047_html_ae595890bce7c6c764f6ff1ef7e549443"><div class="ttname"><a href="a00047.html#ae595890bce7c6c764f6ff1ef7e549443">NAZWA_KARTOTEKI_PLIKOW_DO_RYSOWANIA</a></div><div class="ttdeci">#define NAZWA_KARTOTEKI_PLIKOW_DO_RYSOWANIA</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00021">Object.hh:21</a></div></div>
+<div class="ttc" id="aa00113_html_ac1fba7ab0fc082c29a8261a7c04acc5f"><div class="ttname"><a href="a00113.html#ac1fba7ab0fc082c29a8261a7c04acc5f">Matrix3D::FillRotationZ</a></div><div class="ttdeci">void FillRotationZ(double theta)</div><div class="ttdoc">wypelnij macierz obrotu Z</div><div class="ttdef"><b>Definition:</b> <a href="a00074_source.html#l00023">Matrix3D.cpp:23</a></div></div>
+<div class="ttc" id="aa00117_html_a0c0e3d335b4205a5cb6f3d9c37c00fe5"><div class="ttname"><a href="a00117.html#a0c0e3d335b4205a5cb6f3d9c37c00fe5">Object::_ColourID</a></div><div class="ttdeci">int _ColourID</div><div class="ttdoc">Id Koloru.</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00072">Object.hh:72</a></div></div>
+<div class="ttc" id="aa00117_html_a78942d660398da85c46edef8dc9e10aa"><div class="ttname"><a href="a00117.html#a78942d660398da85c46edef8dc9e10aa">Object::_Position</a></div><div class="ttdeci">Vector3D _Position</div><div class="ttdoc">Wektor polozenia.</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00082">Object.hh:82</a></div></div>
+<div class="ttc" id="aa00117_html_a96e3db4d7a322120a499be6edb002f3a"><div class="ttname"><a href="a00117.html#a96e3db4d7a322120a499be6edb002f3a">Object::_NameOfFile_ModelBlock</a></div><div class="ttdeci">std::string _NameOfFile_ModelBlock</div><div class="ttdoc">Nazwa pliku z bryla wzorcowa.</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00057">Object.hh:57</a></div></div>
+<div class="ttc" id="aa00117_html_ab979f0bc7587926b8613ce62423ebeaf"><div class="ttname"><a href="a00117.html#ab979f0bc7587926b8613ce62423ebeaf">Object::_ObjectName</a></div><div class="ttdeci">std::string _ObjectName</div><div class="ttdoc">Nazwa obiektu.</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00067">Object.hh:67</a></div></div>
+<div class="ttc" id="aa00117_html_ac38a4014e05c03c7ddf61e0da13b0e94"><div class="ttname"><a href="a00117.html#ac38a4014e05c03c7ddf61e0da13b0e94">Object::_RotMatrix</a></div><div class="ttdeci">Matrix3D _RotMatrix</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00084">Object.hh:84</a></div></div>
+<div class="ttc" id="aa00117_html_af3a30890263fccf2694f97fdac01b286"><div class="ttname"><a href="a00117.html#af3a30890263fccf2694f97fdac01b286">Object::_NameOfFile_DrawBlock</a></div><div class="ttdeci">std::string _NameOfFile_DrawBlock</div><div class="ttdoc">Nazwa pliku z bryla rysowana.</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00062">Object.hh:62</a></div></div>
+<div class="ttc" id="aa00117_html_afe45ced8fc837a82845ba0f98847e66f"><div class="ttname"><a href="a00117.html#afe45ced8fc837a82845ba0f98847e66f">Object::_Scale</a></div><div class="ttdeci">Vector3D _Scale</div><div class="ttdoc">Wektor skali.</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00077">Object.hh:77</a></div></div>
+<div class="ttc" id="aa00125_html_a481b56f34148bbb2fea6eca22b5ac63d"><div class="ttname"><a href="a00125.html#a481b56f34148bbb2fea6eca22b5ac63d">Rover::_RotationAngle</a></div><div class="ttdeci">double _RotationAngle</div><div class="ttdoc">Okresla kat rotacji.</div><div class="ttdef"><b>Definition:</b> <a href="a00056_source.html#l00037">Rover.hh:37</a></div></div>
+<div class="ttc" id="aa00125_html_a6bc902ae8c0768bf89ca5fd89b89a7d1"><div class="ttname"><a href="a00125.html#a6bc902ae8c0768bf89ca5fd89b89a7d1">Rover::_Velocity</a></div><div class="ttdeci">double _Velocity</div><div class="ttdoc">Okresla predkosc maksymlna lazika.</div><div class="ttdef"><b>Definition:</b> <a href="a00056_source.html#l00027">Rover.hh:27</a></div></div>
+<div class="ttc" id="aa00125_html_aa35cb04ed5ef3f7b6e8612d14b1d0f22"><div class="ttname"><a href="a00125.html#aa35cb04ed5ef3f7b6e8612d14b1d0f22">Rover::_Distance</a></div><div class="ttdeci">double _Distance</div><div class="ttdoc">Okresla droge do przejechania narazie nieuzytek.</div><div class="ttdef"><b>Definition:</b> <a href="a00056_source.html#l00032">Rover.hh:32</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00125_aded9d8fc52192ccb3b9aca2f4fde1638_cgraph.png" border="0" usemap="#aa00125_aded9d8fc52192ccb3b9aca2f4fde1638_cgraph" alt=""/></div>
+<map name="aa00125_aded9d8fc52192ccb3b9aca2f4fde1638_cgraph" id="aa00125_aded9d8fc52192ccb3b9aca2f4fde1638_cgraph">
+<area shape="rect" title="Construct a new Rover object." alt="" coords="5,5,101,32"/>
+<area shape="rect" href="a00113.html#ac1fba7ab0fc082c29a8261a7c04acc5f" title="wypelnij macierz obrotu Z" alt="" coords="149,5,301,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a4f4687b4722a1af8a506d34b5b787a2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f4687b4722a1af8a506d34b5b787a2a">&#9670;&nbsp;</a></span>IsCollision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00047.html#aa884075f403706dceea29a61771a0d44">CollisionType</a> Rover::IsCollision </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="a00125.html">Rover</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>Obj_ptr</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Obj_ptr</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>CollisionType </dd></dl>
+
+<p>Implementuje <a class="el" href="a00117.html#a9b483b551b5acefb8762a9a8c2396d49">Object</a>.</p>
+
+<p>Reimplementowana w <a class="el" href="a00129.html#aa6ad5dc5a1f3d2679521c6eced65a734">RoverSFR</a>.</p>
+
+<p class="definition">Definicja w linii <a class="el" href="a00086_source.html#l00040">40</a> pliku <a class="el" href="a00086_source.html">Rover.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                                                         {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="a00117.html#a8fe29ce2ca5f7bf2f573fe38be364c7f">_Contour</a>.<a class="code" href="a00105.html#ad69a744d21bd67cc456e975b1785acc2">IsImposed</a>(Obj_ptr-&gt;ReturnContour()))</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="a00047.html#aa884075f403706dceea29a61771a0d44ad84d345573bd5ca8f74f677fc4b6ea15">CollisionType::CT_Collision</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="a00047.html#aa884075f403706dceea29a61771a0d44a6f42e7962ce270f9dad616e196936061">CollisionType::CT_NoCollision</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="ttc" id="aa00047_html_aa884075f403706dceea29a61771a0d44a6f42e7962ce270f9dad616e196936061"><div class="ttname"><a href="a00047.html#aa884075f403706dceea29a61771a0d44a6f42e7962ce270f9dad616e196936061">CT_NoCollision</a></div><div class="ttdeci">@ CT_NoCollision</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00028">Object.hh:28</a></div></div>
+<div class="ttc" id="aa00047_html_aa884075f403706dceea29a61771a0d44ad84d345573bd5ca8f74f677fc4b6ea15"><div class="ttname"><a href="a00047.html#aa884075f403706dceea29a61771a0d44ad84d345573bd5ca8f74f677fc4b6ea15">CT_Collision</a></div><div class="ttdeci">@ CT_Collision</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00029">Object.hh:29</a></div></div>
+<div class="ttc" id="aa00105_html_ad69a744d21bd67cc456e975b1785acc2"><div class="ttname"><a href="a00105.html#ad69a744d21bd67cc456e975b1785acc2">Contour::IsImposed</a></div><div class="ttdeci">bool IsImposed(Contour x) const</div><div class="ttdoc">Check collision.</div><div class="ttdef"><b>Definition:</b> <a href="a00071_source.html#l00005">Contour.cpp:5</a></div></div>
+<div class="ttc" id="aa00117_html_a8fe29ce2ca5f7bf2f573fe38be364c7f"><div class="ttname"><a href="a00117.html#a8fe29ce2ca5f7bf2f573fe38be364c7f">Object::_Contour</a></div><div class="ttdeci">Contour _Contour</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00086">Object.hh:86</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00125_a4f4687b4722a1af8a506d34b5b787a2a_cgraph.png" border="0" usemap="#aa00125_a4f4687b4722a1af8a506d34b5b787a2a_cgraph" alt=""/></div>
+<map name="aa00125_a4f4687b4722a1af8a506d34b5b787a2a_cgraph" id="aa00125_a4f4687b4722a1af8a506d34b5b787a2a_cgraph">
+<area shape="rect" title="Sprawdza kolizje pomiedzy 2 obiektami." alt="" coords="5,5,128,32"/>
+<area shape="rect" href="a00105.html#ad69a744d21bd67cc456e975b1785acc2" title="Check collision." alt="" coords="176,5,311,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2f25eaec312a9eead73b78b1672452fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f25eaec312a9eead73b78b1672452fa">&#9670;&nbsp;</a></span>MoveRover()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Rover::MoveRover </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>Distance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Distance</td><td>- Droga </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplementowana w <a class="el" href="a00129.html#a244a6e8d15ad3f4f4add63cff3a44cc5">RoverSFR</a>.</p>
+
+<p class="definition">Definicja w linii <a class="el" href="a00086_source.html#l00030">30</a> pliku <a class="el" href="a00086_source.html">Rover.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                                    {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="a00113.html">Matrix3D</a> rotacja;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="a00137.html">Vector3D</a> przes;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    przes[1] = 1;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    rotacja.<a class="code" href="a00113.html#ac1fba7ab0fc082c29a8261a7c04acc5f">FillRotationZ</a>(<a class="code" href="a00125.html#a481b56f34148bbb2fea6eca22b5ac63d">_RotationAngle</a>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    przes=rotacja*przes;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="a00117.html#a78942d660398da85c46edef8dc9e10aa">_Position</a>=<a class="code" href="a00117.html#a78942d660398da85c46edef8dc9e10aa">_Position</a> + przes*Distance;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="a00117.html#a24c3b4c2635368c805f2fc664468bdaa">Count_and_save_tops</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="ttc" id="aa00113_html"><div class="ttname"><a href="a00113.html">Matrix3D</a></div><div class="ttdoc">Macierz3D dziedziczy z tMatrix.</div><div class="ttdef"><b>Definition:</b> <a href="a00044_source.html#l00019">Matrix3D.hh:19</a></div></div>
+<div class="ttc" id="aa00117_html_a24c3b4c2635368c805f2fc664468bdaa"><div class="ttname"><a href="a00117.html#a24c3b4c2635368c805f2fc664468bdaa">Object::Count_and_save_tops</a></div><div class="ttdeci">bool Count_and_save_tops()</div><div class="ttdoc">inicjalizuje strumienie i wywoluje z nimi funkcje Count_and_save_top(std::istream &amp;StrmIn,...</div><div class="ttdef"><b>Definition:</b> <a href="a00077_source.html#l00029">Object.cpp:29</a></div></div>
+<div class="ttc" id="aa00137_html"><div class="ttname"><a href="a00137.html">tVector&lt; double, 3 &gt;</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00125_a2f25eaec312a9eead73b78b1672452fa_cgraph.png" border="0" usemap="#aa00125_a2f25eaec312a9eead73b78b1672452fa_cgraph" alt=""/></div>
+<map name="aa00125_a2f25eaec312a9eead73b78b1672452fa_cgraph" id="aa00125_a2f25eaec312a9eead73b78b1672452fa_cgraph">
+<area shape="rect" title="Przesuwa lazik bez animacji o droge Distance." alt="" coords="5,31,133,57"/>
+<area shape="rect" href="a00117.html#a24c3b4c2635368c805f2fc664468bdaa" title="inicjalizuje strumienie i wywoluje z nimi funkcje Count_and_save_top(std::istream &amp;StrmIn,..." alt="" coords="181,5,376,32"/>
+<area shape="rect" href="a00113.html#ac1fba7ab0fc082c29a8261a7c04acc5f" title="wypelnij macierz obrotu Z" alt="" coords="203,56,355,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa42fe0657a871eb2e0a1d2d24391ef92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa42fe0657a871eb2e0a1d2d24391ef92">&#9670;&nbsp;</a></span>returnAngle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Rover::returnAngle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Zwraca</dt><dd>double - kat rotacji </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="a00056_source.html#l00095">95</a> pliku <a class="el" href="a00056_source.html">Rover.hh</a>.</p>
+<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{<span class="keywordflow">return</span> <a class="code" href="a00125.html#a481b56f34148bbb2fea6eca22b5ac63d">_RotationAngle</a>;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a034976830937e70915f1270ddb36a964"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a034976830937e70915f1270ddb36a964">&#9670;&nbsp;</a></span>returnPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00068.html#ae9f8e248568ca99015f69b28f7281be8">Vector3D</a> Rover::returnPosition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Zwraca</dt><dd>Vector3D - wektor polozenia(bardziej punkt) </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="a00056_source.html#l00089">89</a> pliku <a class="el" href="a00056_source.html">Rover.hh</a>.</p>
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{<span class="keywordflow">return</span> <a class="code" href="a00117.html#a78942d660398da85c46edef8dc9e10aa">_Position</a>;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7fb954ca4494b3b6bdc37f351c062e18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fb954ca4494b3b6bdc37f351c062e18">&#9670;&nbsp;</a></span>ReturnType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="a00047.html#a842c5e2e69277690b064bf363c017980">ObjectType</a> Rover::ReturnType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Zwraca</dt><dd>ObjectType </dd></dl>
+
+<p>Reimplementowana z <a class="el" href="a00117.html#a0bd7851ea742f3c0e6376878c78c9ba2">Object</a>.</p>
+
+<p>Reimplementowana w <a class="el" href="a00129.html#ae41d59d58812f0e0355e6ffb9174492d">RoverSFR</a>.</p>
+
+<p class="definition">Definicja w linii <a class="el" href="a00056_source.html#l00102">102</a> pliku <a class="el" href="a00056_source.html">Rover.hh</a>.</p>
+<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{<span class="keywordflow">return</span> <a class="code" href="a00047.html#a842c5e2e69277690b064bf363c017980ae8972fb681c90bb65a51071e79404a17">RoverT</a>;}</div>
+<div class="ttc" id="aa00047_html_a842c5e2e69277690b064bf363c017980ae8972fb681c90bb65a51071e79404a17"><div class="ttname"><a href="a00047.html#a842c5e2e69277690b064bf363c017980ae8972fb681c90bb65a51071e79404a17">RoverT</a></div><div class="ttdeci">@ RoverT</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00040">Object.hh:40</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a32bfe0a61ccc8004563330bcb4a3f46a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32bfe0a61ccc8004563330bcb4a3f46a">&#9670;&nbsp;</a></span>returnVelocity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Rover::returnVelocity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Zwraca</dt><dd>double - predkosc </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="a00056_source.html#l00083">83</a> pliku <a class="el" href="a00056_source.html">Rover.hh</a>.</p>
+<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{<span class="keywordflow">return</span> <a class="code" href="a00125.html#a6bc902ae8c0768bf89ca5fd89b89a7d1">_Velocity</a>;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5f5af08e3e0fb7944940c7ead8e4d316"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f5af08e3e0fb7944940c7ead8e4d316">&#9670;&nbsp;</a></span>RotateRover()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Rover::RotateRover </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>Angle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Angle</td><td>- Kat <br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplementowana w <a class="el" href="a00129.html#af7e6dfc4f8af35d7a5d7431393ea3e40">RoverSFR</a>.</p>
+
+<p class="definition">Definicja w linii <a class="el" href="a00086_source.html#l00024">24</a> pliku <a class="el" href="a00086_source.html">Rover.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                                   {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="a00125.html#a481b56f34148bbb2fea6eca22b5ac63d">_RotationAngle</a> += Angle;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;     <span class="keywordflow">while</span>(<a class="code" href="a00125.html#a481b56f34148bbb2fea6eca22b5ac63d">_RotationAngle</a>&gt;=360) <a class="code" href="a00125.html#a481b56f34148bbb2fea6eca22b5ac63d">_RotationAngle</a>-=360;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;     <span class="keywordflow">while</span>(<a class="code" href="a00125.html#a481b56f34148bbb2fea6eca22b5ac63d">_RotationAngle</a>&lt;=-360) <a class="code" href="a00125.html#a481b56f34148bbb2fea6eca22b5ac63d">_RotationAngle</a>+=360;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="a00117.html#ac38a4014e05c03c7ddf61e0da13b0e94">_RotMatrix</a>.<a class="code" href="a00113.html#ac1fba7ab0fc082c29a8261a7c04acc5f">FillRotationZ</a>(<a class="code" href="a00125.html#a481b56f34148bbb2fea6eca22b5ac63d">_RotationAngle</a>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00125_a5f5af08e3e0fb7944940c7ead8e4d316_cgraph.png" border="0" usemap="#aa00125_a5f5af08e3e0fb7944940c7ead8e4d316_cgraph" alt=""/></div>
+<map name="aa00125_a5f5af08e3e0fb7944940c7ead8e4d316_cgraph" id="aa00125_a5f5af08e3e0fb7944940c7ead8e4d316_cgraph">
+<area shape="rect" title="Obroc lazik bez animacji o kat Angle." alt="" coords="5,5,140,32"/>
+<area shape="rect" href="a00113.html#ac1fba7ab0fc082c29a8261a7c04acc5f" title="wypelnij macierz obrotu Z" alt="" coords="188,5,340,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac3b7e9b978a67103be19f8b308a79b7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3b7e9b978a67103be19f8b308a79b7a">&#9670;&nbsp;</a></span>RoverState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Rover::RoverState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplementowana w <a class="el" href="a00129.html#a4fd332a26cb769acadfcfba637ed4e4b">RoverSFR</a>.</p>
+
+<p class="definition">Definicja w linii <a class="el" href="a00086_source.html#l00046">46</a> pliku <a class="el" href="a00086_source.html">Rover.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                           {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  std::cout&lt;&lt;std::endl&lt;&lt;<span class="stringliteral">&quot;Aktywny Lazik&quot;</span>&lt;&lt;std::endl;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  std::cout&lt;&lt;<span class="stringliteral">&quot;Nazwa: &quot;</span>&lt;&lt;<a class="code" href="a00117.html#ab979f0bc7587926b8613ce62423ebeaf">_ObjectName</a>&lt;&lt;std::endl;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  std::cout&lt;&lt;<span class="stringliteral">&quot;Polozenie(x,y,z): &quot;</span>&lt;&lt;<a class="code" href="a00117.html#a78942d660398da85c46edef8dc9e10aa">_Position</a>[0]&lt;&lt;<span class="stringliteral">&quot; &quot;</span>&lt;&lt;<a class="code" href="a00117.html#a78942d660398da85c46edef8dc9e10aa">_Position</a>[1]&lt;&lt;<span class="stringliteral">&quot; &quot;</span>&lt;&lt;<a class="code" href="a00117.html#a78942d660398da85c46edef8dc9e10aa">_Position</a>[2]&lt;&lt;std::endl;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  std::cout&lt;&lt;<span class="stringliteral">&quot;Orientacja [st]: &quot;</span>&lt;&lt;<a class="code" href="a00125.html#a481b56f34148bbb2fea6eca22b5ac63d">_RotationAngle</a>&lt;&lt;std::endl;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00125_ac3b7e9b978a67103be19f8b308a79b7a_icgraph.png" border="0" usemap="#aa00125_ac3b7e9b978a67103be19f8b308a79b7a_icgraph" alt=""/></div>
+<map name="aa00125_ac3b7e9b978a67103be19f8b308a79b7a_icgraph" id="aa00125_ac3b7e9b978a67103be19f8b308a79b7a_icgraph">
+<area shape="rect" title="zwraca informacje o laziku" alt="" coords="207,5,333,32"/>
+<area shape="rect" href="a00129.html#a4fd332a26cb769acadfcfba637ed4e4b" title="Wyswietla informacje o laziku." alt="" coords="5,5,159,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="aa35cb04ed5ef3f7b6e8612d14b1d0f22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa35cb04ed5ef3f7b6e8612d14b1d0f22">&#9670;&nbsp;</a></span>_Distance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Rover::_Distance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00056_source.html#l00032">32</a> pliku <a class="el" href="a00056_source.html">Rover.hh</a>.</p>
+
+</div>
+</div>
+<a id="a481b56f34148bbb2fea6eca22b5ac63d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a481b56f34148bbb2fea6eca22b5ac63d">&#9670;&nbsp;</a></span>_RotationAngle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Rover::_RotationAngle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00056_source.html#l00037">37</a> pliku <a class="el" href="a00056_source.html">Rover.hh</a>.</p>
+
+</div>
+</div>
+<a id="a6bc902ae8c0768bf89ca5fd89b89a7d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bc902ae8c0768bf89ca5fd89b89a7d1">&#9670;&nbsp;</a></span>_Velocity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Rover::_Velocity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00056_source.html#l00027">27</a> pliku <a class="el" href="a00056_source.html">Rover.hh</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>/home/kacper/Desktop/kpo-zad6-2-main/prj/inc/<a class="el" href="a00056_source.html">Rover.hh</a></li>
+<li>/home/kacper/Desktop/kpo-zad6-2-main/prj/src/<a class="el" href="a00086_source.html">Rover.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="a00125.html">Rover</a></li>
+    <li class="footer">Wygenerowano przez <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

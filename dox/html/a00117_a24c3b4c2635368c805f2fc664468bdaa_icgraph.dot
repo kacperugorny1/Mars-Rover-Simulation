@@ -1,0 +1,12 @@
+digraph "Object::Count_and_save_tops"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Object::Count_and_save_tops",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="inicjalizuje strumienie i wywoluje z nimi funkcje Count_and_save_top(std::istream &StrmIn,..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="Rover::MoveRover",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00125.html#a2f25eaec312a9eead73b78b1672452fa",tooltip="Przesuwa lazik bez animacji o droge Distance."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="RoverSFR::MoveRover",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00129.html#a244a6e8d15ad3f4f4add63cff3a44cc5",tooltip="Funkcja przesuwajaca lazik i zebrane probki o distance."];
+}

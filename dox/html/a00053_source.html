@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MSR: Plik źródłowy /home/kacper/Desktop/kpo-zad6-2-main/prj/inc/RegSample.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="FSR-icon.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MSR
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a00053_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">RegSample.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="a00053.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00047.html">Object.hh</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00068.html">Vectors.hh</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00056.html">Rover.hh</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="a00121.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00121.html">RegSample</a>: <span class="keyword">public</span> <a class="code" href="a00117.html">Object</a>{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="a00121.html#a13e0fd18b3ae4f2c79d0bdb9a6447952">RegSample</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* sObjectName, <a class="code" href="a00137.html">Vector3D</a> Scale,<a class="code" href="a00137.html">Vector3D</a> Position);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="a00121.html#a2c176ab6bee53c11f65a735a48888ddf">   15</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="a00121.html#a2c176ab6bee53c11f65a735a48888ddf">~RegSample</a>(){}</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="a00047.html#aa884075f403706dceea29a61771a0d44">CollisionType</a> <a class="code" href="a00121.html#a7127170c0a2d2c62326676b5c2820767">IsCollision</a>(<span class="keyword">const</span> std::shared_ptr&lt;Rover&gt;&amp; x)<span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="a00121.html#ac84d5baf85601556e51502809efd9892">   30</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="a00047.html#a842c5e2e69277690b064bf363c017980">ObjectType</a> <a class="code" href="a00121.html#ac84d5baf85601556e51502809efd9892">ReturnType</a>()<span class="keyword">const override</span>{<span class="keywordflow">return</span> <a class="code" href="a00047.html#a842c5e2e69277690b064bf363c017980af5f4a816e3f54d1c077537c71b215925">Sample</a>;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="a00121.html#a1ee67a2b2ddbb51eabd46049e91f8275">   38</a></span>&#160;    <a class="code" href="a00137.html">Vector3D</a> &amp; <a class="code" href="a00121.html#a1ee67a2b2ddbb51eabd46049e91f8275">ReturnPosition</a>(){<span class="keywordflow">return</span> <a class="code" href="a00117.html#a78942d660398da85c46edef8dc9e10aa">_Position</a>;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="a00121.html#a619b9f8836c30d2ccf52601d250fc1b0">   40</a></span>&#160;    <a class="code" href="a00113.html">Matrix3D</a> &amp; <a class="code" href="a00121.html#a619b9f8836c30d2ccf52601d250fc1b0">ReturnRotMatrix</a>(){<span class="keywordflow">return</span> <a class="code" href="a00117.html#ac38a4014e05c03c7ddf61e0da13b0e94">_RotMatrix</a>;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
+<div class="ttc" id="aa00047_html"><div class="ttname"><a href="a00047.html">Object.hh</a></div><div class="ttdoc">Plik zawierajacy klase Object.</div></div>
+<div class="ttc" id="aa00047_html_a842c5e2e69277690b064bf363c017980"><div class="ttname"><a href="a00047.html#a842c5e2e69277690b064bf363c017980">ObjectType</a></div><div class="ttdeci">ObjectType</div><div class="ttdoc">Typ obiektu.</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00038">Object.hh:38</a></div></div>
+<div class="ttc" id="aa00047_html_a842c5e2e69277690b064bf363c017980af5f4a816e3f54d1c077537c71b215925"><div class="ttname"><a href="a00047.html#a842c5e2e69277690b064bf363c017980af5f4a816e3f54d1c077537c71b215925">Sample</a></div><div class="ttdeci">@ Sample</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00041">Object.hh:41</a></div></div>
+<div class="ttc" id="aa00047_html_aa884075f403706dceea29a61771a0d44"><div class="ttname"><a href="a00047.html#aa884075f403706dceea29a61771a0d44">CollisionType</a></div><div class="ttdeci">CollisionType</div><div class="ttdoc">typ kolizji</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00027">Object.hh:27</a></div></div>
+<div class="ttc" id="aa00056_html"><div class="ttname"><a href="a00056.html">Rover.hh</a></div><div class="ttdoc">Plik naglowkowy lazika.</div></div>
+<div class="ttc" id="aa00068_html"><div class="ttname"><a href="a00068.html">Vectors.hh</a></div><div class="ttdoc">Definiuje instancje Vektor3D i Vector2D.</div></div>
+<div class="ttc" id="aa00113_html"><div class="ttname"><a href="a00113.html">Matrix3D</a></div><div class="ttdoc">Macierz3D dziedziczy z tMatrix.</div><div class="ttdef"><b>Definition:</b> <a href="a00044_source.html#l00019">Matrix3D.hh:19</a></div></div>
+<div class="ttc" id="aa00117_html"><div class="ttname"><a href="a00117.html">Object</a></div><div class="ttdoc">Klasa Object.</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00052">Object.hh:52</a></div></div>
+<div class="ttc" id="aa00117_html_a78942d660398da85c46edef8dc9e10aa"><div class="ttname"><a href="a00117.html#a78942d660398da85c46edef8dc9e10aa">Object::_Position</a></div><div class="ttdeci">Vector3D _Position</div><div class="ttdoc">Wektor polozenia.</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00082">Object.hh:82</a></div></div>
+<div class="ttc" id="aa00117_html_ac38a4014e05c03c7ddf61e0da13b0e94"><div class="ttname"><a href="a00117.html#ac38a4014e05c03c7ddf61e0da13b0e94">Object::_RotMatrix</a></div><div class="ttdeci">Matrix3D _RotMatrix</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00084">Object.hh:84</a></div></div>
+<div class="ttc" id="aa00121_html"><div class="ttname"><a href="a00121.html">RegSample</a></div><div class="ttdoc">Klasa probka regolitu.</div><div class="ttdef"><b>Definition:</b> <a href="a00053_source.html#l00011">RegSample.hh:11</a></div></div>
+<div class="ttc" id="aa00121_html_a13e0fd18b3ae4f2c79d0bdb9a6447952"><div class="ttname"><a href="a00121.html#a13e0fd18b3ae4f2c79d0bdb9a6447952">RegSample::RegSample</a></div><div class="ttdeci">RegSample(const char *sObjectName, Vector3D Scale, Vector3D Position)</div><div class="ttdef"><b>Definition:</b> <a href="a00083_source.html#l00006">RegSample.cpp:6</a></div></div>
+<div class="ttc" id="aa00121_html_a1ee67a2b2ddbb51eabd46049e91f8275"><div class="ttname"><a href="a00121.html#a1ee67a2b2ddbb51eabd46049e91f8275">RegSample::ReturnPosition</a></div><div class="ttdeci">Vector3D &amp; ReturnPosition()</div><div class="ttdoc">Zwaca referencje do pozycji.</div><div class="ttdef"><b>Definition:</b> <a href="a00053_source.html#l00038">RegSample.hh:38</a></div></div>
+<div class="ttc" id="aa00121_html_a2c176ab6bee53c11f65a735a48888ddf"><div class="ttname"><a href="a00121.html#a2c176ab6bee53c11f65a735a48888ddf">RegSample::~RegSample</a></div><div class="ttdeci">virtual ~RegSample()</div><div class="ttdef"><b>Definition:</b> <a href="a00053_source.html#l00015">RegSample.hh:15</a></div></div>
+<div class="ttc" id="aa00121_html_a619b9f8836c30d2ccf52601d250fc1b0"><div class="ttname"><a href="a00121.html#a619b9f8836c30d2ccf52601d250fc1b0">RegSample::ReturnRotMatrix</a></div><div class="ttdeci">Matrix3D &amp; ReturnRotMatrix()</div><div class="ttdef"><b>Definition:</b> <a href="a00053_source.html#l00040">RegSample.hh:40</a></div></div>
+<div class="ttc" id="aa00121_html_a7127170c0a2d2c62326676b5c2820767"><div class="ttname"><a href="a00121.html#a7127170c0a2d2c62326676b5c2820767">RegSample::IsCollision</a></div><div class="ttdeci">virtual CollisionType IsCollision(const std::shared_ptr&lt; Rover &gt; &amp;x) const override</div><div class="ttdoc">Zwraca czy kolizja.</div><div class="ttdef"><b>Definition:</b> <a href="a00083_source.html#l00023">RegSample.cpp:23</a></div></div>
+<div class="ttc" id="aa00121_html_ac84d5baf85601556e51502809efd9892"><div class="ttname"><a href="a00121.html#ac84d5baf85601556e51502809efd9892">RegSample::ReturnType</a></div><div class="ttdeci">virtual ObjectType ReturnType() const override</div><div class="ttdoc">Zwraca nazwe typu.</div><div class="ttdef"><b>Definition:</b> <a href="a00053_source.html#l00030">RegSample.hh:30</a></div></div>
+<div class="ttc" id="aa00137_html"><div class="ttname"><a href="a00137.html">tVector&lt; double, 3 &gt;</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_16743127fce78036b5d234ef5015f645.html">kacper</a></li><li class="navelem"><a class="el" href="dir_49a7c49b4431654095b2ac0943d558f1.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_796f0d55694bd57af0b260f5884b0691.html">kpo-zad6-2-main</a></li><li class="navelem"><a class="el" href="dir_01633c65f0a370ff10a533d98ad2fd10.html">prj</a></li><li class="navelem"><a class="el" href="dir_d85f67b63ab5d7b12a078e53f7d35029.html">inc</a></li><li class="navelem"><a class="el" href="a00053.html">RegSample.hh</a></li>
+    <li class="footer">Wygenerowano przez <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

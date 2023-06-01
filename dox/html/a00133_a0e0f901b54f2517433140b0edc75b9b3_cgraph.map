@@ -1,0 +1,4 @@
+<map id="Scene::RotateRover" name="Scene::RotateRover">
+<area shape="rect" id="node1" title="Funkcja obracajaca lazik z animacja." alt="" coords="5,5,143,32"/>
+<area shape="rect" id="node2" href="$a00133.html#a37bff5bf8bfc684ca62c1ceacb340996" title="Sprawdza czy jest kolizja z jakims obiektem sceny." alt="" coords="191,5,349,32"/>
+</map>

@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MSR: Plik źródłowy /home/kacper/Desktop/kpo-zad6-2-main/prj/inc/Contour.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="FSR-icon.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MSR
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a00035_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">Contour.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="a00035.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00068.html">Vectors.hh</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="a00105.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00105.html">Contour</a></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="a00105.html#a5477daefec2725c6c4e9974f175e039f">    9</a></span>&#160;    <a class="code" href="a00137.html">Vector2D</a> <a class="code" href="a00105.html#a5477daefec2725c6c4e9974f175e039f">LeftDown</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="a00105.html#a57d9530d5548bc25d5218e9cafb41861">   10</a></span>&#160;    <a class="code" href="a00137.html">Vector2D</a> <a class="code" href="a00105.html#a57d9530d5548bc25d5218e9cafb41861">RightUp</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="a00105.html#ad464e79a4481062c9bb0544651e78a30">   17</a></span>&#160;    <a class="code" href="a00105.html#ad464e79a4481062c9bb0544651e78a30">Contour</a>(){<a class="code" href="a00105.html#a5477daefec2725c6c4e9974f175e039f">LeftDown</a>[1]=0;<a class="code" href="a00105.html#a5477daefec2725c6c4e9974f175e039f">LeftDown</a>[0]=0;<a class="code" href="a00105.html#a57d9530d5548bc25d5218e9cafb41861">RightUp</a>[1]=0;<a class="code" href="a00105.html#a57d9530d5548bc25d5218e9cafb41861">RightUp</a>[0]=0;}</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="a00105.html#ac4247013b33d39e9447aa5effe0c7bf9">   23</a></span>&#160;    <a class="code" href="a00105.html#ac4247013b33d39e9447aa5effe0c7bf9">Contour</a>(<a class="code" href="a00137.html">Vector2D</a> LD,<a class="code" href="a00137.html">Vector2D</a> RU){<a class="code" href="a00105.html#a5477daefec2725c6c4e9974f175e039f">LeftDown</a>=LD;<a class="code" href="a00105.html#a57d9530d5548bc25d5218e9cafb41861">RightUp</a>=RU;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00105.html#ad69a744d21bd67cc456e975b1785acc2">IsImposed</a>(<a class="code" href="a00105.html">Contour</a> x) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="a00105.html#a6f3999812d1657079795cdc8ce6df9b1">   38</a></span>&#160;    <a class="code" href="a00137.html">Vector2D</a> &amp;<a class="code" href="a00105.html#a6f3999812d1657079795cdc8ce6df9b1">ReturnLDvect</a>(){<span class="keywordflow">return</span> <a class="code" href="a00105.html#a5477daefec2725c6c4e9974f175e039f">LeftDown</a>;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="a00105.html#a5a495754fd0b26fb84463b4f4bfdb485">   45</a></span>&#160;    <a class="code" href="a00137.html">Vector2D</a> &amp;<a class="code" href="a00105.html#a5a495754fd0b26fb84463b4f4bfdb485">ReturnRUvect</a>(){<span class="keywordflow">return</span> <a class="code" href="a00105.html#a57d9530d5548bc25d5218e9cafb41861">RightUp</a>;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="ttc" id="aa00068_html"><div class="ttname"><a href="a00068.html">Vectors.hh</a></div><div class="ttdoc">Definiuje instancje Vektor3D i Vector2D.</div></div>
+<div class="ttc" id="aa00105_html"><div class="ttname"><a href="a00105.html">Contour</a></div><div class="ttdef"><b>Definition:</b> <a href="a00035_source.html#l00007">Contour.hh:8</a></div></div>
+<div class="ttc" id="aa00105_html_a5477daefec2725c6c4e9974f175e039f"><div class="ttname"><a href="a00105.html#a5477daefec2725c6c4e9974f175e039f">Contour::LeftDown</a></div><div class="ttdeci">Vector2D LeftDown</div><div class="ttdef"><b>Definition:</b> <a href="a00035_source.html#l00009">Contour.hh:9</a></div></div>
+<div class="ttc" id="aa00105_html_a57d9530d5548bc25d5218e9cafb41861"><div class="ttname"><a href="a00105.html#a57d9530d5548bc25d5218e9cafb41861">Contour::RightUp</a></div><div class="ttdeci">Vector2D RightUp</div><div class="ttdef"><b>Definition:</b> <a href="a00035_source.html#l00010">Contour.hh:10</a></div></div>
+<div class="ttc" id="aa00105_html_a5a495754fd0b26fb84463b4f4bfdb485"><div class="ttname"><a href="a00105.html#a5a495754fd0b26fb84463b4f4bfdb485">Contour::ReturnRUvect</a></div><div class="ttdeci">Vector2D &amp; ReturnRUvect()</div><div class="ttdoc">Zwraca referencje do RightUp.</div><div class="ttdef"><b>Definition:</b> <a href="a00035_source.html#l00045">Contour.hh:45</a></div></div>
+<div class="ttc" id="aa00105_html_a6f3999812d1657079795cdc8ce6df9b1"><div class="ttname"><a href="a00105.html#a6f3999812d1657079795cdc8ce6df9b1">Contour::ReturnLDvect</a></div><div class="ttdeci">Vector2D &amp; ReturnLDvect()</div><div class="ttdoc">Zwraca referencje do LeftDown.</div><div class="ttdef"><b>Definition:</b> <a href="a00035_source.html#l00038">Contour.hh:38</a></div></div>
+<div class="ttc" id="aa00105_html_ac4247013b33d39e9447aa5effe0c7bf9"><div class="ttname"><a href="a00105.html#ac4247013b33d39e9447aa5effe0c7bf9">Contour::Contour</a></div><div class="ttdeci">Contour(Vector2D LD, Vector2D RU)</div><div class="ttdoc">Construct a new Contour object.</div><div class="ttdef"><b>Definition:</b> <a href="a00035_source.html#l00023">Contour.hh:23</a></div></div>
+<div class="ttc" id="aa00105_html_ad464e79a4481062c9bb0544651e78a30"><div class="ttname"><a href="a00105.html#ad464e79a4481062c9bb0544651e78a30">Contour::Contour</a></div><div class="ttdeci">Contour()</div><div class="ttdoc">Construct a new Contour object.</div><div class="ttdef"><b>Definition:</b> <a href="a00035_source.html#l00017">Contour.hh:17</a></div></div>
+<div class="ttc" id="aa00105_html_ad69a744d21bd67cc456e975b1785acc2"><div class="ttname"><a href="a00105.html#ad69a744d21bd67cc456e975b1785acc2">Contour::IsImposed</a></div><div class="ttdeci">bool IsImposed(Contour x) const</div><div class="ttdoc">Check collision.</div><div class="ttdef"><b>Definition:</b> <a href="a00071_source.html#l00005">Contour.cpp:5</a></div></div>
+<div class="ttc" id="aa00137_html"><div class="ttname"><a href="a00137.html">tVector&lt; double, 2 &gt;</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_16743127fce78036b5d234ef5015f645.html">kacper</a></li><li class="navelem"><a class="el" href="dir_49a7c49b4431654095b2ac0943d558f1.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_796f0d55694bd57af0b260f5884b0691.html">kpo-zad6-2-main</a></li><li class="navelem"><a class="el" href="dir_01633c65f0a370ff10a533d98ad2fd10.html">prj</a></li><li class="navelem"><a class="el" href="dir_d85f67b63ab5d7b12a078e53f7d35029.html">inc</a></li><li class="navelem"><a class="el" href="a00035.html">Contour.hh</a></li>
+    <li class="footer">Wygenerowano przez <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

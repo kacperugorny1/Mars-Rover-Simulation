@@ -1,0 +1,5 @@
+<map id="RoverSFR::RoverState" name="RoverSFR::RoverState">
+<area shape="rect" id="node1" title="Wyswietla informacje o laziku." alt="" coords="5,31,159,57"/>
+<area shape="rect" id="node2" href="$a00129.html#ae3418d8af84a54c2b91e3819ce4dc1a0" title="Wyswietla liste zebranych probek." alt="" coords="207,5,403,32"/>
+<area shape="rect" id="node3" href="$a00125.html#ac3b7e9b978a67103be19f8b308a79b7a" title="zwraca informacje o laziku" alt="" coords="241,56,368,83"/>
+</map>

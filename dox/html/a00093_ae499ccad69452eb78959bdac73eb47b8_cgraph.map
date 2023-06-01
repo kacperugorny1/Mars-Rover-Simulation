@@ -1,0 +1,8 @@
+<map id="Scene::addRover" name="Scene::addRover">
+<area shape="rect" id="node1" title="Metoda dodajaca Rover do sceny podajac parametry." alt="" coords="5,93,125,120"/>
+<area shape="rect" id="node2" href="$a00093.html#a57ce22836f26d3c5eca5396644f4489c" title="Metoda dodajaca obiekt do listy rysowania." alt="" coords="183,64,355,91"/>
+<area shape="rect" id="node5" href="$a00089.html#a2b15264738c716c788ed4fe07094f1f6" title="Zapisuje wierzcholki." alt="" coords="173,119,364,145"/>
+<area shape="rect" id="node3" href="$a00085.html#abb2258886b34ef477c0364769ed1623d" title="Zwraca id koloru." alt="" coords="422,5,577,32"/>
+<area shape="rect" id="node4" href="$a00085.html#a8693cb9a9fd4d935774578cc6aadd6d9" title="Zwraca nazwe pliku z bryla rysowana." alt="" coords="412,57,587,98"/>
+<area shape="rect" id="node6" href="$a00035.html#ab76e08c32386d480effd9e9d33dabadc" title=" " alt="" coords="452,123,547,149"/>
+</map>

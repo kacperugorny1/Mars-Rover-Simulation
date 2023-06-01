@@ -1,0 +1,913 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MSR: Dokumentacja przestrzeni nazw doctest::assertType</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="FSR-icon.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MSR
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a00202.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#enum-members">Wyliczenia</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja przestrzeni nazw doctest::assertType</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Wyliczenia</h2></td></tr>
+<tr class="memitem:ae1bb5bed722f34f1c38b83cb19d326d3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3">Enum</a> { <br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a> = 1, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a> = 2 * is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a> = 2 * is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> = 2 * is_require, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3afa3c93eb2cfc13b22463a939c880426f">is_throws</a> = 2 * is_normal, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a963a644bdf5862ad090793796ceb66bb">is_throws_as</a> = 2 * is_throws, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0ea2bbff31127e391e116ae517d5c514">is_throws_with</a> = 2 * is_throws_as, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a5f3e310c10ba1f854da0049c3915130e">is_nothrow</a> = 2 * is_throws_with, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a812e83ede566e134017f41d5c72b2ac5">is_false</a> = 2 * is_nothrow, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a817743d67795f8026724f7996c88b886">is_unary</a> = 2 * is_false, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a6a46d773b45c0d2219d81fcce351590a">is_eq</a> = 2 * is_unary, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a405685d69fea393e6799b8189824b468">is_ne</a> = 2 * is_eq, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0083b77ce64a925eeaa559928b9cc5b3">is_lt</a> = 2 * is_ne, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a4fdc484830c8109f424ddb2615474473">is_gt</a> = 2 * is_lt, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aa4c3ee89546898afdd61ab915d76722c">is_ge</a> = 2 * is_gt, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aeece2ca988e70f9fdf66da7deb76bfcd">is_le</a> = 2 * is_ge, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af6a39192815719381b5fac77a36a4af7">DT_WARN</a> = is_normal | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af76e26710fc328f589e5b4d3249b3ca7">DT_CHECK</a> = is_normal | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af8e3a004dbc46bd595c0f6161a9c631d">DT_REQUIRE</a> = is_normal | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a40aec9d0d18bf21ce8cd35e14eb213b3">DT_WARN_FALSE</a> = is_normal | is_false | is_warn, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab820bef738bb45afc3f687a1eec30f6e">DT_CHECK_FALSE</a> = is_normal | is_false | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a70bf5f2c07e2b981c056715ca74f53da">DT_REQUIRE_FALSE</a> = is_normal | is_false | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a2a12ac53964b0d738c86049b984c4559">DT_WARN_THROWS</a> = is_throws | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ad4e0dd92a8500cb55ed0881f61374daa">DT_CHECK_THROWS</a> = is_throws | is_check, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aa41741357a8c8828c831401ead8183a3">DT_REQUIRE_THROWS</a> = is_throws | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a5c8a7be78a0a01e5c486b7c74db5187c">DT_WARN_THROWS_AS</a> = is_throws_as | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a7f1f57bb74b7dbe7471e524a6edc0656">DT_CHECK_THROWS_AS</a> = is_throws_as | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a917d915963a5e5880ea105740d11acf0">DT_REQUIRE_THROWS_AS</a> = is_throws_as | is_require, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ae9ae0bf430abe2b14cdf14acc0e1a155">DT_WARN_THROWS_WITH</a> = is_throws_with | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ae02fd677eb17511ef112edce1810a0cf">DT_CHECK_THROWS_WITH</a> = is_throws_with | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aa5c3be1e6ecdd052937de72527e48c11">DT_REQUIRE_THROWS_WITH</a> = is_throws_with | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af077308d7b56fc8f2d1e6e8434de45c0">DT_WARN_THROWS_WITH_AS</a> = is_throws_with | is_throws_as | is_warn, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a158f3cff2cc188aeac90f9683aacd36b">DT_CHECK_THROWS_WITH_AS</a> = is_throws_with | is_throws_as | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a37b9b168af88f4d301684a6ac6a0e203">DT_REQUIRE_THROWS_WITH_AS</a> = is_throws_with | is_throws_as | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a486ef45a1bc30cc2e15e82135d86e357">DT_WARN_NOTHROW</a> = is_nothrow | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a57391420d647d521f0247d243db96962">DT_CHECK_NOTHROW</a> = is_nothrow | is_check, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af3139c12be432566e09c7d748bb99228">DT_REQUIRE_NOTHROW</a> = is_nothrow | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a9adc8bcec1d06ea856947a6ae2cb6fb7">DT_WARN_EQ</a> = is_normal | is_eq | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aed8b8c0e25e90998dd29df68aaf019c2">DT_CHECK_EQ</a> = is_normal | is_eq | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3acc1ab55f3c7428ba73b791002d52297d">DT_REQUIRE_EQ</a> = is_normal | is_eq | is_require, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3afea91e7392a43ecc4ef6a4d6d8670708">DT_WARN_NE</a> = is_normal | is_ne | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a7f22bf979e32324aa2dd54748948e95c">DT_CHECK_NE</a> = is_normal | is_ne | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a4270a0d1c9d2d1f43b6197f483539e44">DT_REQUIRE_NE</a> = is_normal | is_ne | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a185b734ee0e242cd3fc8eb42dd1b7a38">DT_WARN_GT</a> = is_normal | is_gt | is_warn, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac2cd22d626b3cd46f4752644ad45d008">DT_CHECK_GT</a> = is_normal | is_gt | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a835ae4380aea6d530095f8b0210c671d">DT_REQUIRE_GT</a> = is_normal | is_gt | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac0155160d30daf2c4b2677c7e32ed88c">DT_WARN_LT</a> = is_normal | is_lt | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a668c458591d7fa5b398b3280bd99e497">DT_CHECK_LT</a> = is_normal | is_lt | is_check, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a7f3cf9611e8b7ec3a1e486272e86e435">DT_REQUIRE_LT</a> = is_normal | is_lt | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a9d396e58efa1e54e9e5803143330aef3">DT_WARN_GE</a> = is_normal | is_ge | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a16227237a2140fd877dbd9e6bf8dcde0">DT_CHECK_GE</a> = is_normal | is_ge | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a39ccaa685df8522892a3baa6ce5002dc">DT_REQUIRE_GE</a> = is_normal | is_ge | is_require, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aed02321201b6add80ba71104a3351cdc">DT_WARN_LE</a> = is_normal | is_le | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a06431d2dc6fe9f278feb1c57438744a1">DT_CHECK_LE</a> = is_normal | is_le | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a42f79b61640a90d4e30c06685672310d">DT_REQUIRE_LE</a> = is_normal | is_le | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a46ba7012d284320721f026f9c557b7d5">DT_WARN_UNARY</a> = is_normal | is_unary | is_warn, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aec7ed8c2634a131911ac952cd5b4c95d">DT_CHECK_UNARY</a> = is_normal | is_unary | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac12e9aaa7d2158a39f3b3e574419bc84">DT_REQUIRE_UNARY</a> = is_normal | is_unary | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a4aef276b6631ff279a6a2c3ca270de46">DT_WARN_UNARY_FALSE</a> = is_normal | is_false | is_unary | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ad654d8c450de11b4d132c7309f612cb4">DT_CHECK_UNARY_FALSE</a> = is_normal | is_false | is_unary | is_check, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a8ef9faccbc4c56f6f192fdfa8fa83807">DT_REQUIRE_UNARY_FALSE</a> = is_normal | is_false | is_unary | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a> = 1, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a> = 2 * is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a> = 2 * is_check, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> = 2 * is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3afa3c93eb2cfc13b22463a939c880426f">is_throws</a> = 2 * is_normal, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a963a644bdf5862ad090793796ceb66bb">is_throws_as</a> = 2 * is_throws, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0ea2bbff31127e391e116ae517d5c514">is_throws_with</a> = 2 * is_throws_as, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a5f3e310c10ba1f854da0049c3915130e">is_nothrow</a> = 2 * is_throws_with, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a812e83ede566e134017f41d5c72b2ac5">is_false</a> = 2 * is_nothrow, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a817743d67795f8026724f7996c88b886">is_unary</a> = 2 * is_false, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a6a46d773b45c0d2219d81fcce351590a">is_eq</a> = 2 * is_unary, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a405685d69fea393e6799b8189824b468">is_ne</a> = 2 * is_eq, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0083b77ce64a925eeaa559928b9cc5b3">is_lt</a> = 2 * is_ne, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a4fdc484830c8109f424ddb2615474473">is_gt</a> = 2 * is_lt, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aa4c3ee89546898afdd61ab915d76722c">is_ge</a> = 2 * is_gt, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aeece2ca988e70f9fdf66da7deb76bfcd">is_le</a> = 2 * is_ge, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af6a39192815719381b5fac77a36a4af7">DT_WARN</a> = is_normal | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af76e26710fc328f589e5b4d3249b3ca7">DT_CHECK</a> = is_normal | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af8e3a004dbc46bd595c0f6161a9c631d">DT_REQUIRE</a> = is_normal | is_require, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a40aec9d0d18bf21ce8cd35e14eb213b3">DT_WARN_FALSE</a> = is_normal | is_false | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab820bef738bb45afc3f687a1eec30f6e">DT_CHECK_FALSE</a> = is_normal | is_false | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a70bf5f2c07e2b981c056715ca74f53da">DT_REQUIRE_FALSE</a> = is_normal | is_false | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a2a12ac53964b0d738c86049b984c4559">DT_WARN_THROWS</a> = is_throws | is_warn, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ad4e0dd92a8500cb55ed0881f61374daa">DT_CHECK_THROWS</a> = is_throws | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aa41741357a8c8828c831401ead8183a3">DT_REQUIRE_THROWS</a> = is_throws | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a5c8a7be78a0a01e5c486b7c74db5187c">DT_WARN_THROWS_AS</a> = is_throws_as | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a7f1f57bb74b7dbe7471e524a6edc0656">DT_CHECK_THROWS_AS</a> = is_throws_as | is_check, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a917d915963a5e5880ea105740d11acf0">DT_REQUIRE_THROWS_AS</a> = is_throws_as | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ae9ae0bf430abe2b14cdf14acc0e1a155">DT_WARN_THROWS_WITH</a> = is_throws_with | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ae02fd677eb17511ef112edce1810a0cf">DT_CHECK_THROWS_WITH</a> = is_throws_with | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aa5c3be1e6ecdd052937de72527e48c11">DT_REQUIRE_THROWS_WITH</a> = is_throws_with | is_require, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af077308d7b56fc8f2d1e6e8434de45c0">DT_WARN_THROWS_WITH_AS</a> = is_throws_with | is_throws_as | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a158f3cff2cc188aeac90f9683aacd36b">DT_CHECK_THROWS_WITH_AS</a> = is_throws_with | is_throws_as | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a37b9b168af88f4d301684a6ac6a0e203">DT_REQUIRE_THROWS_WITH_AS</a> = is_throws_with | is_throws_as | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a486ef45a1bc30cc2e15e82135d86e357">DT_WARN_NOTHROW</a> = is_nothrow | is_warn, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a57391420d647d521f0247d243db96962">DT_CHECK_NOTHROW</a> = is_nothrow | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af3139c12be432566e09c7d748bb99228">DT_REQUIRE_NOTHROW</a> = is_nothrow | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a9adc8bcec1d06ea856947a6ae2cb6fb7">DT_WARN_EQ</a> = is_normal | is_eq | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aed8b8c0e25e90998dd29df68aaf019c2">DT_CHECK_EQ</a> = is_normal | is_eq | is_check, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3acc1ab55f3c7428ba73b791002d52297d">DT_REQUIRE_EQ</a> = is_normal | is_eq | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3afea91e7392a43ecc4ef6a4d6d8670708">DT_WARN_NE</a> = is_normal | is_ne | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a7f22bf979e32324aa2dd54748948e95c">DT_CHECK_NE</a> = is_normal | is_ne | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a4270a0d1c9d2d1f43b6197f483539e44">DT_REQUIRE_NE</a> = is_normal | is_ne | is_require, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a185b734ee0e242cd3fc8eb42dd1b7a38">DT_WARN_GT</a> = is_normal | is_gt | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac2cd22d626b3cd46f4752644ad45d008">DT_CHECK_GT</a> = is_normal | is_gt | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a835ae4380aea6d530095f8b0210c671d">DT_REQUIRE_GT</a> = is_normal | is_gt | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac0155160d30daf2c4b2677c7e32ed88c">DT_WARN_LT</a> = is_normal | is_lt | is_warn, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a668c458591d7fa5b398b3280bd99e497">DT_CHECK_LT</a> = is_normal | is_lt | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a7f3cf9611e8b7ec3a1e486272e86e435">DT_REQUIRE_LT</a> = is_normal | is_lt | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a9d396e58efa1e54e9e5803143330aef3">DT_WARN_GE</a> = is_normal | is_ge | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a16227237a2140fd877dbd9e6bf8dcde0">DT_CHECK_GE</a> = is_normal | is_ge | is_check, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a39ccaa685df8522892a3baa6ce5002dc">DT_REQUIRE_GE</a> = is_normal | is_ge | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aed02321201b6add80ba71104a3351cdc">DT_WARN_LE</a> = is_normal | is_le | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a06431d2dc6fe9f278feb1c57438744a1">DT_CHECK_LE</a> = is_normal | is_le | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a42f79b61640a90d4e30c06685672310d">DT_REQUIRE_LE</a> = is_normal | is_le | is_require, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a46ba7012d284320721f026f9c557b7d5">DT_WARN_UNARY</a> = is_normal | is_unary | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aec7ed8c2634a131911ac952cd5b4c95d">DT_CHECK_UNARY</a> = is_normal | is_unary | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac12e9aaa7d2158a39f3b3e574419bc84">DT_REQUIRE_UNARY</a> = is_normal | is_unary | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a4aef276b6631ff279a6a2c3ca270de46">DT_WARN_UNARY_FALSE</a> = is_normal | is_false | is_unary | is_warn, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ad654d8c450de11b4d132c7309f612cb4">DT_CHECK_UNARY_FALSE</a> = is_normal | is_false | is_unary | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a8ef9faccbc4c56f6f192fdfa8fa83807">DT_REQUIRE_UNARY_FALSE</a> = is_normal | is_false | is_unary | is_require
+<br />
+ }</td></tr>
+<tr class="separator:ae1bb5bed722f34f1c38b83cb19d326d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1bb5bed722f34f1c38b83cb19d326d3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3">Enum</a> { <br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a> = 1, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a> = 2 * is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a> = 2 * is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> = 2 * is_require, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3afa3c93eb2cfc13b22463a939c880426f">is_throws</a> = 2 * is_normal, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a963a644bdf5862ad090793796ceb66bb">is_throws_as</a> = 2 * is_throws, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0ea2bbff31127e391e116ae517d5c514">is_throws_with</a> = 2 * is_throws_as, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a5f3e310c10ba1f854da0049c3915130e">is_nothrow</a> = 2 * is_throws_with, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a812e83ede566e134017f41d5c72b2ac5">is_false</a> = 2 * is_nothrow, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a817743d67795f8026724f7996c88b886">is_unary</a> = 2 * is_false, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a6a46d773b45c0d2219d81fcce351590a">is_eq</a> = 2 * is_unary, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a405685d69fea393e6799b8189824b468">is_ne</a> = 2 * is_eq, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0083b77ce64a925eeaa559928b9cc5b3">is_lt</a> = 2 * is_ne, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a4fdc484830c8109f424ddb2615474473">is_gt</a> = 2 * is_lt, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aa4c3ee89546898afdd61ab915d76722c">is_ge</a> = 2 * is_gt, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aeece2ca988e70f9fdf66da7deb76bfcd">is_le</a> = 2 * is_ge, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af6a39192815719381b5fac77a36a4af7">DT_WARN</a> = is_normal | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af76e26710fc328f589e5b4d3249b3ca7">DT_CHECK</a> = is_normal | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af8e3a004dbc46bd595c0f6161a9c631d">DT_REQUIRE</a> = is_normal | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a40aec9d0d18bf21ce8cd35e14eb213b3">DT_WARN_FALSE</a> = is_normal | is_false | is_warn, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab820bef738bb45afc3f687a1eec30f6e">DT_CHECK_FALSE</a> = is_normal | is_false | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a70bf5f2c07e2b981c056715ca74f53da">DT_REQUIRE_FALSE</a> = is_normal | is_false | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a2a12ac53964b0d738c86049b984c4559">DT_WARN_THROWS</a> = is_throws | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ad4e0dd92a8500cb55ed0881f61374daa">DT_CHECK_THROWS</a> = is_throws | is_check, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aa41741357a8c8828c831401ead8183a3">DT_REQUIRE_THROWS</a> = is_throws | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a5c8a7be78a0a01e5c486b7c74db5187c">DT_WARN_THROWS_AS</a> = is_throws_as | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a7f1f57bb74b7dbe7471e524a6edc0656">DT_CHECK_THROWS_AS</a> = is_throws_as | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a917d915963a5e5880ea105740d11acf0">DT_REQUIRE_THROWS_AS</a> = is_throws_as | is_require, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ae9ae0bf430abe2b14cdf14acc0e1a155">DT_WARN_THROWS_WITH</a> = is_throws_with | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ae02fd677eb17511ef112edce1810a0cf">DT_CHECK_THROWS_WITH</a> = is_throws_with | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aa5c3be1e6ecdd052937de72527e48c11">DT_REQUIRE_THROWS_WITH</a> = is_throws_with | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af077308d7b56fc8f2d1e6e8434de45c0">DT_WARN_THROWS_WITH_AS</a> = is_throws_with | is_throws_as | is_warn, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a158f3cff2cc188aeac90f9683aacd36b">DT_CHECK_THROWS_WITH_AS</a> = is_throws_with | is_throws_as | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a37b9b168af88f4d301684a6ac6a0e203">DT_REQUIRE_THROWS_WITH_AS</a> = is_throws_with | is_throws_as | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a486ef45a1bc30cc2e15e82135d86e357">DT_WARN_NOTHROW</a> = is_nothrow | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a57391420d647d521f0247d243db96962">DT_CHECK_NOTHROW</a> = is_nothrow | is_check, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af3139c12be432566e09c7d748bb99228">DT_REQUIRE_NOTHROW</a> = is_nothrow | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a9adc8bcec1d06ea856947a6ae2cb6fb7">DT_WARN_EQ</a> = is_normal | is_eq | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aed8b8c0e25e90998dd29df68aaf019c2">DT_CHECK_EQ</a> = is_normal | is_eq | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3acc1ab55f3c7428ba73b791002d52297d">DT_REQUIRE_EQ</a> = is_normal | is_eq | is_require, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3afea91e7392a43ecc4ef6a4d6d8670708">DT_WARN_NE</a> = is_normal | is_ne | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a7f22bf979e32324aa2dd54748948e95c">DT_CHECK_NE</a> = is_normal | is_ne | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a4270a0d1c9d2d1f43b6197f483539e44">DT_REQUIRE_NE</a> = is_normal | is_ne | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a185b734ee0e242cd3fc8eb42dd1b7a38">DT_WARN_GT</a> = is_normal | is_gt | is_warn, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac2cd22d626b3cd46f4752644ad45d008">DT_CHECK_GT</a> = is_normal | is_gt | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a835ae4380aea6d530095f8b0210c671d">DT_REQUIRE_GT</a> = is_normal | is_gt | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac0155160d30daf2c4b2677c7e32ed88c">DT_WARN_LT</a> = is_normal | is_lt | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a668c458591d7fa5b398b3280bd99e497">DT_CHECK_LT</a> = is_normal | is_lt | is_check, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a7f3cf9611e8b7ec3a1e486272e86e435">DT_REQUIRE_LT</a> = is_normal | is_lt | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a9d396e58efa1e54e9e5803143330aef3">DT_WARN_GE</a> = is_normal | is_ge | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a16227237a2140fd877dbd9e6bf8dcde0">DT_CHECK_GE</a> = is_normal | is_ge | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a39ccaa685df8522892a3baa6ce5002dc">DT_REQUIRE_GE</a> = is_normal | is_ge | is_require, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aed02321201b6add80ba71104a3351cdc">DT_WARN_LE</a> = is_normal | is_le | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a06431d2dc6fe9f278feb1c57438744a1">DT_CHECK_LE</a> = is_normal | is_le | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a42f79b61640a90d4e30c06685672310d">DT_REQUIRE_LE</a> = is_normal | is_le | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a46ba7012d284320721f026f9c557b7d5">DT_WARN_UNARY</a> = is_normal | is_unary | is_warn, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aec7ed8c2634a131911ac952cd5b4c95d">DT_CHECK_UNARY</a> = is_normal | is_unary | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac12e9aaa7d2158a39f3b3e574419bc84">DT_REQUIRE_UNARY</a> = is_normal | is_unary | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a4aef276b6631ff279a6a2c3ca270de46">DT_WARN_UNARY_FALSE</a> = is_normal | is_false | is_unary | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ad654d8c450de11b4d132c7309f612cb4">DT_CHECK_UNARY_FALSE</a> = is_normal | is_false | is_unary | is_check, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a8ef9faccbc4c56f6f192fdfa8fa83807">DT_REQUIRE_UNARY_FALSE</a> = is_normal | is_false | is_unary | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a> = 1, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a> = 2 * is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a> = 2 * is_check, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> = 2 * is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3afa3c93eb2cfc13b22463a939c880426f">is_throws</a> = 2 * is_normal, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a963a644bdf5862ad090793796ceb66bb">is_throws_as</a> = 2 * is_throws, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0ea2bbff31127e391e116ae517d5c514">is_throws_with</a> = 2 * is_throws_as, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a5f3e310c10ba1f854da0049c3915130e">is_nothrow</a> = 2 * is_throws_with, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a812e83ede566e134017f41d5c72b2ac5">is_false</a> = 2 * is_nothrow, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a817743d67795f8026724f7996c88b886">is_unary</a> = 2 * is_false, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a6a46d773b45c0d2219d81fcce351590a">is_eq</a> = 2 * is_unary, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a405685d69fea393e6799b8189824b468">is_ne</a> = 2 * is_eq, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0083b77ce64a925eeaa559928b9cc5b3">is_lt</a> = 2 * is_ne, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a4fdc484830c8109f424ddb2615474473">is_gt</a> = 2 * is_lt, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aa4c3ee89546898afdd61ab915d76722c">is_ge</a> = 2 * is_gt, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aeece2ca988e70f9fdf66da7deb76bfcd">is_le</a> = 2 * is_ge, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af6a39192815719381b5fac77a36a4af7">DT_WARN</a> = is_normal | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af76e26710fc328f589e5b4d3249b3ca7">DT_CHECK</a> = is_normal | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af8e3a004dbc46bd595c0f6161a9c631d">DT_REQUIRE</a> = is_normal | is_require, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a40aec9d0d18bf21ce8cd35e14eb213b3">DT_WARN_FALSE</a> = is_normal | is_false | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab820bef738bb45afc3f687a1eec30f6e">DT_CHECK_FALSE</a> = is_normal | is_false | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a70bf5f2c07e2b981c056715ca74f53da">DT_REQUIRE_FALSE</a> = is_normal | is_false | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a2a12ac53964b0d738c86049b984c4559">DT_WARN_THROWS</a> = is_throws | is_warn, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ad4e0dd92a8500cb55ed0881f61374daa">DT_CHECK_THROWS</a> = is_throws | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aa41741357a8c8828c831401ead8183a3">DT_REQUIRE_THROWS</a> = is_throws | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a5c8a7be78a0a01e5c486b7c74db5187c">DT_WARN_THROWS_AS</a> = is_throws_as | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a7f1f57bb74b7dbe7471e524a6edc0656">DT_CHECK_THROWS_AS</a> = is_throws_as | is_check, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a917d915963a5e5880ea105740d11acf0">DT_REQUIRE_THROWS_AS</a> = is_throws_as | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ae9ae0bf430abe2b14cdf14acc0e1a155">DT_WARN_THROWS_WITH</a> = is_throws_with | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ae02fd677eb17511ef112edce1810a0cf">DT_CHECK_THROWS_WITH</a> = is_throws_with | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aa5c3be1e6ecdd052937de72527e48c11">DT_REQUIRE_THROWS_WITH</a> = is_throws_with | is_require, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af077308d7b56fc8f2d1e6e8434de45c0">DT_WARN_THROWS_WITH_AS</a> = is_throws_with | is_throws_as | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a158f3cff2cc188aeac90f9683aacd36b">DT_CHECK_THROWS_WITH_AS</a> = is_throws_with | is_throws_as | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a37b9b168af88f4d301684a6ac6a0e203">DT_REQUIRE_THROWS_WITH_AS</a> = is_throws_with | is_throws_as | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a486ef45a1bc30cc2e15e82135d86e357">DT_WARN_NOTHROW</a> = is_nothrow | is_warn, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a57391420d647d521f0247d243db96962">DT_CHECK_NOTHROW</a> = is_nothrow | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af3139c12be432566e09c7d748bb99228">DT_REQUIRE_NOTHROW</a> = is_nothrow | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a9adc8bcec1d06ea856947a6ae2cb6fb7">DT_WARN_EQ</a> = is_normal | is_eq | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aed8b8c0e25e90998dd29df68aaf019c2">DT_CHECK_EQ</a> = is_normal | is_eq | is_check, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3acc1ab55f3c7428ba73b791002d52297d">DT_REQUIRE_EQ</a> = is_normal | is_eq | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3afea91e7392a43ecc4ef6a4d6d8670708">DT_WARN_NE</a> = is_normal | is_ne | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a7f22bf979e32324aa2dd54748948e95c">DT_CHECK_NE</a> = is_normal | is_ne | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a4270a0d1c9d2d1f43b6197f483539e44">DT_REQUIRE_NE</a> = is_normal | is_ne | is_require, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a185b734ee0e242cd3fc8eb42dd1b7a38">DT_WARN_GT</a> = is_normal | is_gt | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac2cd22d626b3cd46f4752644ad45d008">DT_CHECK_GT</a> = is_normal | is_gt | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a835ae4380aea6d530095f8b0210c671d">DT_REQUIRE_GT</a> = is_normal | is_gt | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac0155160d30daf2c4b2677c7e32ed88c">DT_WARN_LT</a> = is_normal | is_lt | is_warn, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a668c458591d7fa5b398b3280bd99e497">DT_CHECK_LT</a> = is_normal | is_lt | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a7f3cf9611e8b7ec3a1e486272e86e435">DT_REQUIRE_LT</a> = is_normal | is_lt | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a9d396e58efa1e54e9e5803143330aef3">DT_WARN_GE</a> = is_normal | is_ge | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a16227237a2140fd877dbd9e6bf8dcde0">DT_CHECK_GE</a> = is_normal | is_ge | is_check, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a39ccaa685df8522892a3baa6ce5002dc">DT_REQUIRE_GE</a> = is_normal | is_ge | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aed02321201b6add80ba71104a3351cdc">DT_WARN_LE</a> = is_normal | is_le | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a06431d2dc6fe9f278feb1c57438744a1">DT_CHECK_LE</a> = is_normal | is_le | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a42f79b61640a90d4e30c06685672310d">DT_REQUIRE_LE</a> = is_normal | is_le | is_require, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a46ba7012d284320721f026f9c557b7d5">DT_WARN_UNARY</a> = is_normal | is_unary | is_warn, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aec7ed8c2634a131911ac952cd5b4c95d">DT_CHECK_UNARY</a> = is_normal | is_unary | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac12e9aaa7d2158a39f3b3e574419bc84">DT_REQUIRE_UNARY</a> = is_normal | is_unary | is_require, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a4aef276b6631ff279a6a2c3ca270de46">DT_WARN_UNARY_FALSE</a> = is_normal | is_false | is_unary | is_warn, 
+<br />
+&#160;&#160;<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ad654d8c450de11b4d132c7309f612cb4">DT_CHECK_UNARY_FALSE</a> = is_normal | is_false | is_unary | is_check, 
+<a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a8ef9faccbc4c56f6f192fdfa8fa83807">DT_REQUIRE_UNARY_FALSE</a> = is_normal | is_false | is_unary | is_require
+<br />
+ }</td></tr>
+<tr class="separator:ae1bb5bed722f34f1c38b83cb19d326d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Dokumentacja typów wyliczanych</h2>
+<a id="ae1bb5bed722f34f1c38b83cb19d326d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1bb5bed722f34f1c38b83cb19d326d3">&#9670;&nbsp;</a></span>Enum <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3">doctest::assertType::Enum</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Wartości wyliczeń</th></tr><tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73"></a>is_warn&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb"></a>is_check&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a"></a>is_require&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4"></a>is_normal&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3afa3c93eb2cfc13b22463a939c880426f"></a>is_throws&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a963a644bdf5862ad090793796ceb66bb"></a>is_throws_as&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a0ea2bbff31127e391e116ae517d5c514"></a>is_throws_with&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a5f3e310c10ba1f854da0049c3915130e"></a>is_nothrow&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a812e83ede566e134017f41d5c72b2ac5"></a>is_false&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a817743d67795f8026724f7996c88b886"></a>is_unary&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a6a46d773b45c0d2219d81fcce351590a"></a>is_eq&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a405685d69fea393e6799b8189824b468"></a>is_ne&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a0083b77ce64a925eeaa559928b9cc5b3"></a>is_lt&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a4fdc484830c8109f424ddb2615474473"></a>is_gt&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3aa4c3ee89546898afdd61ab915d76722c"></a>is_ge&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3aeece2ca988e70f9fdf66da7deb76bfcd"></a>is_le&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3af6a39192815719381b5fac77a36a4af7"></a>DT_WARN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3af76e26710fc328f589e5b4d3249b3ca7"></a>DT_CHECK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3af8e3a004dbc46bd595c0f6161a9c631d"></a>DT_REQUIRE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a40aec9d0d18bf21ce8cd35e14eb213b3"></a>DT_WARN_FALSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ab820bef738bb45afc3f687a1eec30f6e"></a>DT_CHECK_FALSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a70bf5f2c07e2b981c056715ca74f53da"></a>DT_REQUIRE_FALSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a2a12ac53964b0d738c86049b984c4559"></a>DT_WARN_THROWS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ad4e0dd92a8500cb55ed0881f61374daa"></a>DT_CHECK_THROWS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3aa41741357a8c8828c831401ead8183a3"></a>DT_REQUIRE_THROWS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a5c8a7be78a0a01e5c486b7c74db5187c"></a>DT_WARN_THROWS_AS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a7f1f57bb74b7dbe7471e524a6edc0656"></a>DT_CHECK_THROWS_AS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a917d915963a5e5880ea105740d11acf0"></a>DT_REQUIRE_THROWS_AS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ae9ae0bf430abe2b14cdf14acc0e1a155"></a>DT_WARN_THROWS_WITH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ae02fd677eb17511ef112edce1810a0cf"></a>DT_CHECK_THROWS_WITH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3aa5c3be1e6ecdd052937de72527e48c11"></a>DT_REQUIRE_THROWS_WITH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3af077308d7b56fc8f2d1e6e8434de45c0"></a>DT_WARN_THROWS_WITH_AS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a158f3cff2cc188aeac90f9683aacd36b"></a>DT_CHECK_THROWS_WITH_AS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a37b9b168af88f4d301684a6ac6a0e203"></a>DT_REQUIRE_THROWS_WITH_AS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a486ef45a1bc30cc2e15e82135d86e357"></a>DT_WARN_NOTHROW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a57391420d647d521f0247d243db96962"></a>DT_CHECK_NOTHROW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3af3139c12be432566e09c7d748bb99228"></a>DT_REQUIRE_NOTHROW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a9adc8bcec1d06ea856947a6ae2cb6fb7"></a>DT_WARN_EQ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3aed8b8c0e25e90998dd29df68aaf019c2"></a>DT_CHECK_EQ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3acc1ab55f3c7428ba73b791002d52297d"></a>DT_REQUIRE_EQ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3afea91e7392a43ecc4ef6a4d6d8670708"></a>DT_WARN_NE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a7f22bf979e32324aa2dd54748948e95c"></a>DT_CHECK_NE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a4270a0d1c9d2d1f43b6197f483539e44"></a>DT_REQUIRE_NE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a185b734ee0e242cd3fc8eb42dd1b7a38"></a>DT_WARN_GT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ac2cd22d626b3cd46f4752644ad45d008"></a>DT_CHECK_GT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a835ae4380aea6d530095f8b0210c671d"></a>DT_REQUIRE_GT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ac0155160d30daf2c4b2677c7e32ed88c"></a>DT_WARN_LT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a668c458591d7fa5b398b3280bd99e497"></a>DT_CHECK_LT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a7f3cf9611e8b7ec3a1e486272e86e435"></a>DT_REQUIRE_LT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a9d396e58efa1e54e9e5803143330aef3"></a>DT_WARN_GE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a16227237a2140fd877dbd9e6bf8dcde0"></a>DT_CHECK_GE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a39ccaa685df8522892a3baa6ce5002dc"></a>DT_REQUIRE_GE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3aed02321201b6add80ba71104a3351cdc"></a>DT_WARN_LE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a06431d2dc6fe9f278feb1c57438744a1"></a>DT_CHECK_LE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a42f79b61640a90d4e30c06685672310d"></a>DT_REQUIRE_LE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a46ba7012d284320721f026f9c557b7d5"></a>DT_WARN_UNARY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3aec7ed8c2634a131911ac952cd5b4c95d"></a>DT_CHECK_UNARY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ac12e9aaa7d2158a39f3b3e574419bc84"></a>DT_REQUIRE_UNARY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a4aef276b6631ff279a6a2c3ca270de46"></a>DT_WARN_UNARY_FALSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ad654d8c450de11b4d132c7309f612cb4"></a>DT_CHECK_UNARY_FALSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a8ef9faccbc4c56f6f192fdfa8fa83807"></a>DT_REQUIRE_UNARY_FALSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73"></a>is_warn&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb"></a>is_check&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a"></a>is_require&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4"></a>is_normal&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3afa3c93eb2cfc13b22463a939c880426f"></a>is_throws&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a963a644bdf5862ad090793796ceb66bb"></a>is_throws_as&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a0ea2bbff31127e391e116ae517d5c514"></a>is_throws_with&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a5f3e310c10ba1f854da0049c3915130e"></a>is_nothrow&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a812e83ede566e134017f41d5c72b2ac5"></a>is_false&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a817743d67795f8026724f7996c88b886"></a>is_unary&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a6a46d773b45c0d2219d81fcce351590a"></a>is_eq&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a405685d69fea393e6799b8189824b468"></a>is_ne&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a0083b77ce64a925eeaa559928b9cc5b3"></a>is_lt&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a4fdc484830c8109f424ddb2615474473"></a>is_gt&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3aa4c3ee89546898afdd61ab915d76722c"></a>is_ge&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3aeece2ca988e70f9fdf66da7deb76bfcd"></a>is_le&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3af6a39192815719381b5fac77a36a4af7"></a>DT_WARN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3af76e26710fc328f589e5b4d3249b3ca7"></a>DT_CHECK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3af8e3a004dbc46bd595c0f6161a9c631d"></a>DT_REQUIRE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a40aec9d0d18bf21ce8cd35e14eb213b3"></a>DT_WARN_FALSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ab820bef738bb45afc3f687a1eec30f6e"></a>DT_CHECK_FALSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a70bf5f2c07e2b981c056715ca74f53da"></a>DT_REQUIRE_FALSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a2a12ac53964b0d738c86049b984c4559"></a>DT_WARN_THROWS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ad4e0dd92a8500cb55ed0881f61374daa"></a>DT_CHECK_THROWS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3aa41741357a8c8828c831401ead8183a3"></a>DT_REQUIRE_THROWS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a5c8a7be78a0a01e5c486b7c74db5187c"></a>DT_WARN_THROWS_AS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a7f1f57bb74b7dbe7471e524a6edc0656"></a>DT_CHECK_THROWS_AS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a917d915963a5e5880ea105740d11acf0"></a>DT_REQUIRE_THROWS_AS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ae9ae0bf430abe2b14cdf14acc0e1a155"></a>DT_WARN_THROWS_WITH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ae02fd677eb17511ef112edce1810a0cf"></a>DT_CHECK_THROWS_WITH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3aa5c3be1e6ecdd052937de72527e48c11"></a>DT_REQUIRE_THROWS_WITH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3af077308d7b56fc8f2d1e6e8434de45c0"></a>DT_WARN_THROWS_WITH_AS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a158f3cff2cc188aeac90f9683aacd36b"></a>DT_CHECK_THROWS_WITH_AS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a37b9b168af88f4d301684a6ac6a0e203"></a>DT_REQUIRE_THROWS_WITH_AS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a486ef45a1bc30cc2e15e82135d86e357"></a>DT_WARN_NOTHROW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a57391420d647d521f0247d243db96962"></a>DT_CHECK_NOTHROW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3af3139c12be432566e09c7d748bb99228"></a>DT_REQUIRE_NOTHROW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a9adc8bcec1d06ea856947a6ae2cb6fb7"></a>DT_WARN_EQ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3aed8b8c0e25e90998dd29df68aaf019c2"></a>DT_CHECK_EQ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3acc1ab55f3c7428ba73b791002d52297d"></a>DT_REQUIRE_EQ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3afea91e7392a43ecc4ef6a4d6d8670708"></a>DT_WARN_NE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a7f22bf979e32324aa2dd54748948e95c"></a>DT_CHECK_NE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a4270a0d1c9d2d1f43b6197f483539e44"></a>DT_REQUIRE_NE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a185b734ee0e242cd3fc8eb42dd1b7a38"></a>DT_WARN_GT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ac2cd22d626b3cd46f4752644ad45d008"></a>DT_CHECK_GT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a835ae4380aea6d530095f8b0210c671d"></a>DT_REQUIRE_GT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ac0155160d30daf2c4b2677c7e32ed88c"></a>DT_WARN_LT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a668c458591d7fa5b398b3280bd99e497"></a>DT_CHECK_LT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a7f3cf9611e8b7ec3a1e486272e86e435"></a>DT_REQUIRE_LT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a9d396e58efa1e54e9e5803143330aef3"></a>DT_WARN_GE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a16227237a2140fd877dbd9e6bf8dcde0"></a>DT_CHECK_GE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a39ccaa685df8522892a3baa6ce5002dc"></a>DT_REQUIRE_GE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3aed02321201b6add80ba71104a3351cdc"></a>DT_WARN_LE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a06431d2dc6fe9f278feb1c57438744a1"></a>DT_CHECK_LE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a42f79b61640a90d4e30c06685672310d"></a>DT_REQUIRE_LE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a46ba7012d284320721f026f9c557b7d5"></a>DT_WARN_UNARY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3aec7ed8c2634a131911ac952cd5b4c95d"></a>DT_CHECK_UNARY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ac12e9aaa7d2158a39f3b3e574419bc84"></a>DT_REQUIRE_UNARY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a4aef276b6631ff279a6a2c3ca270de46"></a>DT_WARN_UNARY_FALSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ad654d8c450de11b4d132c7309f612cb4"></a>DT_CHECK_UNARY_FALSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a8ef9faccbc4c56f6f192fdfa8fa83807"></a>DT_REQUIRE_UNARY_FALSE&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definicja w linii <a class="el" href="a00035_source.html#l00533">533</a> pliku <a class="el" href="a00035_source.html">doctest_fwd.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;    {</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;        <span class="comment">// macro traits</span></div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160; </div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>    = 1,</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>   = 2 * <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a> = 2 * <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160; </div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a>      = 2 * <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3afa3c93eb2cfc13b22463a939c880426f">is_throws</a>      = 2 * <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a>,</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a963a644bdf5862ad090793796ceb66bb">is_throws_as</a>   = 2 * <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3afa3c93eb2cfc13b22463a939c880426f">is_throws</a>,</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0ea2bbff31127e391e116ae517d5c514">is_throws_with</a> = 2 * <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a963a644bdf5862ad090793796ceb66bb">is_throws_as</a>,</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a5f3e310c10ba1f854da0049c3915130e">is_nothrow</a>     = 2 * <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0ea2bbff31127e391e116ae517d5c514">is_throws_with</a>,</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160; </div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a812e83ede566e134017f41d5c72b2ac5">is_false</a> = 2 * <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a5f3e310c10ba1f854da0049c3915130e">is_nothrow</a>,</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a817743d67795f8026724f7996c88b886">is_unary</a> = 2 * <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a812e83ede566e134017f41d5c72b2ac5">is_false</a>, <span class="comment">// not checked anywhere - used just to distinguish the types</span></div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160; </div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a6a46d773b45c0d2219d81fcce351590a">is_eq</a> = 2 * <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a817743d67795f8026724f7996c88b886">is_unary</a>,</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a405685d69fea393e6799b8189824b468">is_ne</a> = 2 * <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a6a46d773b45c0d2219d81fcce351590a">is_eq</a>,</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160; </div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0083b77ce64a925eeaa559928b9cc5b3">is_lt</a> = 2 * <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a405685d69fea393e6799b8189824b468">is_ne</a>,</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a4fdc484830c8109f424ddb2615474473">is_gt</a> = 2 * <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0083b77ce64a925eeaa559928b9cc5b3">is_lt</a>,</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160; </div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aa4c3ee89546898afdd61ab915d76722c">is_ge</a> = 2 * <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a4fdc484830c8109f424ddb2615474473">is_gt</a>,</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aeece2ca988e70f9fdf66da7deb76bfcd">is_le</a> = 2 * <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aa4c3ee89546898afdd61ab915d76722c">is_ge</a>,</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160; </div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;        <span class="comment">// macro types</span></div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160; </div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af6a39192815719381b5fac77a36a4af7">DT_WARN</a>    = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af76e26710fc328f589e5b4d3249b3ca7">DT_CHECK</a>   = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af8e3a004dbc46bd595c0f6161a9c631d">DT_REQUIRE</a> = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160; </div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a40aec9d0d18bf21ce8cd35e14eb213b3">DT_WARN_FALSE</a>    = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a812e83ede566e134017f41d5c72b2ac5">is_false</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab820bef738bb45afc3f687a1eec30f6e">DT_CHECK_FALSE</a>   = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a812e83ede566e134017f41d5c72b2ac5">is_false</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a70bf5f2c07e2b981c056715ca74f53da">DT_REQUIRE_FALSE</a> = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a812e83ede566e134017f41d5c72b2ac5">is_false</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160; </div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a2a12ac53964b0d738c86049b984c4559">DT_WARN_THROWS</a>    = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3afa3c93eb2cfc13b22463a939c880426f">is_throws</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ad4e0dd92a8500cb55ed0881f61374daa">DT_CHECK_THROWS</a>   = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3afa3c93eb2cfc13b22463a939c880426f">is_throws</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aa41741357a8c8828c831401ead8183a3">DT_REQUIRE_THROWS</a> = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3afa3c93eb2cfc13b22463a939c880426f">is_throws</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160; </div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a5c8a7be78a0a01e5c486b7c74db5187c">DT_WARN_THROWS_AS</a>    = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a963a644bdf5862ad090793796ceb66bb">is_throws_as</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a7f1f57bb74b7dbe7471e524a6edc0656">DT_CHECK_THROWS_AS</a>   = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a963a644bdf5862ad090793796ceb66bb">is_throws_as</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a917d915963a5e5880ea105740d11acf0">DT_REQUIRE_THROWS_AS</a> = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a963a644bdf5862ad090793796ceb66bb">is_throws_as</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160; </div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ae9ae0bf430abe2b14cdf14acc0e1a155">DT_WARN_THROWS_WITH</a>    = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0ea2bbff31127e391e116ae517d5c514">is_throws_with</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ae02fd677eb17511ef112edce1810a0cf">DT_CHECK_THROWS_WITH</a>   = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0ea2bbff31127e391e116ae517d5c514">is_throws_with</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aa5c3be1e6ecdd052937de72527e48c11">DT_REQUIRE_THROWS_WITH</a> = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0ea2bbff31127e391e116ae517d5c514">is_throws_with</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;        </div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af077308d7b56fc8f2d1e6e8434de45c0">DT_WARN_THROWS_WITH_AS</a>    = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0ea2bbff31127e391e116ae517d5c514">is_throws_with</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a963a644bdf5862ad090793796ceb66bb">is_throws_as</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a158f3cff2cc188aeac90f9683aacd36b">DT_CHECK_THROWS_WITH_AS</a>   = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0ea2bbff31127e391e116ae517d5c514">is_throws_with</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a963a644bdf5862ad090793796ceb66bb">is_throws_as</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a37b9b168af88f4d301684a6ac6a0e203">DT_REQUIRE_THROWS_WITH_AS</a> = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0ea2bbff31127e391e116ae517d5c514">is_throws_with</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a963a644bdf5862ad090793796ceb66bb">is_throws_as</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160; </div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a486ef45a1bc30cc2e15e82135d86e357">DT_WARN_NOTHROW</a>    = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a5f3e310c10ba1f854da0049c3915130e">is_nothrow</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a57391420d647d521f0247d243db96962">DT_CHECK_NOTHROW</a>   = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a5f3e310c10ba1f854da0049c3915130e">is_nothrow</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af3139c12be432566e09c7d748bb99228">DT_REQUIRE_NOTHROW</a> = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a5f3e310c10ba1f854da0049c3915130e">is_nothrow</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160; </div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a9adc8bcec1d06ea856947a6ae2cb6fb7">DT_WARN_EQ</a>    = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a6a46d773b45c0d2219d81fcce351590a">is_eq</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aed8b8c0e25e90998dd29df68aaf019c2">DT_CHECK_EQ</a>   = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a6a46d773b45c0d2219d81fcce351590a">is_eq</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3acc1ab55f3c7428ba73b791002d52297d">DT_REQUIRE_EQ</a> = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a6a46d773b45c0d2219d81fcce351590a">is_eq</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160; </div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3afea91e7392a43ecc4ef6a4d6d8670708">DT_WARN_NE</a>    = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a405685d69fea393e6799b8189824b468">is_ne</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a7f22bf979e32324aa2dd54748948e95c">DT_CHECK_NE</a>   = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a405685d69fea393e6799b8189824b468">is_ne</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a4270a0d1c9d2d1f43b6197f483539e44">DT_REQUIRE_NE</a> = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a405685d69fea393e6799b8189824b468">is_ne</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160; </div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a185b734ee0e242cd3fc8eb42dd1b7a38">DT_WARN_GT</a>    = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a4fdc484830c8109f424ddb2615474473">is_gt</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac2cd22d626b3cd46f4752644ad45d008">DT_CHECK_GT</a>   = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a4fdc484830c8109f424ddb2615474473">is_gt</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a835ae4380aea6d530095f8b0210c671d">DT_REQUIRE_GT</a> = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a4fdc484830c8109f424ddb2615474473">is_gt</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160; </div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac0155160d30daf2c4b2677c7e32ed88c">DT_WARN_LT</a>    = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0083b77ce64a925eeaa559928b9cc5b3">is_lt</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a668c458591d7fa5b398b3280bd99e497">DT_CHECK_LT</a>   = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0083b77ce64a925eeaa559928b9cc5b3">is_lt</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a7f3cf9611e8b7ec3a1e486272e86e435">DT_REQUIRE_LT</a> = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0083b77ce64a925eeaa559928b9cc5b3">is_lt</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160; </div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a9d396e58efa1e54e9e5803143330aef3">DT_WARN_GE</a>    = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aa4c3ee89546898afdd61ab915d76722c">is_ge</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a16227237a2140fd877dbd9e6bf8dcde0">DT_CHECK_GE</a>   = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aa4c3ee89546898afdd61ab915d76722c">is_ge</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a39ccaa685df8522892a3baa6ce5002dc">DT_REQUIRE_GE</a> = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aa4c3ee89546898afdd61ab915d76722c">is_ge</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160; </div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aed02321201b6add80ba71104a3351cdc">DT_WARN_LE</a>    = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aeece2ca988e70f9fdf66da7deb76bfcd">is_le</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a06431d2dc6fe9f278feb1c57438744a1">DT_CHECK_LE</a>   = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aeece2ca988e70f9fdf66da7deb76bfcd">is_le</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a42f79b61640a90d4e30c06685672310d">DT_REQUIRE_LE</a> = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aeece2ca988e70f9fdf66da7deb76bfcd">is_le</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160; </div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a46ba7012d284320721f026f9c557b7d5">DT_WARN_UNARY</a>    = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a817743d67795f8026724f7996c88b886">is_unary</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aec7ed8c2634a131911ac952cd5b4c95d">DT_CHECK_UNARY</a>   = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a817743d67795f8026724f7996c88b886">is_unary</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac12e9aaa7d2158a39f3b3e574419bc84">DT_REQUIRE_UNARY</a> = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a817743d67795f8026724f7996c88b886">is_unary</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160; </div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a4aef276b6631ff279a6a2c3ca270de46">DT_WARN_UNARY_FALSE</a>    = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a812e83ede566e134017f41d5c72b2ac5">is_false</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a817743d67795f8026724f7996c88b886">is_unary</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ad654d8c450de11b4d132c7309f612cb4">DT_CHECK_UNARY_FALSE</a>   = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a812e83ede566e134017f41d5c72b2ac5">is_false</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a817743d67795f8026724f7996c88b886">is_unary</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a8ef9faccbc4c56f6f192fdfa8fa83807">DT_REQUIRE_UNARY_FALSE</a> = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a812e83ede566e134017f41d5c72b2ac5">is_false</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a817743d67795f8026724f7996c88b886">is_unary</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;    };</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae1bb5bed722f34f1c38b83cb19d326d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1bb5bed722f34f1c38b83cb19d326d3">&#9670;&nbsp;</a></span>Enum <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3">doctest::assertType::Enum</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Wartości wyliczeń</th></tr><tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73"></a>is_warn&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb"></a>is_check&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a"></a>is_require&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4"></a>is_normal&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3afa3c93eb2cfc13b22463a939c880426f"></a>is_throws&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a963a644bdf5862ad090793796ceb66bb"></a>is_throws_as&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a0ea2bbff31127e391e116ae517d5c514"></a>is_throws_with&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a5f3e310c10ba1f854da0049c3915130e"></a>is_nothrow&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a812e83ede566e134017f41d5c72b2ac5"></a>is_false&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a817743d67795f8026724f7996c88b886"></a>is_unary&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a6a46d773b45c0d2219d81fcce351590a"></a>is_eq&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a405685d69fea393e6799b8189824b468"></a>is_ne&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a0083b77ce64a925eeaa559928b9cc5b3"></a>is_lt&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a4fdc484830c8109f424ddb2615474473"></a>is_gt&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3aa4c3ee89546898afdd61ab915d76722c"></a>is_ge&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3aeece2ca988e70f9fdf66da7deb76bfcd"></a>is_le&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3af6a39192815719381b5fac77a36a4af7"></a>DT_WARN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3af76e26710fc328f589e5b4d3249b3ca7"></a>DT_CHECK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3af8e3a004dbc46bd595c0f6161a9c631d"></a>DT_REQUIRE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a40aec9d0d18bf21ce8cd35e14eb213b3"></a>DT_WARN_FALSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ab820bef738bb45afc3f687a1eec30f6e"></a>DT_CHECK_FALSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a70bf5f2c07e2b981c056715ca74f53da"></a>DT_REQUIRE_FALSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a2a12ac53964b0d738c86049b984c4559"></a>DT_WARN_THROWS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ad4e0dd92a8500cb55ed0881f61374daa"></a>DT_CHECK_THROWS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3aa41741357a8c8828c831401ead8183a3"></a>DT_REQUIRE_THROWS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a5c8a7be78a0a01e5c486b7c74db5187c"></a>DT_WARN_THROWS_AS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a7f1f57bb74b7dbe7471e524a6edc0656"></a>DT_CHECK_THROWS_AS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a917d915963a5e5880ea105740d11acf0"></a>DT_REQUIRE_THROWS_AS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ae9ae0bf430abe2b14cdf14acc0e1a155"></a>DT_WARN_THROWS_WITH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ae02fd677eb17511ef112edce1810a0cf"></a>DT_CHECK_THROWS_WITH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3aa5c3be1e6ecdd052937de72527e48c11"></a>DT_REQUIRE_THROWS_WITH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3af077308d7b56fc8f2d1e6e8434de45c0"></a>DT_WARN_THROWS_WITH_AS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a158f3cff2cc188aeac90f9683aacd36b"></a>DT_CHECK_THROWS_WITH_AS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a37b9b168af88f4d301684a6ac6a0e203"></a>DT_REQUIRE_THROWS_WITH_AS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a486ef45a1bc30cc2e15e82135d86e357"></a>DT_WARN_NOTHROW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a57391420d647d521f0247d243db96962"></a>DT_CHECK_NOTHROW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3af3139c12be432566e09c7d748bb99228"></a>DT_REQUIRE_NOTHROW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a9adc8bcec1d06ea856947a6ae2cb6fb7"></a>DT_WARN_EQ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3aed8b8c0e25e90998dd29df68aaf019c2"></a>DT_CHECK_EQ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3acc1ab55f3c7428ba73b791002d52297d"></a>DT_REQUIRE_EQ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3afea91e7392a43ecc4ef6a4d6d8670708"></a>DT_WARN_NE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a7f22bf979e32324aa2dd54748948e95c"></a>DT_CHECK_NE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a4270a0d1c9d2d1f43b6197f483539e44"></a>DT_REQUIRE_NE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a185b734ee0e242cd3fc8eb42dd1b7a38"></a>DT_WARN_GT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ac2cd22d626b3cd46f4752644ad45d008"></a>DT_CHECK_GT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a835ae4380aea6d530095f8b0210c671d"></a>DT_REQUIRE_GT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ac0155160d30daf2c4b2677c7e32ed88c"></a>DT_WARN_LT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a668c458591d7fa5b398b3280bd99e497"></a>DT_CHECK_LT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a7f3cf9611e8b7ec3a1e486272e86e435"></a>DT_REQUIRE_LT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a9d396e58efa1e54e9e5803143330aef3"></a>DT_WARN_GE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a16227237a2140fd877dbd9e6bf8dcde0"></a>DT_CHECK_GE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a39ccaa685df8522892a3baa6ce5002dc"></a>DT_REQUIRE_GE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3aed02321201b6add80ba71104a3351cdc"></a>DT_WARN_LE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a06431d2dc6fe9f278feb1c57438744a1"></a>DT_CHECK_LE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a42f79b61640a90d4e30c06685672310d"></a>DT_REQUIRE_LE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a46ba7012d284320721f026f9c557b7d5"></a>DT_WARN_UNARY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3aec7ed8c2634a131911ac952cd5b4c95d"></a>DT_CHECK_UNARY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ac12e9aaa7d2158a39f3b3e574419bc84"></a>DT_REQUIRE_UNARY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a4aef276b6631ff279a6a2c3ca270de46"></a>DT_WARN_UNARY_FALSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ad654d8c450de11b4d132c7309f612cb4"></a>DT_CHECK_UNARY_FALSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a8ef9faccbc4c56f6f192fdfa8fa83807"></a>DT_REQUIRE_UNARY_FALSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73"></a>is_warn&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb"></a>is_check&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a"></a>is_require&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4"></a>is_normal&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3afa3c93eb2cfc13b22463a939c880426f"></a>is_throws&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a963a644bdf5862ad090793796ceb66bb"></a>is_throws_as&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a0ea2bbff31127e391e116ae517d5c514"></a>is_throws_with&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a5f3e310c10ba1f854da0049c3915130e"></a>is_nothrow&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a812e83ede566e134017f41d5c72b2ac5"></a>is_false&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a817743d67795f8026724f7996c88b886"></a>is_unary&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a6a46d773b45c0d2219d81fcce351590a"></a>is_eq&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a405685d69fea393e6799b8189824b468"></a>is_ne&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a0083b77ce64a925eeaa559928b9cc5b3"></a>is_lt&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a4fdc484830c8109f424ddb2615474473"></a>is_gt&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3aa4c3ee89546898afdd61ab915d76722c"></a>is_ge&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3aeece2ca988e70f9fdf66da7deb76bfcd"></a>is_le&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3af6a39192815719381b5fac77a36a4af7"></a>DT_WARN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3af76e26710fc328f589e5b4d3249b3ca7"></a>DT_CHECK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3af8e3a004dbc46bd595c0f6161a9c631d"></a>DT_REQUIRE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a40aec9d0d18bf21ce8cd35e14eb213b3"></a>DT_WARN_FALSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ab820bef738bb45afc3f687a1eec30f6e"></a>DT_CHECK_FALSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a70bf5f2c07e2b981c056715ca74f53da"></a>DT_REQUIRE_FALSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a2a12ac53964b0d738c86049b984c4559"></a>DT_WARN_THROWS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ad4e0dd92a8500cb55ed0881f61374daa"></a>DT_CHECK_THROWS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3aa41741357a8c8828c831401ead8183a3"></a>DT_REQUIRE_THROWS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a5c8a7be78a0a01e5c486b7c74db5187c"></a>DT_WARN_THROWS_AS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a7f1f57bb74b7dbe7471e524a6edc0656"></a>DT_CHECK_THROWS_AS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a917d915963a5e5880ea105740d11acf0"></a>DT_REQUIRE_THROWS_AS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ae9ae0bf430abe2b14cdf14acc0e1a155"></a>DT_WARN_THROWS_WITH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ae02fd677eb17511ef112edce1810a0cf"></a>DT_CHECK_THROWS_WITH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3aa5c3be1e6ecdd052937de72527e48c11"></a>DT_REQUIRE_THROWS_WITH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3af077308d7b56fc8f2d1e6e8434de45c0"></a>DT_WARN_THROWS_WITH_AS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a158f3cff2cc188aeac90f9683aacd36b"></a>DT_CHECK_THROWS_WITH_AS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a37b9b168af88f4d301684a6ac6a0e203"></a>DT_REQUIRE_THROWS_WITH_AS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a486ef45a1bc30cc2e15e82135d86e357"></a>DT_WARN_NOTHROW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a57391420d647d521f0247d243db96962"></a>DT_CHECK_NOTHROW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3af3139c12be432566e09c7d748bb99228"></a>DT_REQUIRE_NOTHROW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a9adc8bcec1d06ea856947a6ae2cb6fb7"></a>DT_WARN_EQ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3aed8b8c0e25e90998dd29df68aaf019c2"></a>DT_CHECK_EQ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3acc1ab55f3c7428ba73b791002d52297d"></a>DT_REQUIRE_EQ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3afea91e7392a43ecc4ef6a4d6d8670708"></a>DT_WARN_NE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a7f22bf979e32324aa2dd54748948e95c"></a>DT_CHECK_NE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a4270a0d1c9d2d1f43b6197f483539e44"></a>DT_REQUIRE_NE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a185b734ee0e242cd3fc8eb42dd1b7a38"></a>DT_WARN_GT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ac2cd22d626b3cd46f4752644ad45d008"></a>DT_CHECK_GT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a835ae4380aea6d530095f8b0210c671d"></a>DT_REQUIRE_GT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ac0155160d30daf2c4b2677c7e32ed88c"></a>DT_WARN_LT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a668c458591d7fa5b398b3280bd99e497"></a>DT_CHECK_LT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a7f3cf9611e8b7ec3a1e486272e86e435"></a>DT_REQUIRE_LT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a9d396e58efa1e54e9e5803143330aef3"></a>DT_WARN_GE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a16227237a2140fd877dbd9e6bf8dcde0"></a>DT_CHECK_GE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a39ccaa685df8522892a3baa6ce5002dc"></a>DT_REQUIRE_GE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3aed02321201b6add80ba71104a3351cdc"></a>DT_WARN_LE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a06431d2dc6fe9f278feb1c57438744a1"></a>DT_CHECK_LE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a42f79b61640a90d4e30c06685672310d"></a>DT_REQUIRE_LE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a46ba7012d284320721f026f9c557b7d5"></a>DT_WARN_UNARY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3aec7ed8c2634a131911ac952cd5b4c95d"></a>DT_CHECK_UNARY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ac12e9aaa7d2158a39f3b3e574419bc84"></a>DT_REQUIRE_UNARY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a4aef276b6631ff279a6a2c3ca270de46"></a>DT_WARN_UNARY_FALSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3ad654d8c450de11b4d132c7309f612cb4"></a>DT_CHECK_UNARY_FALSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae1bb5bed722f34f1c38b83cb19d326d3a8ef9faccbc4c56f6f192fdfa8fa83807"></a>DT_REQUIRE_UNARY_FALSE&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definicja w linii <a class="el" href="a00637_source.html#l00536">536</a> pliku <a class="el" href="a00637_source.html">doctest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    {</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;        <span class="comment">// macro traits</span></div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160; </div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>    = 1,</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>   = 2 * <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a> = 2 * <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160; </div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a>      = 2 * <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3afa3c93eb2cfc13b22463a939c880426f">is_throws</a>      = 2 * <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a>,</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a963a644bdf5862ad090793796ceb66bb">is_throws_as</a>   = 2 * <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3afa3c93eb2cfc13b22463a939c880426f">is_throws</a>,</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0ea2bbff31127e391e116ae517d5c514">is_throws_with</a> = 2 * <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a963a644bdf5862ad090793796ceb66bb">is_throws_as</a>,</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a5f3e310c10ba1f854da0049c3915130e">is_nothrow</a>     = 2 * <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0ea2bbff31127e391e116ae517d5c514">is_throws_with</a>,</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160; </div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a812e83ede566e134017f41d5c72b2ac5">is_false</a> = 2 * <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a5f3e310c10ba1f854da0049c3915130e">is_nothrow</a>,</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a817743d67795f8026724f7996c88b886">is_unary</a> = 2 * <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a812e83ede566e134017f41d5c72b2ac5">is_false</a>, <span class="comment">// not checked anywhere - used just to distinguish the types</span></div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160; </div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a6a46d773b45c0d2219d81fcce351590a">is_eq</a> = 2 * <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a817743d67795f8026724f7996c88b886">is_unary</a>,</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a405685d69fea393e6799b8189824b468">is_ne</a> = 2 * <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a6a46d773b45c0d2219d81fcce351590a">is_eq</a>,</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160; </div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0083b77ce64a925eeaa559928b9cc5b3">is_lt</a> = 2 * <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a405685d69fea393e6799b8189824b468">is_ne</a>,</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a4fdc484830c8109f424ddb2615474473">is_gt</a> = 2 * <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0083b77ce64a925eeaa559928b9cc5b3">is_lt</a>,</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160; </div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aa4c3ee89546898afdd61ab915d76722c">is_ge</a> = 2 * <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a4fdc484830c8109f424ddb2615474473">is_gt</a>,</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aeece2ca988e70f9fdf66da7deb76bfcd">is_le</a> = 2 * <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aa4c3ee89546898afdd61ab915d76722c">is_ge</a>,</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160; </div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;        <span class="comment">// macro types</span></div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160; </div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af6a39192815719381b5fac77a36a4af7">DT_WARN</a>    = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af76e26710fc328f589e5b4d3249b3ca7">DT_CHECK</a>   = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af8e3a004dbc46bd595c0f6161a9c631d">DT_REQUIRE</a> = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160; </div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a40aec9d0d18bf21ce8cd35e14eb213b3">DT_WARN_FALSE</a>    = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a812e83ede566e134017f41d5c72b2ac5">is_false</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab820bef738bb45afc3f687a1eec30f6e">DT_CHECK_FALSE</a>   = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a812e83ede566e134017f41d5c72b2ac5">is_false</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a70bf5f2c07e2b981c056715ca74f53da">DT_REQUIRE_FALSE</a> = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a812e83ede566e134017f41d5c72b2ac5">is_false</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160; </div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a2a12ac53964b0d738c86049b984c4559">DT_WARN_THROWS</a>    = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3afa3c93eb2cfc13b22463a939c880426f">is_throws</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ad4e0dd92a8500cb55ed0881f61374daa">DT_CHECK_THROWS</a>   = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3afa3c93eb2cfc13b22463a939c880426f">is_throws</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aa41741357a8c8828c831401ead8183a3">DT_REQUIRE_THROWS</a> = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3afa3c93eb2cfc13b22463a939c880426f">is_throws</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160; </div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a5c8a7be78a0a01e5c486b7c74db5187c">DT_WARN_THROWS_AS</a>    = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a963a644bdf5862ad090793796ceb66bb">is_throws_as</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a7f1f57bb74b7dbe7471e524a6edc0656">DT_CHECK_THROWS_AS</a>   = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a963a644bdf5862ad090793796ceb66bb">is_throws_as</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a917d915963a5e5880ea105740d11acf0">DT_REQUIRE_THROWS_AS</a> = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a963a644bdf5862ad090793796ceb66bb">is_throws_as</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160; </div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ae9ae0bf430abe2b14cdf14acc0e1a155">DT_WARN_THROWS_WITH</a>    = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0ea2bbff31127e391e116ae517d5c514">is_throws_with</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ae02fd677eb17511ef112edce1810a0cf">DT_CHECK_THROWS_WITH</a>   = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0ea2bbff31127e391e116ae517d5c514">is_throws_with</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aa5c3be1e6ecdd052937de72527e48c11">DT_REQUIRE_THROWS_WITH</a> = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0ea2bbff31127e391e116ae517d5c514">is_throws_with</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;        </div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af077308d7b56fc8f2d1e6e8434de45c0">DT_WARN_THROWS_WITH_AS</a>    = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0ea2bbff31127e391e116ae517d5c514">is_throws_with</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a963a644bdf5862ad090793796ceb66bb">is_throws_as</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a158f3cff2cc188aeac90f9683aacd36b">DT_CHECK_THROWS_WITH_AS</a>   = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0ea2bbff31127e391e116ae517d5c514">is_throws_with</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a963a644bdf5862ad090793796ceb66bb">is_throws_as</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a37b9b168af88f4d301684a6ac6a0e203">DT_REQUIRE_THROWS_WITH_AS</a> = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0ea2bbff31127e391e116ae517d5c514">is_throws_with</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a963a644bdf5862ad090793796ceb66bb">is_throws_as</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160; </div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a486ef45a1bc30cc2e15e82135d86e357">DT_WARN_NOTHROW</a>    = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a5f3e310c10ba1f854da0049c3915130e">is_nothrow</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a57391420d647d521f0247d243db96962">DT_CHECK_NOTHROW</a>   = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a5f3e310c10ba1f854da0049c3915130e">is_nothrow</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af3139c12be432566e09c7d748bb99228">DT_REQUIRE_NOTHROW</a> = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a5f3e310c10ba1f854da0049c3915130e">is_nothrow</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160; </div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a9adc8bcec1d06ea856947a6ae2cb6fb7">DT_WARN_EQ</a>    = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a6a46d773b45c0d2219d81fcce351590a">is_eq</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aed8b8c0e25e90998dd29df68aaf019c2">DT_CHECK_EQ</a>   = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a6a46d773b45c0d2219d81fcce351590a">is_eq</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3acc1ab55f3c7428ba73b791002d52297d">DT_REQUIRE_EQ</a> = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a6a46d773b45c0d2219d81fcce351590a">is_eq</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160; </div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3afea91e7392a43ecc4ef6a4d6d8670708">DT_WARN_NE</a>    = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a405685d69fea393e6799b8189824b468">is_ne</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a7f22bf979e32324aa2dd54748948e95c">DT_CHECK_NE</a>   = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a405685d69fea393e6799b8189824b468">is_ne</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a4270a0d1c9d2d1f43b6197f483539e44">DT_REQUIRE_NE</a> = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a405685d69fea393e6799b8189824b468">is_ne</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160; </div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a185b734ee0e242cd3fc8eb42dd1b7a38">DT_WARN_GT</a>    = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a4fdc484830c8109f424ddb2615474473">is_gt</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac2cd22d626b3cd46f4752644ad45d008">DT_CHECK_GT</a>   = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a4fdc484830c8109f424ddb2615474473">is_gt</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a835ae4380aea6d530095f8b0210c671d">DT_REQUIRE_GT</a> = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a4fdc484830c8109f424ddb2615474473">is_gt</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160; </div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac0155160d30daf2c4b2677c7e32ed88c">DT_WARN_LT</a>    = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0083b77ce64a925eeaa559928b9cc5b3">is_lt</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a668c458591d7fa5b398b3280bd99e497">DT_CHECK_LT</a>   = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0083b77ce64a925eeaa559928b9cc5b3">is_lt</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a7f3cf9611e8b7ec3a1e486272e86e435">DT_REQUIRE_LT</a> = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0083b77ce64a925eeaa559928b9cc5b3">is_lt</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160; </div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a9d396e58efa1e54e9e5803143330aef3">DT_WARN_GE</a>    = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aa4c3ee89546898afdd61ab915d76722c">is_ge</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a16227237a2140fd877dbd9e6bf8dcde0">DT_CHECK_GE</a>   = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aa4c3ee89546898afdd61ab915d76722c">is_ge</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a39ccaa685df8522892a3baa6ce5002dc">DT_REQUIRE_GE</a> = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aa4c3ee89546898afdd61ab915d76722c">is_ge</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160; </div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aed02321201b6add80ba71104a3351cdc">DT_WARN_LE</a>    = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aeece2ca988e70f9fdf66da7deb76bfcd">is_le</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a06431d2dc6fe9f278feb1c57438744a1">DT_CHECK_LE</a>   = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aeece2ca988e70f9fdf66da7deb76bfcd">is_le</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a42f79b61640a90d4e30c06685672310d">DT_REQUIRE_LE</a> = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aeece2ca988e70f9fdf66da7deb76bfcd">is_le</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160; </div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a46ba7012d284320721f026f9c557b7d5">DT_WARN_UNARY</a>    = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a817743d67795f8026724f7996c88b886">is_unary</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aec7ed8c2634a131911ac952cd5b4c95d">DT_CHECK_UNARY</a>   = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a817743d67795f8026724f7996c88b886">is_unary</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac12e9aaa7d2158a39f3b3e574419bc84">DT_REQUIRE_UNARY</a> = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a817743d67795f8026724f7996c88b886">is_unary</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160; </div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a4aef276b6631ff279a6a2c3ca270de46">DT_WARN_UNARY_FALSE</a>    = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a812e83ede566e134017f41d5c72b2ac5">is_false</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a817743d67795f8026724f7996c88b886">is_unary</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">is_warn</a>,</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ad654d8c450de11b4d132c7309f612cb4">DT_CHECK_UNARY_FALSE</a>   = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a812e83ede566e134017f41d5c72b2ac5">is_false</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a817743d67795f8026724f7996c88b886">is_unary</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">is_check</a>,</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;        <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a8ef9faccbc4c56f6f192fdfa8fa83807">DT_REQUIRE_UNARY_FALSE</a> = <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">is_normal</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a812e83ede566e134017f41d5c72b2ac5">is_false</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a817743d67795f8026724f7996c88b886">is_unary</a> | <a class="code" href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">is_require</a>,</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;    };</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3af3139c12be432566e09c7d748bb99228"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af3139c12be432566e09c7d748bb99228">doctest::assertType::DT_REQUIRE_NOTHROW</a></div><div class="ttdeci">@ DT_REQUIRE_NOTHROW</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00590">doctest.h:590</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a7f1f57bb74b7dbe7471e524a6edc0656"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a7f1f57bb74b7dbe7471e524a6edc0656">doctest::assertType::DT_CHECK_THROWS_AS</a></div><div class="ttdeci">@ DT_CHECK_THROWS_AS</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00577">doctest.h:577</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3aa4c3ee89546898afdd61ab915d76722c"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aa4c3ee89546898afdd61ab915d76722c">doctest::assertType::is_ge</a></div><div class="ttdeci">@ is_ge</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00559">doctest.h:559</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3ae02fd677eb17511ef112edce1810a0cf"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ae02fd677eb17511ef112edce1810a0cf">doctest::assertType::DT_CHECK_THROWS_WITH</a></div><div class="ttdeci">@ DT_CHECK_THROWS_WITH</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00581">doctest.h:581</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a0ea2bbff31127e391e116ae517d5c514"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0ea2bbff31127e391e116ae517d5c514">doctest::assertType::is_throws_with</a></div><div class="ttdeci">@ is_throws_with</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00547">doctest.h:547</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a70bf5f2c07e2b981c056715ca74f53da"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a70bf5f2c07e2b981c056715ca74f53da">doctest::assertType::DT_REQUIRE_FALSE</a></div><div class="ttdeci">@ DT_REQUIRE_FALSE</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00570">doctest.h:570</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a4fdc484830c8109f424ddb2615474473"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a4fdc484830c8109f424ddb2615474473">doctest::assertType::is_gt</a></div><div class="ttdeci">@ is_gt</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00557">doctest.h:557</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a812e83ede566e134017f41d5c72b2ac5"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a812e83ede566e134017f41d5c72b2ac5">doctest::assertType::is_false</a></div><div class="ttdeci">@ is_false</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00550">doctest.h:550</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3ad4e0dd92a8500cb55ed0881f61374daa"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ad4e0dd92a8500cb55ed0881f61374daa">doctest::assertType::DT_CHECK_THROWS</a></div><div class="ttdeci">@ DT_CHECK_THROWS</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00573">doctest.h:573</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3ad654d8c450de11b4d132c7309f612cb4"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ad654d8c450de11b4d132c7309f612cb4">doctest::assertType::DT_CHECK_UNARY_FALSE</a></div><div class="ttdeci">@ DT_CHECK_UNARY_FALSE</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00621">doctest.h:621</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a405685d69fea393e6799b8189824b468"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a405685d69fea393e6799b8189824b468">doctest::assertType::is_ne</a></div><div class="ttdeci">@ is_ne</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00554">doctest.h:554</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a46ba7012d284320721f026f9c557b7d5"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a46ba7012d284320721f026f9c557b7d5">doctest::assertType::DT_WARN_UNARY</a></div><div class="ttdeci">@ DT_WARN_UNARY</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00616">doctest.h:616</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a817743d67795f8026724f7996c88b886"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a817743d67795f8026724f7996c88b886">doctest::assertType::is_unary</a></div><div class="ttdeci">@ is_unary</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00551">doctest.h:551</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a9d396e58efa1e54e9e5803143330aef3"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a9d396e58efa1e54e9e5803143330aef3">doctest::assertType::DT_WARN_GE</a></div><div class="ttdeci">@ DT_WARN_GE</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00608">doctest.h:608</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a4270a0d1c9d2d1f43b6197f483539e44"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a4270a0d1c9d2d1f43b6197f483539e44">doctest::assertType::DT_REQUIRE_NE</a></div><div class="ttdeci">@ DT_REQUIRE_NE</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00598">doctest.h:598</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a9adc8bcec1d06ea856947a6ae2cb6fb7"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a9adc8bcec1d06ea856947a6ae2cb6fb7">doctest::assertType::DT_WARN_EQ</a></div><div class="ttdeci">@ DT_WARN_EQ</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00592">doctest.h:592</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3ae9ae0bf430abe2b14cdf14acc0e1a155"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ae9ae0bf430abe2b14cdf14acc0e1a155">doctest::assertType::DT_WARN_THROWS_WITH</a></div><div class="ttdeci">@ DT_WARN_THROWS_WITH</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00580">doctest.h:580</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a40aec9d0d18bf21ce8cd35e14eb213b3"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a40aec9d0d18bf21ce8cd35e14eb213b3">doctest::assertType::DT_WARN_FALSE</a></div><div class="ttdeci">@ DT_WARN_FALSE</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00568">doctest.h:568</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3af6a39192815719381b5fac77a36a4af7"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af6a39192815719381b5fac77a36a4af7">doctest::assertType::DT_WARN</a></div><div class="ttdeci">@ DT_WARN</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00564">doctest.h:564</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a668c458591d7fa5b398b3280bd99e497"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a668c458591d7fa5b398b3280bd99e497">doctest::assertType::DT_CHECK_LT</a></div><div class="ttdeci">@ DT_CHECK_LT</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00605">doctest.h:605</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3aa5c3be1e6ecdd052937de72527e48c11"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aa5c3be1e6ecdd052937de72527e48c11">doctest::assertType::DT_REQUIRE_THROWS_WITH</a></div><div class="ttdeci">@ DT_REQUIRE_THROWS_WITH</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00582">doctest.h:582</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3aec7ed8c2634a131911ac952cd5b4c95d"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aec7ed8c2634a131911ac952cd5b4c95d">doctest::assertType::DT_CHECK_UNARY</a></div><div class="ttdeci">@ DT_CHECK_UNARY</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00617">doctest.h:617</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3af76e26710fc328f589e5b4d3249b3ca7"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af76e26710fc328f589e5b4d3249b3ca7">doctest::assertType::DT_CHECK</a></div><div class="ttdeci">@ DT_CHECK</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00565">doctest.h:565</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a06431d2dc6fe9f278feb1c57438744a1"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a06431d2dc6fe9f278feb1c57438744a1">doctest::assertType::DT_CHECK_LE</a></div><div class="ttdeci">@ DT_CHECK_LE</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00613">doctest.h:613</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3af077308d7b56fc8f2d1e6e8434de45c0"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af077308d7b56fc8f2d1e6e8434de45c0">doctest::assertType::DT_WARN_THROWS_WITH_AS</a></div><div class="ttdeci">@ DT_WARN_THROWS_WITH_AS</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00584">doctest.h:584</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3aed8b8c0e25e90998dd29df68aaf019c2"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aed8b8c0e25e90998dd29df68aaf019c2">doctest::assertType::DT_CHECK_EQ</a></div><div class="ttdeci">@ DT_CHECK_EQ</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00593">doctest.h:593</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a2a12ac53964b0d738c86049b984c4559"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a2a12ac53964b0d738c86049b984c4559">doctest::assertType::DT_WARN_THROWS</a></div><div class="ttdeci">@ DT_WARN_THROWS</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00572">doctest.h:572</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a963a644bdf5862ad090793796ceb66bb"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a963a644bdf5862ad090793796ceb66bb">doctest::assertType::is_throws_as</a></div><div class="ttdeci">@ is_throws_as</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00546">doctest.h:546</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3af8e3a004dbc46bd595c0f6161a9c631d"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3af8e3a004dbc46bd595c0f6161a9c631d">doctest::assertType::DT_REQUIRE</a></div><div class="ttdeci">@ DT_REQUIRE</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00566">doctest.h:566</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a185b734ee0e242cd3fc8eb42dd1b7a38"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a185b734ee0e242cd3fc8eb42dd1b7a38">doctest::assertType::DT_WARN_GT</a></div><div class="ttdeci">@ DT_WARN_GT</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00600">doctest.h:600</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a0083b77ce64a925eeaa559928b9cc5b3"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a0083b77ce64a925eeaa559928b9cc5b3">doctest::assertType::is_lt</a></div><div class="ttdeci">@ is_lt</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00556">doctest.h:556</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a37b9b168af88f4d301684a6ac6a0e203"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a37b9b168af88f4d301684a6ac6a0e203">doctest::assertType::DT_REQUIRE_THROWS_WITH_AS</a></div><div class="ttdeci">@ DT_REQUIRE_THROWS_WITH_AS</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00586">doctest.h:586</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a7f3cf9611e8b7ec3a1e486272e86e435"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a7f3cf9611e8b7ec3a1e486272e86e435">doctest::assertType::DT_REQUIRE_LT</a></div><div class="ttdeci">@ DT_REQUIRE_LT</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00606">doctest.h:606</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3aed02321201b6add80ba71104a3351cdc"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aed02321201b6add80ba71104a3351cdc">doctest::assertType::DT_WARN_LE</a></div><div class="ttdeci">@ DT_WARN_LE</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00612">doctest.h:612</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3ac12e9aaa7d2158a39f3b3e574419bc84"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac12e9aaa7d2158a39f3b3e574419bc84">doctest::assertType::DT_REQUIRE_UNARY</a></div><div class="ttdeci">@ DT_REQUIRE_UNARY</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00618">doctest.h:618</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a5f3e310c10ba1f854da0049c3915130e"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a5f3e310c10ba1f854da0049c3915130e">doctest::assertType::is_nothrow</a></div><div class="ttdeci">@ is_nothrow</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00548">doctest.h:548</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3ac0155160d30daf2c4b2677c7e32ed88c"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac0155160d30daf2c4b2677c7e32ed88c">doctest::assertType::DT_WARN_LT</a></div><div class="ttdeci">@ DT_WARN_LT</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00604">doctest.h:604</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a57391420d647d521f0247d243db96962"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a57391420d647d521f0247d243db96962">doctest::assertType::DT_CHECK_NOTHROW</a></div><div class="ttdeci">@ DT_CHECK_NOTHROW</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00589">doctest.h:589</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3aa41741357a8c8828c831401ead8183a3"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aa41741357a8c8828c831401ead8183a3">doctest::assertType::DT_REQUIRE_THROWS</a></div><div class="ttdeci">@ DT_REQUIRE_THROWS</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00574">doctest.h:574</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a6a46d773b45c0d2219d81fcce351590a"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a6a46d773b45c0d2219d81fcce351590a">doctest::assertType::is_eq</a></div><div class="ttdeci">@ is_eq</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00553">doctest.h:553</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a486ef45a1bc30cc2e15e82135d86e357"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a486ef45a1bc30cc2e15e82135d86e357">doctest::assertType::DT_WARN_NOTHROW</a></div><div class="ttdeci">@ DT_WARN_NOTHROW</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00588">doctest.h:588</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a917d915963a5e5880ea105740d11acf0"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a917d915963a5e5880ea105740d11acf0">doctest::assertType::DT_REQUIRE_THROWS_AS</a></div><div class="ttdeci">@ DT_REQUIRE_THROWS_AS</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00578">doctest.h:578</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a158f3cff2cc188aeac90f9683aacd36b"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a158f3cff2cc188aeac90f9683aacd36b">doctest::assertType::DT_CHECK_THROWS_WITH_AS</a></div><div class="ttdeci">@ DT_CHECK_THROWS_WITH_AS</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00585">doctest.h:585</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3afa3c93eb2cfc13b22463a939c880426f"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3afa3c93eb2cfc13b22463a939c880426f">doctest::assertType::is_throws</a></div><div class="ttdeci">@ is_throws</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00545">doctest.h:545</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a5c8a7be78a0a01e5c486b7c74db5187c"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a5c8a7be78a0a01e5c486b7c74db5187c">doctest::assertType::DT_WARN_THROWS_AS</a></div><div class="ttdeci">@ DT_WARN_THROWS_AS</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00576">doctest.h:576</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a7f22bf979e32324aa2dd54748948e95c"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a7f22bf979e32324aa2dd54748948e95c">doctest::assertType::DT_CHECK_NE</a></div><div class="ttdeci">@ DT_CHECK_NE</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00597">doctest.h:597</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3acc1ab55f3c7428ba73b791002d52297d"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3acc1ab55f3c7428ba73b791002d52297d">doctest::assertType::DT_REQUIRE_EQ</a></div><div class="ttdeci">@ DT_REQUIRE_EQ</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00594">doctest.h:594</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3ab820bef738bb45afc3f687a1eec30f6e"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab820bef738bb45afc3f687a1eec30f6e">doctest::assertType::DT_CHECK_FALSE</a></div><div class="ttdeci">@ DT_CHECK_FALSE</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00569">doctest.h:569</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a338b9d86d4ba91306966385df94c4e73">doctest::assertType::is_warn</a></div><div class="ttdeci">@ is_warn</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00540">doctest.h:540</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3ac2cd22d626b3cd46f4752644ad45d008"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac2cd22d626b3cd46f4752644ad45d008">doctest::assertType::DT_CHECK_GT</a></div><div class="ttdeci">@ DT_CHECK_GT</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00601">doctest.h:601</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a92e42919762197665a685b8c738507c4">doctest::assertType::is_normal</a></div><div class="ttdeci">@ is_normal</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00544">doctest.h:544</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3afea91e7392a43ecc4ef6a4d6d8670708"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3afea91e7392a43ecc4ef6a4d6d8670708">doctest::assertType::DT_WARN_NE</a></div><div class="ttdeci">@ DT_WARN_NE</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00596">doctest.h:596</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ab5947af73aa1ba3d6aa391d7542dbeeb">doctest::assertType::is_check</a></div><div class="ttdeci">@ is_check</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00541">doctest.h:541</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3aeece2ca988e70f9fdf66da7deb76bfcd"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3aeece2ca988e70f9fdf66da7deb76bfcd">doctest::assertType::is_le</a></div><div class="ttdeci">@ is_le</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00560">doctest.h:560</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a835ae4380aea6d530095f8b0210c671d"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a835ae4380aea6d530095f8b0210c671d">doctest::assertType::DT_REQUIRE_GT</a></div><div class="ttdeci">@ DT_REQUIRE_GT</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00602">doctest.h:602</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a8ef9faccbc4c56f6f192fdfa8fa83807"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a8ef9faccbc4c56f6f192fdfa8fa83807">doctest::assertType::DT_REQUIRE_UNARY_FALSE</a></div><div class="ttdeci">@ DT_REQUIRE_UNARY_FALSE</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00622">doctest.h:622</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a39ccaa685df8522892a3baa6ce5002dc"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a39ccaa685df8522892a3baa6ce5002dc">doctest::assertType::DT_REQUIRE_GE</a></div><div class="ttdeci">@ DT_REQUIRE_GE</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00610">doctest.h:610</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a4aef276b6631ff279a6a2c3ca270de46"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a4aef276b6631ff279a6a2c3ca270de46">doctest::assertType::DT_WARN_UNARY_FALSE</a></div><div class="ttdeci">@ DT_WARN_UNARY_FALSE</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00620">doctest.h:620</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3ac56bfff8b2d76dea5d06039f7521012a">doctest::assertType::is_require</a></div><div class="ttdeci">@ is_require</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00542">doctest.h:542</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a42f79b61640a90d4e30c06685672310d"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a42f79b61640a90d4e30c06685672310d">doctest::assertType::DT_REQUIRE_LE</a></div><div class="ttdeci">@ DT_REQUIRE_LE</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00614">doctest.h:614</a></div></div>
+<div class="ttc" id="aa00202_html_ae1bb5bed722f34f1c38b83cb19d326d3a16227237a2140fd877dbd9e6bf8dcde0"><div class="ttname"><a href="a00202.html#ae1bb5bed722f34f1c38b83cb19d326d3a16227237a2140fd877dbd9e6bf8dcde0">doctest::assertType::DT_CHECK_GE</a></div><div class="ttdeci">@ DT_CHECK_GE</div><div class="ttdef"><b>Definition:</b> <a href="a00637_source.html#l00609">doctest.h:609</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="a00200.html">doctest</a></li><li class="navelem"><a class="el" href="a00202.html">assertType</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

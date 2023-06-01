@@ -1,0 +1,4 @@
+<map id="RoverSFR::DisplaySampleList" name="RoverSFR::DisplaySampleList">
+<area shape="rect" id="node1" title="Wyswietla liste zebranych probek." alt="" coords="207,5,403,32"/>
+<area shape="rect" id="node2" href="$a00129.html#a4fd332a26cb769acadfcfba637ed4e4b" title="Wyswietla informacje o laziku." alt="" coords="5,5,159,32"/>
+</map>

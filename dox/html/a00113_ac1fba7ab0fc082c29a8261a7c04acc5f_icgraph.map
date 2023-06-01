@@ -1,0 +1,10 @@
+<map id="Matrix3D::FillRotationZ" name="Matrix3D::FillRotationZ">
+<area shape="rect" id="node1" title="wypelnij macierz obrotu Z" alt="" coords="216,157,368,184"/>
+<area shape="rect" id="node2" href="$a00121.html#a7127170c0a2d2c62326676b5c2820767" title="Zwraca czy kolizja." alt="" coords="9,5,164,32"/>
+<area shape="rect" id="node3" href="$a00129.html#a244a6e8d15ad3f4f4add63cff3a44cc5" title="Funkcja przesuwajaca lazik i zebrane probki o distance." alt="" coords="9,56,164,83"/>
+<area shape="rect" id="node4" href="$a00125.html#a2f25eaec312a9eead73b78b1672452fa" title="Przesuwa lazik bez animacji o droge Distance." alt="" coords="23,107,151,133"/>
+<area shape="rect" id="node5" href="$a00117.html#ae1de648309686c595627070232461c37" title="Construct a new Object object." alt="" coords="35,157,139,184"/>
+<area shape="rect" id="node6" href="$a00121.html#a13e0fd18b3ae4f2c79d0bdb9a6447952" title=" " alt="" coords="5,208,168,235"/>
+<area shape="rect" id="node7" href="$a00125.html#a5f5af08e3e0fb7944940c7ead8e4d316" title="Obroc lazik bez animacji o kat Angle." alt="" coords="19,259,154,285"/>
+<area shape="rect" id="node8" href="$a00125.html#aded9d8fc52192ccb3b9aca2f4fde1638" title="Construct a new Rover object." alt="" coords="39,309,135,336"/>
+</map>

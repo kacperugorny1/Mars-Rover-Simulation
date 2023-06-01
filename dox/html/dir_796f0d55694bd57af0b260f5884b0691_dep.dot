@@ -1,0 +1,14 @@
+digraph "/home/kacper/Desktop/kpo-zad6-2-main" {
+  compound=true
+  node [ fontsize="10", fontname="FreeSans"];
+  edge [ labelfontsize="10", labelfontname="FreeSans"];
+  subgraph clusterdir_49a7c49b4431654095b2ac0943d558f1 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Desktop" fontname="FreeSans", fontsize="10", URL="dir_49a7c49b4431654095b2ac0943d558f1.html"]
+  subgraph clusterdir_796f0d55694bd57af0b260f5884b0691 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_796f0d55694bd57af0b260f5884b0691.html"];
+    dir_796f0d55694bd57af0b260f5884b0691 [shape=plaintext label="kpo-zad6-2-main"];
+  dir_02c67cb622a0c3b55ae9a8bf7e8c57a1 [shape=box label="dox" fillcolor="white" style="filled" color="red" URL="dir_02c67cb622a0c3b55ae9a8bf7e8c57a1.html"];
+  dir_01633c65f0a370ff10a533d98ad2fd10 [shape=box label="prj" fillcolor="white" style="filled" color="red" URL="dir_01633c65f0a370ff10a533d98ad2fd10.html"];
+  }
+  }
+}

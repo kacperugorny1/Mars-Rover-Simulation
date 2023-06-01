@@ -1,0 +1,14 @@
+digraph "Contour::IsImposed"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Contour::IsImposed",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Check collision."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="Rover::IsCollision",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00125.html#a4f4687b4722a1af8a506d34b5b787a2a",tooltip="Sprawdza kolizje pomiedzy 2 obiektami."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="RoverSFR::IsCollision",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00129.html#aa6ad5dc5a1f3d2679521c6eced65a734",tooltip="Sprawdza czy koliduje z lazikiem."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="RegSample::IsCollision",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00121.html#a7127170c0a2d2c62326676b5c2820767",tooltip="Zwraca czy kolizja."];
+}

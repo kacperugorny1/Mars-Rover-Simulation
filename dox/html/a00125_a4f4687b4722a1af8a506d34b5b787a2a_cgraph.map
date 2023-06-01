@@ -1,0 +1,4 @@
+<map id="Rover::IsCollision" name="Rover::IsCollision">
+<area shape="rect" id="node1" title="Sprawdza kolizje pomiedzy 2 obiektami." alt="" coords="5,5,128,32"/>
+<area shape="rect" id="node2" href="$a00105.html#ad69a744d21bd67cc456e975b1785acc2" title="Check collision." alt="" coords="176,5,311,32"/>
+</map>

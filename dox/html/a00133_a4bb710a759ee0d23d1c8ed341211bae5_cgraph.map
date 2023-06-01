@@ -1,0 +1,4 @@
+<map id="Scene::MoveRover" name="Scene::MoveRover">
+<area shape="rect" id="node1" title="Funkcja przesuwajaca lazik z dana predkoscia o droge s ruch jest animowany." alt="" coords="5,5,136,32"/>
+<area shape="rect" id="node2" href="$a00133.html#a37bff5bf8bfc684ca62c1ceacb340996" title="Sprawdza czy jest kolizja z jakims obiektem sceny." alt="" coords="184,5,343,32"/>
+</map>

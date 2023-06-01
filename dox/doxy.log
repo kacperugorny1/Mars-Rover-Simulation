@@ -1,0 +1,154 @@
+warning: Tag 'TCL_SUBST' at line 270 of file 'Doxyfile' has become obsolete.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+warning: Tag 'COLS_IN_ALPHA_INDEX' at line 1151 of file 'Doxyfile' has become obsolete.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+warning: argument 'a4wide' for option PAPER_TYPE is not a valid enum value
+Using the default: a4!
+warning: doxygen no longer ships with the FreeSans font.
+You may want to clear or change DOT_FONTNAME.
+Otherwise you run the risk that the wrong font is being used for dot generated graphs.
+warning: The selected output language "polish" has not been updated
+since release 1.8.2.  As a result some sentences may appear in English.
+
+/home/kacper/Desktop/kpo-zad6-2-main/prj/inc/RoverSFR.hh:44: warning: argument 'Distance' of command @param is not found in the argument list of RoverSFR::RotateRover(double Angle)
+/home/kacper/Desktop/kpo-zad6-2-main/prj/inc/RoverSFR.hh:46: warning: The following parameter of RoverSFR::RotateRover(double Angle) is not documented:
+  parameter 'Angle'
+/home/kacper/Desktop/kpo-zad6-2-main/prj/inc/vector.hh:84: warning: argument 'v' from the argument list of tVector::operator= has multiple @param documentation sections
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00030.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00030.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00036.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00036.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00040.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00040.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00037.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00037.png"'
+sh: 1: dot: not found
+sh: 1: dot: not founderror: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00045.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00045.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00043.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00043.png"'
+
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00042.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00042.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00046.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00046.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00049.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00049.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00048.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00048.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00051.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00051.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00052.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00052.png"'
+sh: 1: sh: 1: dot: not founddot: not found
+
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00054.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00054.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00055.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00055.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00057.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00057.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00060.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00060.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00058.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00058.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00061.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00061.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00064.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00064.png"'
+sh: 1: dot: not found
+sh: 1: dot: not found
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00063.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00063.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00068_ad7113c3dee0bfb8b38163a6fcbb39226_icgraph.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00068_ad7113c3dee0bfb8b38163a6fcbb39226_icgraph.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00066.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00066.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00067.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00067.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00069.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00069.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00072.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00072.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00070.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00070.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00075.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00075.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00078.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00078.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00081.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00081.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00080_a4eefeb43e7c6727fb4e262012df87ad2_icgraph.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00080_a4eefeb43e7c6727fb4e262012df87ad2_icgraph.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00087.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00087.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00084.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00084.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00093.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00093.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00090.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00090.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00096.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00096.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00095_ad7113c3dee0bfb8b38163a6fcbb39226_icgraph.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00095_ad7113c3dee0bfb8b38163a6fcbb39226_icgraph.png"'
+sh: 1: dot: not found
+sh: 1: error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00105_ad69a744d21bd67cc456e975b1785acc2_icgraph.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00105_ad69a744d21bd67cc456e975b1785acc2_icgraph.png"'
+dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00103.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00103.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00109_a9598190cad0a0ffe641dd56556ac97a2_cgraph.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00109_a9598190cad0a0ffe641dd56556ac97a2_cgraph.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00109_a5be3801f0dca3db6dfcfc593ed8f12fc_icgraph.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00109_a5be3801f0dca3db6dfcfc593ed8f12fc_icgraph.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00113_ac1fba7ab0fc082c29a8261a7c04acc5f_icgraph.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00113_ac1fba7ab0fc082c29a8261a7c04acc5f_icgraph.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00111.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00111.png"'
+sh: 1: dot: not found
+sh: 1: error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00117_a24c3b4c2635368c805f2fc664468bdaa_icgraph.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00117_a24c3b4c2635368c805f2fc664468bdaa_icgraph.png"'
+dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00115.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00115.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00123.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00123.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00119.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00119.png"'
+sh: 1: dot: not found
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00129_af7e6dfc4f8af35d7a5d7431393ea3e40_cgraph.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00129_af7e6dfc4f8af35d7a5d7431393ea3e40_cgraph.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00127.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00127.png"'
+sh: 1: dot: not found
+sh: 1: error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/dir_01633c65f0a370ff10a533d98ad2fd10_dep.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/dir_01633c65f0a370ff10a533d98ad2fd10_dep.png"'
+dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00136.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00136.png"'
+sh: 1: dot: not found
+sh: 1: error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2_dep.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2_dep.png"'
+dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/dir_16743127fce78036b5d234ef5015f645_dep.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/dir_16743127fce78036b5d234ef5015f645_dep.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/dir_5744f0e814da613ea85ed472591afbb9_dep.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/dir_5744f0e814da613ea85ed472591afbb9_dep.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/dir_49a7c49b4431654095b2ac0943d558f1_dep.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/dir_49a7c49b4431654095b2ac0943d558f1_dep.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/dir_f48bae84e945866af4b15ebdc6c217c7_dep.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/dir_f48bae84e945866af4b15ebdc6c217c7_dep.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/dir_796f0d55694bd57af0b260f5884b0691_dep.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/dir_796f0d55694bd57af0b260f5884b0691_dep.png"'
+sh: 1: dot: not found
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/kacper/Desktop/kpo-zad6-2-main/dox/html/inherit_graph_7.dot" -Tpng -o "/home/kacper/Desktop/kpo-zad6-2-main/dox/html/inherit_graph_7.png"'
+error: problems opening map file /home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00109_a9598190cad0a0ffe641dd56556ac97a2_cgraph.map for inclusion in the docs!
+If you installed Graphviz/dot after a previous failing run, 
+try deleting the output directory and rerun doxygen.
+error: problems opening map file /home/kacper/Desktop/kpo-zad6-2-main/dox/html/a00129_af7e6dfc4f8af35d7a5d7431393ea3e40_cgraph.map for inclusion in the docs!
+If you installed Graphviz/dot after a previous failing run, 
+try deleting the output directory and rerun doxygen.
+error: problems opening map file /home/kacper/Desktop/kpo-zad6-2-main/dox/html/dir_01633c65f0a370ff10a533d98ad2fd10_dep.map for inclusion in the docs!
+If you installed Graphviz/dot after a previous failing run, 
+try deleting the output directory and rerun doxygen.
+error: problems opening map file /home/kacper/Desktop/kpo-zad6-2-main/dox/html/dir_16743127fce78036b5d234ef5015f645_dep.map for inclusion in the docs!
+If you installed Graphviz/dot after a previous failing run, 
+try deleting the output directory and rerun doxygen.
+error: problems opening map file /home/kacper/Desktop/kpo-zad6-2-main/dox/html/dir_49a7c49b4431654095b2ac0943d558f1_dep.map for inclusion in the docs!
+If you installed Graphviz/dot after a previous failing run, 
+try deleting the output directory and rerun doxygen.
+error: problems opening map file /home/kacper/Desktop/kpo-zad6-2-main/dox/html/dir_5744f0e814da613ea85ed472591afbb9_dep.map for inclusion in the docs!
+If you installed Graphviz/dot after a previous failing run, 
+try deleting the output directory and rerun doxygen.
+error: problems opening map file /home/kacper/Desktop/kpo-zad6-2-main/dox/html/dir_796f0d55694bd57af0b260f5884b0691_dep.map for inclusion in the docs!
+If you installed Graphviz/dot after a previous failing run, 
+try deleting the output directory and rerun doxygen.
+error: problems opening map file /home/kacper/Desktop/kpo-zad6-2-main/dox/html/dir_f48bae84e945866af4b15ebdc6c217c7_dep.map for inclusion in the docs!
+If you installed Graphviz/dot after a previous failing run, 
+try deleting the output directory and rerun doxygen.

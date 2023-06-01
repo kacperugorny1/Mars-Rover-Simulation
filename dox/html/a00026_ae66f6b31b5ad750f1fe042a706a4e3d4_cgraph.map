@@ -1,0 +1,22 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,288,56,315"/>
+<area shape="rect" id="node2" href="$a00097.html#ae499ccad69452eb78959bdac73eb47b8" title="Metoda dodajaca Rover do sceny podajac parametry." alt="" coords="129,60,249,87"/>
+<area shape="rect" id="node7" href="$a00101.html#ad7923da98dd49419659dcc7fb3b213b4" title="Funkcja liczaca wektory." alt="" coords="112,111,267,137"/>
+<area shape="rect" id="node8" href="$a00026.html#a41ff9290a9a345af10f8faa5902219ba" title=" " alt="" coords="141,161,237,188"/>
+<area shape="rect" id="node9" href="$a00026.html#a5aa7e7c2d5cfe407dbcfb0bbc993cad6" title=" " alt="" coords="129,212,249,239"/>
+<area shape="rect" id="node13" href="$a00097.html#ad5292c8fc0f91f9e4f0267e3c898faea" title="Metoda wyswietlajaca liste lazikow." alt="" coords="104,263,275,289"/>
+<area shape="rect" id="node14" href="$a00097.html#a4813338ee7c6c995f5bb6f10e3673804" title="metoda rysujaca w gnuplocie" alt="" coords="142,313,237,340"/>
+<area shape="rect" id="node15" href="$a00097.html#a58e85f55140d5e623fb0acb93214f2c8" title="Metoda inicjujaca lacze do gnuplota." alt="" coords="113,364,266,391"/>
+<area shape="rect" id="node18" href="$a00097.html#a4bb710a759ee0d23d1c8ed341211bae5" title="Funkcja przesuwajaca lazik z dana predkoscia o droge s ruch jest animowany." alt="" coords="124,415,255,441"/>
+<area shape="rect" id="node19" href="$a00097.html#a0e0f901b54f2517433140b0edc75b9b3" title="Funkcja obracajaca lazik z animacja." alt="" coords="121,465,258,492"/>
+<area shape="rect" id="node20" href="$a00097.html#a3000ef8f2a26bcd8dff96fe371c3e495" title="Wybierz lazik ktorym sterujesz." alt="" coords="121,516,257,543"/>
+<area shape="rect" id="node3" href="$a00097.html#a57ce22836f26d3c5eca5396644f4489c" title="Metoda dodajaca obiekt do listy rysowania." alt="" coords="332,35,504,61"/>
+<area shape="rect" id="node6" href="$a00093.html#a2b15264738c716c788ed4fe07094f1f6" title="inicjalizuje strumienie i wywoluje z nimi funkcje Count_and_save_top(std::istream &amp;StrmIn,..." alt="" coords="323,85,513,112"/>
+<area shape="rect" id="node4" href="$a00089.html#abb2258886b34ef477c0364769ed1623d" title="Zwraca id koloru." alt="" coords="571,5,726,32"/>
+<area shape="rect" id="node5" href="$a00089.html#a8693cb9a9fd4d935774578cc6aadd6d9" title="Zwraca nazwe pliku z bryla rysowana." alt="" coords="561,57,736,98"/>
+<area shape="rect" id="node10" href="$a00097.html#a9aaa7eb02545bbce8c2e255151384a8f" title="Zwroc kat orientacji aktywnego lazika." alt="" coords="349,161,487,188"/>
+<area shape="rect" id="node11" href="$a00097.html#a85aa9f2f5459aba8acf76399dd8eddaf" title="Zwroc nazwe aktywnego lazika." alt="" coords="349,212,487,239"/>
+<area shape="rect" id="node12" href="$a00097.html#af528fa10e78e2bbc1c269c6528533753" title="Zwroc pozycje aktywnego lazika." alt="" coords="355,263,481,289"/>
+<area shape="rect" id="node16" href="$a00041.html#a4ea2370930491646c4519a1f689f117c" title="Inicjalizuje model powierzchni Marsa." alt="" coords="339,357,497,398"/>
+<area shape="rect" id="node17" href="$a00062.html#a4eefeb43e7c6727fb4e262012df87ad2" title=" " alt="" coords="579,357,719,398"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Scene::SelectRover" name="Scene::SelectRover">
+<area shape="rect" id="node1" title="Wybierz lazik ktorym sterujesz." alt="" coords="156,31,292,57"/>
+<area shape="rect" id="node2" href="$a00029.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="31,5,82,32"/>
+<area shape="rect" id="node3" href="$a00133.html#ad10176d75a9cc0da56626f682d083507" title="Konstruktor bezparametryczny." alt="" coords="5,56,108,83"/>
+</map>

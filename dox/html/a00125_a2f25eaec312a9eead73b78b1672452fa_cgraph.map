@@ -1,0 +1,5 @@
+<map id="Rover::MoveRover" name="Rover::MoveRover">
+<area shape="rect" id="node1" title="Przesuwa lazik bez animacji o droge Distance." alt="" coords="5,31,133,57"/>
+<area shape="rect" id="node2" href="$a00117.html#a24c3b4c2635368c805f2fc664468bdaa" title="inicjalizuje strumienie i wywoluje z nimi funkcje Count_and_save_top(std::istream &amp;StrmIn,..." alt="" coords="181,5,376,32"/>
+<area shape="rect" id="node3" href="$a00113.html#ac1fba7ab0fc082c29a8261a7c04acc5f" title="wypelnij macierz obrotu Z" alt="" coords="203,56,355,83"/>
+</map>
