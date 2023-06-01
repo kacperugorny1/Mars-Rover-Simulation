@@ -1,6 +1,6 @@
 # kpo-zad6-2
 
-To compile run this you need:
+To compile run this you need:\n
 gcc 
 doxygen - for docs
 gnuplot
